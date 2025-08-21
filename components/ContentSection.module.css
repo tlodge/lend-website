@@ -1,0 +1,158 @@
+.section {
+  display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+  min-height: 960px;
+}
+
+.leftColumn {
+  flex: 1;
+  margin-right: 1px;
+}
+
+.rightColumn {
+  width: 430px;
+  background-color: #ced5de;
+  border-left: 1px solid #000;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.topArticle {
+  height: 480px;
+  background-color: #ffffff;
+  background-image: url("/placeholder.svg?height=480&width=850");
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  border-bottom: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bottomRow {
+  height: 480px;
+  display: flex;
+}
+
+.bottomArticle {
+  flex: 1;
+  background-color: #f5f9f7;
+  background-image: url("/placeholder.svg?height=480&width=425");
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bottomArticle:first-child {
+  border-right: 1px solid #000;
+}
+
+.articleTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.articleMeta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.articleText {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.readMore {
+  color: #5b85c2;
+  text-align: center;
+  font-weight: 600;
+}
+
+.readMore:hover {
+  text-decoration: underline;
+}
+
+.newsTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.newsItem {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #999;
+}
+
+.newsItem:last-child {
+  border-bottom: none;
+}
+
+.newsItemTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.newsItemDate {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.newsItemText {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.newsItemLink {
+  color: #5b85c2;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.newsItemLink:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+  }
+
+  .rightColumn {
+    width: 100%;
+    order: -1;
+  }
+
+  .topArticle,
+  .bottomRow {
+    height: auto;
+    min-height: 300px;
+  }
+
+  .bottomRow {
+    flex-direction: column;
+  }
+
+  .bottomArticle:first-child {
+    border-right: none;
+    border-bottom: 1px solid #000;
+  }
+}
