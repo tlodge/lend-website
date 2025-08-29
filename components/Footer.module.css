@@ -5,16 +5,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* Added relative positioning for decorative SVG */
-  position: relative;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 1280px;
+  left: calc((100vw - 1296px) / 2);
 }
 
 /* Added decorative SVG styling */
 .decorativeSvg {
   position: absolute;
   top: -50px;
-  left: 0;
-  width: 100%;
+
+  width: 1280px;
   height: 50px;
   z-index: 1;
 }
@@ -29,13 +35,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  gap: 30px;
 }
 
 .partnerLogo {
-  height: 60px;
+  height: 45px;
   width: auto;
-  filter: brightness(0) invert(1);
+  /* filter: brightness(0) invert(1); */  
+}
+
+.partnerLogoHigh {
+  height: 80px;
+  width: auto;
+  /* filter: brightness(0) invert(1); */
 }
 
 @media (max-width: 768px) {
@@ -43,6 +55,7 @@
     height: auto;
     padding: 30px 0;
   }
+
 
   .logoRow {
     flex-wrap: wrap;

@@ -7,8 +7,8 @@ export default function Contact() {
     <>
       <Header />
       <div className="content-container">
-        <HeroSection backgroundImage="pattern.png" isPattern={true} content="Please <strong>contact us</strong> if you have any questions or would like to get involved"  />
-        <main style={{ padding: "60px 0", backgroundColor: "#F5F9F7", minHeight: "calc(100vh - 480px)"}}>
+        <HeroSection backgroundImage="pattern.png" isPattern={true} content="We need your help!" />
+        <main style={{ padding: "60px 0", backgroundColor: "#F5F9F7" }}>
           <div style={{ maxWidth: "800px", margin: "0 auto", padding: "0 20px" }}>
             <div
               style={{
@@ -18,7 +18,7 @@ export default function Contact() {
                 boxShadow: "0 2px 10px rgba(0,0,0,0.1)",
               }}
             >
-              <h2 style={{ fontSize: "28px", marginBottom: "30px", color: "#333" }}>Get in Touch</h2>
+              <h2 style={{ fontSize: "28px", marginBottom: "30px", color: "#333" }}>Participate</h2>
 
               <div style={{ marginBottom: "30px" }}>
                 <h3 style={{ fontSize: "20px", marginBottom: "15px", color: "#5B85C2" }}>Research Team</h3>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 425 481" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <path d="M425,480.457l0,-56.943c-0.951,-0.092 -271.112,33.283 -341.319,38.834c-33.58,2.654 -61.52,3.677 -83.681,3.401l0,14.708l425,0Z" style="fill:#505050;"/>
+    <g>
+        <path d="M343.465,462.316c-0.262,-8.145 -1.456,-14.386 -2.83,-18.986l-9.763,0c-1.373,4.6 -2.568,10.841 -2.83,18.986l15.423,-0Z" style="fill:#0b1605;"/>
+        <g>
+            <path d="M335.754,297.822c-0,-0 -23.55,88.006 -23.55,125.723c-0,12.998 10.552,23.55 23.55,23.55c12.997,0 23.55,-10.552 23.55,-23.55c-0,-37.717 -23.55,-125.723 -23.55,-125.723Z" style="fill:#967e76;"/>
+        </g>
+    </g>
+    <rect x="0" y="0" width="425" height="480" style="fill:none;"/>
+</svg>

@@ -1,6 +1,10 @@
 import styles from "./AboutContent.module.css"
+import peopleData from "../app/data/people.json"
+import type { PeopleData } from "../lib/types"
 
 export default function AboutContent() {
+  const teamMembers: PeopleData = peopleData as PeopleData;
+  
   return (
     <section className={styles.aboutSection}>
       <div className={styles.container}>
@@ -9,7 +13,7 @@ export default function AboutContent() {
             <h2>About the LEND project</h2>
             <p>
               Dementia affects over 850,000 people in the UK and 700,000 carers, often leading to loss of identity,
-              reduced quality of life, and "excess disability."
+              reduced quality of life, and &quot;excess disability.&quot;
             </p>
             <p>
               Support gaps are particularly stark for disadvantaged and minority groups. Research shows that personal
@@ -22,7 +26,7 @@ export default function AboutContent() {
               audio, and video, with filters to help users find personally meaningful accounts.
             </p>
             <p>
-              Two clinical trials will evaluate LEND's benefits and cost-effectiveness for people with dementia and
+              Two clinical trials will evaluate LEND&apos;s benefits and cost-effectiveness for people with dementia and
               their carers. A Lived Experience Advisory Panel will co-develop the intervention, ensuring cultural
               competence, relevance, and impact.
             </p>
@@ -33,10 +37,24 @@ export default function AboutContent() {
             <p>
               We are a mix of academics, clinical psychologists, psychiatrists, economists, statisticians,
               technologists, and people with lived experience of dementia. The project lead is Professor Martin Orel,
-              who is the Director of the Institute at the University of Nottingham. More information on each member of
-              the team can be found here.
+              who is the Director of the Institute at the University of Nottingham. 
             </p>
+            <div className={styles.teamMembers}>
+            
+            
+            <div className={styles.teamGrid}>
+              {teamMembers.map((person, index) => (
+                <div key={index} className={styles.teamMember}>
+                  <h3><a href={""} target="_blank" rel="noopener noreferrer">{person.name}</a></h3>
+                  <h4>{person.institution}</h4>
+                  <p>{person.profile}</p>
+                </div>
+              ))}
+            </div>
           </div>
+          </div>
+
+          
         </div>
 
         <div className={styles.rightColumn}>
@@ -47,7 +65,7 @@ export default function AboutContent() {
             </div>
 
             <div className={styles.detailItem}>
-              <h3>The Project will ends</h3>
+              <h3>The Project will end</h3>
               <p>May 2029</p>
             </div>
 

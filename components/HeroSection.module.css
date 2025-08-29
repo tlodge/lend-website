@@ -1,6 +1,10 @@
 .hero {
-  background-color: #e9e9e9;
-  border-bottom: 1px solid #000;
+  background-image: url('/pattern.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  border-bottom: 1px solid #c2bebd;
   height: 260px;
   display: flex;
   align-items: center;
@@ -8,16 +12,38 @@
   text-align: center;
 }
 
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(237, 231, 226, 0.4);
+  z-index: 1;
+}
+
+.tree {
+  position: absolute;
+  bottom: 0;
+  right: 16px;
+  width: 68px;
+  height: 161px;
+  z-index: 2;
+}
+
 .container {
   max-width: 1280px;
   padding: 0 40px;
+  position: relative;
+  z-index: 2;
 }
 
 .heroText {
-  font-size: 18px;
-  line-height: 1.6;
+  font-size: 20px;
+  line-height: 1.8;
   color: #333;
-  max-width: 800px;
+  max-width: 900px;
 }
 
 @media (max-width: 768px) {

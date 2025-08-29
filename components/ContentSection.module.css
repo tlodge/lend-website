@@ -12,8 +12,8 @@
 
 .rightColumn {
   width: 430px;
-  background-color: #ced5de;
-  border-left: 1px solid #000;
+  background-color: #ede7e2;
+  border-left: 1px solid #9b9b9b;
   padding: 30px;
   overflow-y: auto;
 }
@@ -21,14 +21,17 @@
 .topArticle {
   height: 480px;
   background-color: #ffffff;
-  background-image: url("/placeholder.svg?height=480&width=850");
-  background-size: cover;
-  background-position: center;
   padding: 40px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #9b9b9b;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  background-image: url("/storybacklg.svg");
+
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .bottomRow {
@@ -39,21 +42,40 @@
 .bottomArticle {
   flex: 1;
   background-color: #f5f9f7;
-  background-image: url("/placeholder.svg?height=480&width=425");
-  background-size: cover;
-  background-position: center;
   padding: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  
 }
 
+.leftImage {
+  background-image: url("/storybackleft.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.rightImage {
+  background-image: url("/storybackright.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
 .bottomArticle:first-child {
-  border-right: 1px solid #000;
+  border-right: 1px solid #9b9b9b;
 }
 
 .articleTitle {
   font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.smallArticleTitle {
+  font-size: 20px;
   font-weight: 700;
   color: #333;
   margin-bottom: 15px;
@@ -94,7 +116,7 @@
 .newsItem {
   margin-bottom: 30px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #999;
+ 
 }
 
 .newsItem:last-child {
@@ -116,7 +138,7 @@
 
 .newsItemText {
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.7;
   color: #333;
   margin-bottom: 12px;
 }

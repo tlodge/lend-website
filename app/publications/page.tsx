@@ -6,7 +6,7 @@ export default function Publications() {
   const publications = [
     {
       title: "Lived Experience Narratives in Dementia Care: A Systematic Review",
-      authors: "Lodge, T., Smith, J., & Williams, K.",
+      authors: "Harding, T., Smith, J., & Williams, K.",
       journal: "Journal of Dementia Care",
       year: "2024",
       volume: "32",
@@ -16,7 +16,7 @@ export default function Publications() {
     },
     {
       title: "The Role of Storytelling in Supporting Dementia Carers: Qualitative Insights",
-      authors: "Williams, K., Lodge, T., Brown, M., & Davis, L.",
+      authors: "Williams, K., Harding, T., Brown, M., & Davis, L.",
       journal: "International Journal of Geriatric Psychiatry",
       year: "2024",
       volume: "39",
@@ -26,7 +26,7 @@ export default function Publications() {
     },
     {
       title: "Digital Platforms for Sharing Dementia Experiences: User Perspectives and Design Considerations",
-      authors: "Smith, J., Lodge, T., & Thompson, R.",
+      authors: "Smith, J., Harding, T., & Thompson, R.",
       journal: "Dementia and Geriatric Cognitive Disorders",
       year: "2023",
       volume: "52",
@@ -36,7 +36,7 @@ export default function Publications() {
     },
     {
       title: "Co-designing Resources with People Living with Dementia: Lessons from the LEND Project",
-      authors: "Lodge, T., Williams, K., Johnson, P., & Miller, S.",
+      authors: "Harding, T., Williams, K., Johnson, P., & Miller, S.",
       journal: "Research Involvement and Engagement",
       year: "2023",
       volume: "9",
@@ -46,7 +46,7 @@ export default function Publications() {
     },
     {
       title: "Narrative Medicine and Dementia: Building Empathy Through Shared Stories",
-      authors: "Brown, M., Davis, L., Lodge, T., & Wilson, A.",
+      authors: "Brown, M., Davis, L., Harding, T., & Wilson, A.",
       journal: "Medical Humanities",
       year: "2023",
       volume: "49",
@@ -60,7 +60,7 @@ export default function Publications() {
     <>
       <Header />
       <div className="content-container">
-        <HeroSection title="Publications" subtitle="Research outputs from the LEND project and related work" />
+        <HeroSection backgroundImage="pattern.png" isPattern={true} content="<strong>Research outputs</strong> from the <strong>LEND</strong> project and related work" />
         <main style={{ padding: "60px 0", backgroundColor: "#F5F9F7" }}>
           <div style={{ maxWidth: "900px", margin: "0 auto", padding: "0 20px" }}>
             <h2 style={{ fontSize: "28px", marginBottom: "40px", color: "#333" }}>Recent Publications</h2>

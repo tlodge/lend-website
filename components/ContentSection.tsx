@@ -5,19 +5,19 @@ const ContentSection = () => {
     <section className={styles.section}>
       <div className={styles.leftColumn}>
         <article className={styles.topArticle}>
-          <h2 className={styles.articleTitle}>What stories are most important to you?</h2>
+          <h2 className={styles.articleTitle}>Which stories are most important to you?</h2>
           <div className={styles.articleMeta}>
             <span>Author: Tom Lodge</span>
             <span>20 August 2025</span>
           </div>
           <p className={styles.articleText}>
-            What's in a story? It's a good question. There are a multitude of stories and narratives that might be
+            What&apos;s in a story? It&apos;s a good question. There are a multitude of stories and narratives that might be
             useful for people with lived experience of dementia, whether sharing experiences, providing advice,
             correcting misconceptions.
             <br />
             <br />
             But what would you like to see more of? Which features of a story are most important to you? Find out what
-            we've learnt so far and contribute your own knowledge.
+            we&apos;ve learnt so far and contribute your own knowledge.
           </p>
           <a href="#" className={styles.readMore}>
             Read more
@@ -25,14 +25,14 @@ const ContentSection = () => {
         </article>
 
         <div className={styles.bottomRow}>
-          <article className={styles.bottomArticle}>
-            <h3 className={styles.articleTitle}>How do stories help us?</h3>
+          <article className={styles.bottomArticle + " " + styles.leftImage}>
+            <h3 className={styles.smallArticleTitle}>How do stories help us?</h3>
             <div className={styles.articleMeta}>
               <span>Author: Tom Lodge</span>
               <span>20 August 2025</span>
             </div>
             <p className={styles.articleText}>
-              What's in a story? It's a good question. There are a multitude of stories and narratives that might be
+              What&apos;s in a story? It&apos;s a good question. There are a multitude of stories and narratives that might be
               useful for people with lived experience of dementia, whether sharing experiences, providing advice,
               correcting misconceptions.
             </p>
@@ -41,14 +41,14 @@ const ContentSection = () => {
             </a>
           </article>
 
-          <article className={styles.bottomArticle}>
-            <h3 className={styles.articleTitle}>The promise and perils of AI chat.</h3>
+          <article className={styles.bottomArticle + " " + styles.rightImage}>
+            <h3 className={styles.smallArticleTitle}>The promise and perils of AI chat.</h3>
             <div className={styles.articleMeta}>
               <span>Author: Tom Lodge</span>
               <span>20 August 2025</span>
             </div>
             <p className={styles.articleText}>
-              What's in a story? It's a good question. There are a multitude of stories and narratives that might be
+              What&apos;s in a story? It&apos;s a good question. There are a multitude of stories and narratives that might be
               useful for people with lived experience of dementia, whether sharing experiences, providing advice,
               correcting misconceptions.
             </p>

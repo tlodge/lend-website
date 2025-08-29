@@ -8,7 +8,7 @@ const BlogPage = () => {
     <>
       <Header />
       <div className="content-container">
-        <HeroSection />
+        <HeroSection backgroundImage="blogback.svg" isPattern={false} content="The <strong>LEND</strong> project blog and articles" />
         <BlogGrid />
       </div>
       <Footer />
