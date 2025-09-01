@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.decorativeSvg}>
        
-        <svg width="1281" height="50px" viewBox="0 0 1280 50">
+        <svg width="1280" height="50px" viewBox="0 0 1280 50">
     <path d="M1280,50l-0,-49.781c-3.141,-0.08 -6.243,-0.153 -9.301,-0.219c-444.178,18.342 -765.816,29.316 -997.661,34.168c-110.89,2.321 -199.857,3.215 -273.038,2.973l0,12.859l1280,-0Z"/>
 </svg>
       </div>

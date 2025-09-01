@@ -46,11 +46,16 @@
   display: flex;
   justify-content: center;
 }
-
+@media screen and (max-width: 1000px) {
+  .container {
+    padding: 0 20px;
+  }
+}
 
 @media (max-width: 768px) {
   .container {
     padding: 0 20px;
+   
   }
 
   .questionsRow {
@@ -65,4 +70,15 @@
   .description {
     font-size: 14px;
   }
+}
+
+@media (max-width: 420px) {
+  .container {
+    padding: 20px 10px;
+    
+  }
+
+.section {
+  height: auto;
+}
 }

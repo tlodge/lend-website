@@ -153,6 +153,12 @@
   text-decoration: underline;
 }
 
+@media (max-width: 1000px) {
+  .rightColumn {
+    width: 300px;
+  }
+}
+
 @media (max-width: 768px) {
   .section {
     flex-direction: column;
@@ -161,6 +167,8 @@
   .rightColumn {
     width: 100%;
     order: -1;
+    border-bottom: 1px solid  #9b9b9b;
+    ;
   }
 
   .topArticle,

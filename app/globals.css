@@ -142,11 +142,11 @@ body {
 
 /* Container for all content sections except header and footer */
 .content-container {
-  max-width: 1279px;
+  max-width: 1280px;
   margin: 0 auto;
   background-color: white;
-  margin-bottom: 130px;
-  min-height: calc(110vh - 350px);
+ /* margin-bottom: 130px;*/
+ /* min-height: calc(100vh - 350px);*/
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
