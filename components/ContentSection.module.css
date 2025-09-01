@@ -96,6 +96,10 @@
   margin-bottom: 25px;
 }
 
+.topArticle .articleText {
+  font-size: 18px;
+
+}
 .readMore {
   color: #5b85c2;
   text-align: center;

@@ -1,61 +1,76 @@
+import Link from "next/link"
 import styles from "./ContentSection.module.css"
+import blogData from "../app/data/blogs.json"
+import type { BlogData } from "../lib/types"
 
 const ContentSection = () => {
+  const blogs: BlogData = blogData as BlogData;
+  
+  // Get frontpage articles
+  const topArticle = blogs.find(blog => blog.frontpage === 1);
+  const bottomLeftArticle = blogs.find(blog => blog.frontpage === 2);
+  const bottomRightArticle = blogs.find(blog => blog.frontpage === 3);
+
+  const formatDate = (dateString: string) => {
+    const date = new Date(dateString);
+    return date.toLocaleDateString('en-GB', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    });
+  };
+
   return (
     <section className={styles.section}>
       <div className={styles.leftColumn}>
-        <article className={styles.topArticle}>
-          <h2 className={styles.articleTitle}>Which stories are most important to you?</h2>
-          <div className={styles.articleMeta}>
-            <span>Author: Tom Lodge</span>
-            <span>20 August 2025</span>
-          </div>
-          <p className={styles.articleText}>
-            What&apos;s in a story? It&apos;s a good question. There are a multitude of stories and narratives that might be
-            useful for people with lived experience of dementia, whether sharing experiences, providing advice,
-            correcting misconceptions.
-            <br />
-            <br />
-            But what would you like to see more of? Which features of a story are most important to you? Find out what
-            we&apos;ve learnt so far and contribute your own knowledge.
-          </p>
-          <a href="#" className={styles.readMore}>
-            Read more
-          </a>
-        </article>
+        {topArticle && (
+          <article className={styles.topArticle}>
+            <h2 className={styles.articleTitle}>{topArticle.title}</h2>
+            <div className={styles.articleMeta}>
+              <span>Author: {topArticle.author}</span>
+              <span>{formatDate(topArticle.date)}</span>
+            </div>
+            <p className={styles.articleText}>
+              {topArticle.excerpt}
+            </p>
+            <Link href={`/blog/${topArticle.id}`} className={styles.readMore}>
+              Read more
+            </Link>
+          </article>
+        )}
 
         <div className={styles.bottomRow}>
-          <article className={styles.bottomArticle + " " + styles.leftImage}>
-            <h3 className={styles.smallArticleTitle}>How do stories help us?</h3>
-            <div className={styles.articleMeta}>
-              <span>Author: Tom Lodge</span>
-              <span>20 August 2025</span>
-            </div>
-            <p className={styles.articleText}>
-              What&apos;s in a story? It&apos;s a good question. There are a multitude of stories and narratives that might be
-              useful for people with lived experience of dementia, whether sharing experiences, providing advice,
-              correcting misconceptions.
-            </p>
-            <a href="#" className={styles.readMore}>
-              Read more
-            </a>
-          </article>
+          {bottomLeftArticle && (
+            <article className={styles.bottomArticle + " " + styles.leftImage}>
+              <h3 className={styles.smallArticleTitle}>{bottomLeftArticle.title}</h3>
+              <div className={styles.articleMeta}>
+                <span>Author: {bottomLeftArticle.author}</span>
+                <span>{formatDate(bottomLeftArticle.date)}</span>
+              </div>
+              <p className={styles.articleText}>
+                {bottomLeftArticle.excerpt}
+              </p>
+              <Link href={`/blog/${bottomLeftArticle.id}`} className={styles.readMore}>
+                Read more
+              </Link>
+            </article>
+          )}
 
-          <article className={styles.bottomArticle + " " + styles.rightImage}>
-            <h3 className={styles.smallArticleTitle}>The promise and perils of AI chat.</h3>
-            <div className={styles.articleMeta}>
-              <span>Author: Tom Lodge</span>
-              <span>20 August 2025</span>
-            </div>
-            <p className={styles.articleText}>
-              What&apos;s in a story? It&apos;s a good question. There are a multitude of stories and narratives that might be
-              useful for people with lived experience of dementia, whether sharing experiences, providing advice,
-              correcting misconceptions.
-            </p>
-            <a href="#" className={styles.readMore}>
-              Read more
-            </a>
-          </article>
+          {bottomRightArticle && (
+            <article className={styles.bottomArticle + " " + styles.rightImage}>
+              <h3 className={styles.smallArticleTitle}>{bottomRightArticle.title}</h3>
+              <div className={styles.articleMeta}>
+                <span>Author: {bottomRightArticle.author}</span>
+                <span>{formatDate(bottomRightArticle.date)}</span>
+              </div>
+              <p className={styles.articleText}>
+                {bottomRightArticle.excerpt}
+              </p>
+              <Link href={`/blog/${bottomRightArticle.id}`} className={styles.readMore}>
+                Read more
+              </Link>
+            </article>
+          )}
         </div>
       </div>
 
