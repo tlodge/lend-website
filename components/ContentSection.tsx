@@ -30,9 +30,7 @@ const ContentSection = () => {
               <span>Author: {topArticle.author}</span>
               <span>{formatDate(topArticle.date)}</span>
             </div>
-            <p className={styles.articleText}>
-              {topArticle.excerpt}
-            </p>
+            <p className={styles.articleText} dangerouslySetInnerHTML={{ __html: topArticle.excerpt }} />
             <Link href={`/blog/${topArticle.id}`} className={styles.readMore}>
               Read more
             </Link>
@@ -47,9 +45,7 @@ const ContentSection = () => {
                 <span>Author: {bottomLeftArticle.author}</span>
                 <span>{formatDate(bottomLeftArticle.date)}</span>
               </div>
-              <p className={styles.articleText}>
-                {bottomLeftArticle.excerpt}
-              </p>
+              <p className={styles.articleText} dangerouslySetInnerHTML={{ __html: bottomLeftArticle.excerpt }} />
               <Link href={`/blog/${bottomLeftArticle.id}`} className={styles.readMore}>
                 Read more
               </Link>
@@ -63,9 +59,7 @@ const ContentSection = () => {
                 <span>Author: {bottomRightArticle.author}</span>
                 <span>{formatDate(bottomRightArticle.date)}</span>
               </div>
-              <p className={styles.articleText}>
-                {bottomRightArticle.excerpt}
-              </p>
+              <p className={styles.articleText} dangerouslySetInnerHTML={{ __html: bottomRightArticle.excerpt }} />
               <Link href={`/blog/${bottomRightArticle.id}`} className={styles.readMore}>
                 Read more
               </Link>

@@ -1,66 +1,36 @@
 [
   {
-    "id": "how-stories-help-us",
-    "title": "How do stories help us?",
+    "id": "theme1",
+    "title": "What is in a Narrative?",
     "author": "Tom Lodge",
     "date": "2025-08-20",
-    "excerpt": "What's in a story? It's a good question. There are a multitude of stories and narratives that might be useful for people with lived experience of dementia, whether sharing experiences, providing advice, correcting misconceptions. This is a front-page top article so we can have quite a bit of text and it will be larger than the sub article text.  Still going with this text and will go for a bit longer to see how it looks at all screen sizes.",
-    "content": "What's in a story? It's a good question. There are a multitude of stories and narratives that might be useful for people with lived experience of dementia, whether sharing experiences, providing advice, correcting misconceptions.\n## The Power of Personal Narratives\nPersonal stories have a unique ability to connect with people on an emotional level that facts and statistics simply cannot achieve. When someone shares their experience with dementia, whether as a person living with the condition or as a carer, they create a bridge of understanding that helps others feel less alone.\n## Building Connections Through Shared Experiences\nStories help us build communities of support. When people share their experiences, they often find others who have faced similar challenges. This sense of connection can be incredibly powerful for both the storyteller and the listener.\n## Correcting Misconceptions\nPersonal narratives can also help correct common misconceptions about dementia. Through real stories, we can challenge stereotypes and show the diversity of experiences that exist within the dementia community.\n## Looking Forward\nAs we continue to develop the LEND project, we're committed to amplifying these important voices and creating spaces where stories can be shared, heard, and valued.",
+    "excerpt": "In our most recent Lived Experience Advisory Panel workshop we discussed the <strong>value</strong> of dementia narratives. Which features of a narrative are most likely to shape impact? In this short article we cover some of the insights from the session: thinking about what subjects and themes narratives might cover, who they're for, who is telling them and how they should be delivered.",
+    "contentFile": "/blogs/theme1.md",
     "tags": ["stories", "narratives", "community", "support"],
-    "featured": true,
-    "frontpage": 1,
-    "callout": "Personal stories have a unique ability to connect with people on an emotional level that facts and statistics simply cannot achieve."
-  },
-  {
-    "id": "ai-chat-promise-perils",
-    "title": "The promise and perils of AI chat",
-    "author": "Tom Lodge",
-    "date": "2025-08-20",
-    "excerpt": "Artificial intelligence is transforming how we interact with technology, but what does this mean for people living with dementia and their carers?",
-    "content": "Artificial intelligence is transforming how we interact with technology, but what does this mean for people living with dementia and their carers?\n\n## The Promise of AI\n\nAI chat systems offer several potential benefits for the dementia community:\n\n- **24/7 Availability**: Unlike human support, AI systems are always available\n- **Consistent Responses**: AI can provide reliable, evidence-based information\n- **Reduced Stigma**: Some people may feel more comfortable talking to an AI about sensitive topics\n\n## The Perils and Concerns\n\nHowever, there are also significant concerns:\n\n- **Accuracy**: AI systems may provide incorrect or outdated information\n- **Lack of Human Connection**: AI cannot replace the emotional support that comes from human interaction\n- **Privacy**: Concerns about data security and privacy\n- **Accessibility**: Not everyone has access to or comfort with AI technology\n\n## Finding the Right Balance\n\nThe key is finding ways to use AI as a tool to support, rather than replace, human connection and care.",
-    "tags": ["AI", "technology", "support", "privacy"],
     "featured": false,
-    "frontpage": 2
+    "frontpage": 2,
+    "callout": ""
   },
   {
-    "id": "important-stories",
-    "title": "What stories are most important to you?",
+    "id": "theme2",
+    "title": "The promise and perils of conversational agents",
     "author": "Tom Lodge",
     "date": "2025-08-20",
-    "excerpt": "We want to hear from you about which stories and experiences matter most in your journey with dementia.",
-    "content": "We want to hear from you about which stories and experiences matter most in your journey with dementia.\n\n## Your Voice Matters\n\nEvery person's experience with dementia is unique, and every story has value. We're building the LEND platform to amplify these important voices and create a resource that truly serves the community.\n\n## What We're Looking For\n\nWe're interested in stories about:\n\n- **Daily Life**: How dementia affects everyday activities and routines\n- **Relationships**: How relationships change and adapt\n- **Coping Strategies**: What helps you manage challenges\n- **Hope and Joy**: Moments of connection, achievement, and happiness\n- **Advice**: Tips and insights that might help others\n\n## How to Share\n\nIf you'd like to share your story, please get in touch with us. We're committed to making the process as comfortable and supportive as possible.",
+    "excerpt": "In our most recent Lived Experience Advisory Panel workshop we presented a very early stage prototype to get a little feedback and discussion on features of our intervention. Prior to using the prototype, the panel were asked to ‘bookmark’ up to four narratives that they felt were valuable. They were asked to use two approaches to discover narratives: Structured browsing: a ‘catalogue’ interface with thumbnails of videos alongside titles and summaries, with simple filters to refine the list of available videos and a conversational interface that provides clips from narratives in response to discussions. ",
+    "contentFile": "/blogs/theme2.md",
+    "tags": ["AI", "technology", "support", "privacy"],
+    "featured": true,
+    "frontpage": 1
+  },
+  {
+    "id": "theme3",
+    "title": "Harmful narratives",
+    "author": "Tom Lodge",
+    "date": "2025-08-20",
+    "excerpt": "In the most recent Lived Experience Advisory Panel, we learned how narratives may cause harm when they are poorly aligned with users’ circumstances, expectations, or identities.  Rather than offer support, they may cause frustration, distress, or feelings of exclusion. How might we design to mitigate this risk?",
+    "contentFile": "/blogs/theme3.md",
     "tags": ["community", "stories", "participation", "voice"],
     "featured": false,
     "frontpage": 3
-  },
-  {
-    "id": "understanding-dementia-narratives",
-    "title": "Understanding dementia through personal narratives",
-    "author": "Sarah Williams",
-    "date": "2025-08-15",
-    "excerpt": "Personal stories provide unique insights into the lived experience of dementia, offering perspectives that clinical research alone cannot capture.",
-    "content": "# Understanding dementia through personal narratives\n\n*By Sarah Williams - August 15, 2025*\n\nPersonal stories provide unique insights into the lived experience of dementia, offering perspectives that clinical research alone cannot capture. These narratives help bridge the gap between medical understanding and human experience.\n\n## Beyond Clinical Data\n\nWhile clinical research provides essential information about dementia, personal narratives offer something equally valuable: the human perspective. They help us understand not just what happens to the brain, but how it feels to experience these changes.\n\n## The Value of Lived Experience\n\nPeople living with dementia and their carers have insights that can only come from direct experience. Their stories help researchers, healthcare professionals, and policymakers understand the real-world impact of their decisions.\n\n## Building Better Support Systems\n\nBy listening to personal narratives, we can design better support systems that truly meet people's needs. These stories guide us toward more compassionate and effective approaches to dementia care.",
-    "tags": ["narratives", "lived experience", "research", "support"],
-    "featured": false
-  },
-  {
-    "id": "supportive-communities-storytelling",
-    "title": "Building supportive communities through storytelling",
-    "author": "Michael Chen",
-    "date": "2025-08-12",
-    "excerpt": "Storytelling creates connections between people facing similar challenges, building networks of support and understanding.",
-    "content": "# Building supportive communities through storytelling\n\n*By Michael Chen - August 12, 2025*\n\nStorytelling creates connections between people facing similar challenges. When individuals share their experiences with dementia, they build networks of support and understanding that extend far beyond traditional care settings.\n\n## The Power of Connection\n\nWhen people share their stories, they often discover that they're not alone in their experiences. This sense of connection can be incredibly powerful and healing.\n\n## Creating Safe Spaces\n\nStorytelling creates safe spaces where people can be honest about their challenges and triumphs. These spaces are essential for building genuine support networks.\n\n## Learning from Each Other\n\nThrough storytelling, people can learn from each other's experiences and strategies. What works for one person might help another facing similar challenges.\n\n## The Ripple Effect\n\nWhen one person shares their story, it often encourages others to share theirs. This creates a ripple effect that builds stronger, more supportive communities.",
-    "tags": ["community", "storytelling", "support", "connection"],
-    "featured": false
-  },
-  {
-    "id": "family-narratives-dementia-care",
-    "title": "The role of family narratives in dementia care",
-    "author": "Emma Thompson",
-    "date": "2025-08-10",
-    "excerpt": "Family stories play a crucial role in maintaining identity and connection for people living with dementia.",
-    "content": "# The role of family narratives in dementia care\n\n*By Emma Thompson - August 10, 2025*\n\nFamily stories play a crucial role in maintaining identity and connection for people living with dementia. These shared narratives help preserve relationships and provide comfort during difficult transitions.\n\n## Preserving Identity\n\nFamily stories help people maintain their sense of identity even as dementia progresses. These narratives remind people of who they are and what matters to them.\n\n## Strengthening Relationships\n\nSharing family stories can strengthen relationships between people living with dementia and their loved ones. These shared experiences create bonds that can withstand the challenges of dementia.\n\n## Providing Comfort\n\nFamiliar stories can provide comfort and security during times of confusion or distress. They serve as anchors to a person's history and relationships.\n\n## Creating New Memories\n\nEven as dementia progresses, families can continue to create new stories together. These experiences help maintain connection and joy in the present moment.",
-    "tags": ["family", "identity", "relationships", "care"],
-    "featured": false
   }
 ]

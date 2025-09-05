@@ -12,7 +12,7 @@ export interface BlogPost {
   author: string;
   date: string;
   excerpt: string;
-  content: string;
+  contentFile: string; // Path to markdown file
   tags: string[];
   featured: boolean;
   frontpage?: 1 | 2 | 3; // 1 = top, 2 = bottom left, 3 = bottom right

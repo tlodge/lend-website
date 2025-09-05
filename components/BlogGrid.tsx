@@ -30,7 +30,7 @@ const BlogGrid = () => {
                   <span className={styles.author}>Author: {blog.author}</span>
                   <span className={styles.date}>{formatDate(blog.date)}</span>
                 </div>
-                <p className={styles.excerpt}>{blog.excerpt}</p>
+                <p className={styles.excerpt} dangerouslySetInnerHTML= {{ __html: blog.excerpt }} />
                 <div className={styles.tags}>
                   {blog.tags.map((tag) => (
                     <span key={tag} className={styles.tag}>{tag}</span>
