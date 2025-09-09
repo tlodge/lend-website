@@ -1,11 +1,14 @@
 
-In our most recent Lived Experience Advisory Panel workshop we presented a very early stage prototype to get a little feedback and seed discussions on features of our intervention. They were asked to use our prototype to ‘bookmark’ up to four narratives that they felt were valuable. They were asked to use two approaches to discover narratives i. *structured browsing* which displayed thumbnails of videos alongside titles and summaries, with simple filters to refine the list of available videos and a ii. a *conversational interface* that provides clips from narratives in response to discussions.   
+In our most recent Lived Experience Advisory Panel workshop we presented a very early stage prototype to get a little feedback and seed discussions on features of our intervention. They were asked to use our prototype to ‘bookmark’ up to four narratives that they felt were valuable. They were asked to use two approaches to discover narratives 
+
+i. *structured browsing* which displayed thumbnails of videos alongside titles and summaries, with simple filters to refine the list of available videos and 
+ii. *a conversational interface* that provides clips from narratives in response to discussions.   
 
 ## Richness of requirements and 'co-identification'
 
-Even within this brief exercise, participants described a wide range of requirements for narratives: seeking information, shared experiences, cultural resonance, advice, and opportunities to reflect on previously viewed material. For shared-experience narratives in particular, several participants looked for close alignment with their own circumstances, including gender, relationship roles, dementia type, and quite specific lived experiences.
+This small exercise illustrated something important: there is a rich range of features that users may look for in their narratives: information, shared experiences, cultural resonance, advice. For shared-experience narratives, the 'shared' part is equally rich: gender, relationship roles, dementia type as well as quite specific situations and circumstances.
 
-With the conversational interfaces, we're interested in an approach we're calling **narrative co-identification**. This is where a user works with an agent and their back-and-forth exchanges help gather details for discovering appropriate narratives. From our discussions around [narrative content](./theme3) we know there is a risk of causing frustration and offence if the narratives fail to meet (what can be quite specific) requirements. Perhaps conversational intefaces might help us to better predict whether these cases.
+It may be that conversational interfaces are particularly well suited to capturing this richness.  Users can converse with an agent to gradually establish a user's intent (narrative co-identification). Our ability to do so may profoundly affect the outcomes of the intervention. Our discussions around [narrative content](./theme3) indicate that there's a risk of causing frustration and offence if the narratives fail to meet (often quite specific, even subtle) requirements. 
 
 ## Scaffolding the narrative lifecycle 
 
