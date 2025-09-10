@@ -10,7 +10,7 @@ interface HeroSectionProps {
 
 const HeroSection = ({ content = "", image = "", backgroundImage = "", isPattern = false }: HeroSectionProps) => {
   const heroStyle = backgroundImage ? { 
-    backgroundImage: `url(${backgroundImage})`,
+    backgroundImage: `url(/${backgroundImage})`,
     backgroundSize: isPattern ? 'auto' : 'cover',
     backgroundRepeat: isPattern ? 'repeat' : 'no-repeat'
   } : {};

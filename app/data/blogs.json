@@ -2,11 +2,12 @@
   {
     "id": "theme1",
     "title": "What is in a Narrative?",
+    "subtitle": "Do different narratives serve different purposes?",
     "author": "Tom Lodge",
     "date": "2025-08-20",
     "excerpt": "In our most recent Lived Experience Advisory Panel workshop we discussed the <strong>value</strong> of dementia narratives. Which features of a narrative are most likely to shape impact? In this short article we cover some of the insights from the session: thinking about what subjects and themes narratives might cover, who they're for, who is telling them and how they should be delivered.",
     "contentFile": "/blogs/theme1.md",
-    "tags": ["stories", "narratives", "community", "support"],
+    "tags": ["narratives", "news"],
     "featured": false,
     "frontpage": 2,
     "callout": ""
@@ -14,22 +15,24 @@
   {
     "id": "theme2",
     "title": "The promise and perils of conversational agents",
+    "subtitle": "For surfacing user intent.",
     "author": "Tom Lodge",
     "date": "2025-08-20",
-    "excerpt": "In our most recent Lived Experience Advisory Panel workshop we presented a very early stage prototype to get a little feedback and seed discussions on features of our intervention. Our LEAP members were asked to use our prototype to ‘bookmark’ up to four narratives that they felt were valuable. They were asked to use two approaches to discover narratives: i. <i>Structured browsing</i>: an interface with thumbnails of videos alongside titles and summaries, with simple filters to refine the list of available videos and ii. <i>A conversational interface</i> that provides clips from narratives in response to discussions. ",
+    "excerpt": "In our most recent Lived Experience Advisory Panel workshop we presented a very early stage prototype to get a little feedback and seed discussions on features of our intervention. Our LEAP members were asked to use our prototype to 'bookmark' up to four narratives that they felt were valuable. They were asked to use two approaches to discover narratives: i. <i>Structured browsing</i>: an interface with thumbnails of videos alongside titles and summaries, with simple filters to refine the list of available videos and ii. <i>A conversational interface</i> that provides clips from narratives in response to discussions. ",
     "contentFile": "/blogs/theme2.md",
-    "tags": ["AI", "technology", "support", "privacy"],
+    "tags": ["AI", "narratives", "news"],
     "featured": true,
     "frontpage": 1
   },
   {
     "id": "theme3",
     "title": "Harmful narratives",
+    "subtitle": "The risks of delivering the wrong narrative at the wrong time.",
     "author": "Tom Lodge",
     "date": "2025-08-20",
-    "excerpt": "In the most recent Lived Experience Advisory Panel, we learned how narratives may cause harm when they are poorly aligned with users’ circumstances, expectations, or identities.  Rather than offer support, they may cause frustration, distress, or feelings of exclusion. How might we design to mitigate this risk?",
+    "excerpt": "In the most recent Lived Experience Advisory Panel, we learned how narratives may cause harm when they are poorly aligned with users' circumstances, expectations, or identities.  Rather than offer support, they may cause frustration, distress, or feelings of exclusion. How might we design to mitigate this risk?",
     "contentFile": "/blogs/theme3.md",
-    "tags": ["community", "stories", "participation", "voice"],
+    "tags": ["narratives", "harms", "news"],
     "featured": false,
     "frontpage": 3
   }

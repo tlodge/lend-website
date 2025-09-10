@@ -12,6 +12,7 @@
 
 .rightColumn {
   width: 430px;
+  height:970px;
   background-color: #ede7e2;
   border-left: 1px solid #9b9b9b;
   padding: 30px;
@@ -160,6 +161,7 @@
 @media (max-width: 1000px) {
   .rightColumn {
     width: 300px;
+    height:auto;
   }
 }
 
@@ -170,6 +172,7 @@
 
   .rightColumn {
     width: 100%;
+    height:auto;
     order: -1;
     border-bottom: 1px solid  #9b9b9b;
     ;

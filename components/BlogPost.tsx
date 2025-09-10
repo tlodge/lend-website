@@ -128,7 +128,7 @@ const BlogPost = async ({ blog }: BlogPostProps) => {
           {blog.featured && <span className={styles.featuredBadge}>Featured</span>}
           
           <h1 className={styles.title}>{blog.title}</h1>
-          
+          <h2 className={styles.subtitle}>{blog.subtitle}</h2>
           <div className={styles.meta}>
             <div className={styles.authorInfo}>
               <span className={styles.author}>By {blog.author}</span>
@@ -136,11 +136,11 @@ const BlogPost = async ({ blog }: BlogPostProps) => {
             </div>
           </div>
           
-          <div className={styles.tags}>
+          {/*<div className={styles.tags}>
             {blog.tags.map((tag) => (
               <span key={tag} className={styles.tag}>{tag}</span>
             ))}
-          </div>
+          </div>*/}
         </header>
         
         {blog.callout && (

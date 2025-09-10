@@ -153,6 +153,9 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  color: #5b85c2;
+  text-align: center;
+  font-weight: 600;
 }
 
 button {

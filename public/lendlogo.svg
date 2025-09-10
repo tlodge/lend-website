@@ -1,26 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 308 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
-    <g transform="matrix(1,0,0,0.995819,0,-2.23935)">
-        <g transform="matrix(18.7968,0,0,18.7968,-1.68877,50.5632)">
-            <path d="M0.09,-0l-0,-0.714l0.151,0l0,0.589l0.29,0l-0,0.125l-0.441,-0Z" style="fill-rule:nonzero;"/>
-        </g>
-        <g transform="matrix(18.7968,0,0,18.7968,8.93032,50.5632)">
-            <path d="M0.501,-0l-0.411,-0l-0,-0.714l0.411,0l-0,0.124l-0.26,0l0,0.157l0.242,-0l-0,0.124l-0.242,-0l0,0.184l0.26,-0l-0,0.125Z" style="fill-rule:nonzero;"/>
-        </g>
-        <g transform="matrix(18.7968,0,0,18.7968,19.4576,50.5632)">
-            <path d="M0.723,-0l-0.192,-0l-0.311,-0.54l-0.004,-0c0.001,0.022 0.002,0.045 0.003,0.068c0.001,0.023 0.005,0.113 0.006,0.136l0,0.336l-0.135,-0l-0,-0.714l0.191,0l0.31,0.535l0.003,-0c-0,-0.022 -0.001,-0.044 -0.002,-0.066c-0.001,-0.022 -0.002,-0.044 -0.003,-0.066c-0.001,-0.021 -0.001,-0.043 -0.002,-0.065l-0,-0.338l0.136,0l0,0.714Z" style="fill-rule:nonzero;"/>
-        </g>
-        <g transform="matrix(18.7968,0,0,18.7968,34.7392,50.5632)">
-            <path d="M0.682,-0.364c0,0.081 -0.015,0.148 -0.046,0.202c-0.031,0.054 -0.075,0.094 -0.134,0.121c-0.058,0.027 -0.128,0.041 -0.21,0.041l-0.202,-0l-0,-0.714l0.224,0c0.075,0 0.14,0.013 0.195,0.04c0.055,0.026 0.097,0.066 0.128,0.118c0.03,0.052 0.045,0.116 0.045,0.192Zm-0.157,0.004c-0,-0.053 -0.008,-0.096 -0.023,-0.13c-0.016,-0.034 -0.039,-0.059 -0.069,-0.075c-0.03,-0.017 -0.067,-0.025 -0.111,-0.025l-0.081,0l0,0.465l0.065,-0c0.074,-0 0.129,-0.02 0.165,-0.059c0.036,-0.039 0.054,-0.098 0.054,-0.176Z" style="fill-rule:nonzero;"/>
-        </g>
-        <g transform="matrix(18.7968,0,0,18.7968,48.6532,50.5632)">
-        </g>
+<svg width="100%" height="100%" viewBox="0 0 388 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-miterlimit:8;">
+    <g transform="matrix(16,0,0,16,388.729,62.8291)">
     </g>
-    <g transform="matrix(1,0,0,0.995819,1.42109e-14,-2.93544)">
-        <g transform="matrix(13.4248,0,0,13.4248,309.095,51.201)">
-        </g>
-        <text x="55.886px" y="51.201px" style="font-family:'OpenSans-Regular', 'Open Sans';font-size:13.425px;">Lived Experience Narratives in Dementia</text>
-    </g>
-    <path d="M55.418,12.289c-0,6.093 -9.113,11.04 -20.337,11.04c-0.756,-0 -1.511,-0.023 -2.262,-0.069l-6.708,5.589l-0.068,-6.67c-6.921,-1.864 -11.299,-5.696 -11.299,-9.89c0,-6.092 9.113,-11.039 20.337,-11.039c11.224,-0 20.337,4.947 20.337,11.039Z" style="fill:#fff;stroke:#000;stroke-width:2.5px;"/>
+    <text x="86.948px" y="62.829px" style="font-family:'OpenSans-Regular', 'Open Sans';font-size:16px;">Lived Experience Narratives in Dementia</text>
+    <path d="M38.805,41.354l-2.174,-5.554c-13.985,-3.975 -18.925,-12.911 -11.033,-19.957c7.891,-7.046 25.625,-9.535 39.61,-5.559c13.985,3.976 18.925,12.911 11.034,19.957c-5.825,5.201 -17.332,8.1 -29.085,7.327l-8.352,3.786Z" style="fill:#0e9fb2;"/>
+    <path d="M35.604,43.209c-1.129,-2.422 -0.899,-4.568 -2.247,-6.27c-18.501,-7.075 -19.537,-21.942 -2.703,-27.866c6.797,-4.67 17.405,-2.618 26.414,-2.334c18.903,2.734 27.154,15.942 15.526,25.395c-7.262,4.176 -15.1,7.791 -28.358,6.801c-2.181,1.465 -4.795,2.112 -8.632,4.274Z" style="fill:none;fill-rule:nonzero;stroke:#1e1c1a;stroke-width:1.5px;"/>
+    <text x="-2.105px" y="66.657px" style="font-family:'Helvetica';font-size:27.63px;fill:#0e9fb2;">L<tspan x="12.985px 31.138px 50.815px " y="66.657px 66.657px 66.657px ">END</tspan></text>
 </svg>

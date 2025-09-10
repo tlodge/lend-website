@@ -11,6 +11,12 @@ const ContentSection = () => {
   const bottomLeftArticle = blogs.find(blog => blog.frontpage === 2);
   const bottomRightArticle = blogs.find(blog => blog.frontpage === 3);
 
+  // Get news articles (tagged with "news") and sort by date (newest first), limit to 3
+  const newsArticles = blogs
+    .filter(blog => blog.tags.includes("news"))
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, 3);
+
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
     return date.toLocaleDateString('en-GB', {
@@ -71,31 +77,20 @@ const ContentSection = () => {
       <aside className={styles.rightColumn}>
         <h2 className={styles.newsTitle}>Latest news</h2>
 
-        <article className={styles.newsItem}>
-          <h3 className={styles.newsItemTitle}>8th August 2025 LEAP Workshop</h3>
-          <p className={styles.newsItemDate}>20 August 2025</p>
-          <p className={styles.newsItemText}>
-            In a recent workshop at the University of Nottingham our lived-experience panel chatted about the challenges
-            that they face and the stories that have been helpful (and unhelpful!) to them. Find out what we learnt and
-            tell us about your own experiences.
-          </p>
-          <a href="#" className={styles.newsItemLink}>
-            Read all about it
-          </a>
-        </article>
-
-        <article className={styles.newsItem}>
-          <h3 className={styles.newsItemTitle}>8th August 2025 LEAP Workshop</h3>
-          <p className={styles.newsItemDate}>20 August 2025</p>
-          <p className={styles.newsItemText}>
-            In a recent workshop at the University of Nottingham our lived-experience panel chatted about the challenges
-            that they face and the stories that have been helpful (and unhelpful!) to them. Find out what we learnt and
-            tell us about your own experiences.
-          </p>
-          <a href="#" className={styles.newsItemLink}>
-            Read all about it
-          </a>
-        </article>
+        {newsArticles.length > 0 ? (
+          newsArticles.map((article) => (
+            <article key={article.id} className={styles.newsItem}>
+              <h3 className={styles.newsItemTitle}>{article.title}</h3>
+              <p className={styles.newsItemDate}>{formatDate(article.date)}</p>
+              <p className={styles.newsItemText} dangerouslySetInnerHTML={{ __html: article.excerpt }} />
+              <Link href={`/blog/${article.id}`} className={styles.newsItemLink}>
+                Read all about it
+              </Link>
+            </article>
+          ))
+        ) : (
+          <p className={styles.newsItemText}>No news articles available at the moment.</p>
+        )}
       </aside>
     </section>
   )

@@ -9,6 +9,7 @@ export type PeopleData = Person[];
 export interface BlogPost {
   id: string;
   title: string;
+  subtitle: string;
   author: string;
   date: string;
   excerpt: string;
@@ -21,3 +22,15 @@ export interface BlogPost {
 }
 
 export type BlogData = BlogPost[];
+
+export interface Experiment {
+  id: string;
+  title: string;
+  location: string;
+  date: string;
+  duration: string;
+  description: string;
+  tags: string[];
+}
+
+export type ExperimentData = Experiment[];
