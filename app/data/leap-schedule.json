@@ -1,0 +1,86 @@
+{
+  "sessions": [
+    {
+      "id": 1,
+      "date": "19 September 2025",
+      "question": "Is there a set of narrative 'types' that we should focus upon?",
+      "background": "In the LEAP meeting on the 8th August we identified several 'types' of narrative from our discussions.They each have a different set of potential benefits, whether providing information, tackling misconceptions, identifying similar situations or offering hope and inspiration.",
+      "questions": ["Are any other core <em>types</em> of narrative?","What are the main features of each of these types? For example: when and why might they be useful, how often will they be consumed?", "What might we do to maximise the impact of each type?"]
+    },
+    {
+      "id": 2,
+      "date": "19 September 2025",
+      "question": "How should narratives be delivered?",
+      "background": "We anticipate that our intervention will deliver narratives as text, audio and video (with subtitle options). However we don't yet know what other forms will be useful, or what the range of options for delivering each of these should be.",
+      "questions": [
+        "What other forms, beyond text, audio and video should we consider, and under what circumstances?",
+        "Are there situations where users will prefer longer or shorter narratives?",
+        "Will users prefer to consume one or more extracts from narratives that focus on a specific issue or to consume fuller, more expansive narratives? What will this depend on?",
+        "Will (and in what situations) will they want to consume a narrative more than once?",
+        "Will users want to consume multiple narratives that are narrated by, or focus on, the same person?"
+      ]
+    },
+    {
+      "id": 3,
+      "date": "19 September 2025",
+      "question": "What makes a narrative feel 'authentic'?",
+      "background": "From previous research projects and discussions on LEND LEAP groups, we know the authenticity of a narrative will influence its impact.",
+      "questions": [
+        "What influences the perception of authenticity? The narrator? The content? Or how well a narrative matches a user's expectations and experience?",
+        "Can we construct fictional but authentic narratives?",
+        "Is it more important that some 'types' of narrative are more authentic than others?"
+      ]
+    },
+    {
+      "id": 4,
+      "date": "19 September 2025",
+      "question": "How will participants want to search for narratives?",
+      "background": "We have already run a short session where participants tested a browse-based (YouTube-style) and chatbot (ChatGPT-style) based interface for discovering narratives. It raised a set of additional questions we'll explore in this session.",
+      "questions": [
+        "Do participants always know what narratives they want?",
+        "Do certain 'types' of narrative (and expectations) require richer expressions of intent?"
+      ]
+    },
+    {
+      "id": 5,
+      "date": "19 September 2025",
+      "question": "What are the implications of using chat-based systems?",
+      "background": "We have some preliminary observations from using a chat-based discovery system and we'd like to dig a little deeper in this session.",
+      "questions": [
+        "Is it possible to ensure that the chatbot and participant keep discussions within the scope of the task?",
+        "Do conversational interfaces provide a more effective approach to discovering narratives than browse-based systems (if so, how/why)?",
+        "Do users trust conversational interfaces?",
+        "What are the risks of using conversational interfaces and can they be mitigated?"
+      ]
+    },
+    {
+      "id": 6,
+      "date": "19 September 2025",
+      "question": "What is the role of reflection?",
+      "background": "We have tended to focus more on the discovery and delivery of narratives, with less attention paid to reflection. In our LEAP panel on the 8th, we found that some participants used our chat interface to discuss narratives that they had watched. This got us thinking about the purpose of reflection and the ways in which we can support it (if it's useful).",
+      "questions": []
+    },
+    {
+      "id": 7,
+      "date": "19 September 2025",
+      "question": "How do we reduce the risk of, and respond to narrative harms?",
+      "background": "We know that there are various harms that may occur when users watch narratives including frustration, offence and feelings of isolation. We'd like to use this session to explore this issue further.",
+      "questions": [
+        "What kinds of harms are possible and what are the risk factors (i.e. content, mismatching, common 'triggers')?",
+        "What mechanisms can we employ to reduce the risk of harms occurring?",
+        "What mechanisms can we employ to support users when harms occur?"
+      ]
+    },
+    {
+      "id": 8,
+      "date": "19 September 2025",
+      "question": "How can we help people create their own narratives?",
+      "background": "In our LEAP panel on the 8th we discussed the ability for participants to share their own narratives.",
+      "questions": [
+        "What would your reasons be for wanting to share a narrative?",
+        "What would you want to say?",
+        "Is there more than one story that you'd like to tell?"
+      ]
+    }
+  ]
+}

@@ -34,3 +34,13 @@ export interface Experiment {
 }
 
 export type ExperimentData = Experiment[];
+
+export interface LEAPSession {
+  id: number;
+  question: string;
+  background: string;
+  objectives: string[];
+  questions: string[];
+}
+
+export type LEAPData = LEAPSession[];
