@@ -10,6 +10,22 @@ import type { LEAPData } from "../lib/types"
 const LEAPGrid = () => {
   const sessions: LEAPData = leapData.sessions as unknown as LEAPData;
   const [expandedCard, setExpandedCard] = useState<number | null>(null);
+  const [votes, setVotes] = useState<Record<number, number>>(() => {
+    // Initialize votes from localStorage or default to 0
+    if (typeof window !== 'undefined') {
+      const savedVotes = localStorage.getItem('leap-votes');
+      return savedVotes ? JSON.parse(savedVotes) : {};
+    }
+    return {};
+  });
+  const [userVotes, setUserVotes] = useState<Set<number>>(() => {
+    // Initialize user votes from localStorage
+    if (typeof window !== 'undefined') {
+      const savedUserVotes = localStorage.getItem('leap-user-votes');
+      return savedUserVotes ? new Set(JSON.parse(savedUserVotes)) : new Set();
+    }
+    return new Set();
+  });
 
   const formatDate = (sessionId: number) => {
     // You can customize this based on your actual session dates
@@ -30,6 +46,42 @@ const LEAPGrid = () => {
     setExpandedCard(expandedCard === sessionId ? null : sessionId);
   };
 
+  const handleVote = (sessionId: number) => {
+    const hasVoted = userVotes.has(sessionId);
+    
+    setVotes(prevVotes => {
+      const newVotes = {
+        ...prevVotes,
+        [sessionId]: hasVoted 
+          ? Math.max(0, (prevVotes[sessionId] || 0) - 1)
+          : (prevVotes[sessionId] || 0) + 1
+      };
+      
+      // Save to localStorage
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('leap-votes', JSON.stringify(newVotes));
+      }
+      
+      return newVotes;
+    });
+    
+    setUserVotes(prevUserVotes => {
+      const newUserVotes = new Set(prevUserVotes);
+      if (hasVoted) {
+        newUserVotes.delete(sessionId);
+      } else {
+        newUserVotes.add(sessionId);
+      }
+      
+      // Save to localStorage
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('leap-user-votes', JSON.stringify([...newUserVotes]));
+      }
+      
+      return newUserVotes;
+    });
+  };
+
   return (
 
     <section className={styles.leapSection}>
@@ -37,29 +89,15 @@ const LEAPGrid = () => {
         <p className={styles.intro}>A whole  variety of interesting questions have emerged from the discussions and feedback so far at our LEAP groups. With your help,  we&apos;d like to investigate further. We will be running a series of hour-long online sessions, where we&apos;ll focus on a single question and we hope to learn as much as we can to support the design of our intervention. We want to develop this with you; to make sure that we create something useful and valuable for people with dementia and their carers. </p>
         <div className={styles.grid}>
           {sessions.map((session, index) => {
-            // Check if this is a rightmost card (3rd column) that is expanded
-            const isRightmostCard = (index + 1) % 3 === 0;
-            const isThisCardExpanded = expandedCard === session.id;
+            // Check if this card should be hidden
+            // Hide the card to the left of an expanded rightmost card
+            const rightCardIndex = index + 1;
+            const isLeftOfExpandedRightmost = rightCardIndex < sessions.length && 
+              (rightCardIndex + 1) % 3 === 0 && 
+              expandedCard === sessions[rightCardIndex].id;
             
-            // Hide the card to the left if this rightmost card is expanded
-            if (isRightmostCard && isThisCardExpanded) {
-              // This is the expanded rightmost card - show it
-            } else if (isRightmostCard && !isThisCardExpanded) {
-              // This is a rightmost card but not expanded - check if any rightmost card is expanded
-              const anyRightmostExpanded = sessions.some((s, i) => (i + 1) % 3 === 0 && expandedCard === s.id);
-              if (anyRightmostExpanded) {
-                return null; // Hide this rightmost card if another rightmost is expanded
-              }
-            } else {
-              // This is not a rightmost card - check if it should be hidden
-              const rightCardIndex = index + 1;
-              const isRightCardExpanded = rightCardIndex < sessions.length && 
-                (rightCardIndex + 1) % 3 === 0 && 
-                expandedCard === sessions[rightCardIndex].id;
-              
-              if (isRightCardExpanded) {
-                return null; // Hide this card if the rightmost card next to it is expanded
-              }
+            if (isLeftOfExpandedRightmost) {
+              return null; // Hide this card
             }
             
             return (
@@ -68,6 +106,30 @@ const LEAPGrid = () => {
               className={`${styles.card} ${expandedCard === session.id ? styles.expanded : ""}`}
             >
               <div className={styles.cardContent}>
+                <div className={styles.voteContainer}>
+                  <button 
+                    className={`${styles.heartButton} ${userVotes.has(session.id) ? styles.voted : ''}`}
+                    onClick={() => handleVote(session.id)}
+                    aria-label={`Vote for ${session.question}`}
+                  >
+                    <svg 
+                      width="23" 
+                      height="23" 
+                      viewBox="0 0 23 23" 
+                      fill="none" 
+                      xmlns="http://www.w3.org/2000/svg"
+                      className={styles.heartIcon}
+                    >
+                      <g transform="matrix(1,0,0,1,0.375,0.375)">
+        <g transform="matrix(1.01596,0,0,0.97943,-4287.44,1464.01)">
+            <path d="M4230.9,-1490.27C4233.18,-1494.76 4237.73,-1494.76 4240.02,-1492.52C4242.29,-1490.27 4242.29,-1485.78 4240.02,-1481.28C4238.42,-1477.91 4234.32,-1474.55 4230.9,-1472.3C4227.48,-1474.55 4223.38,-1477.91 4221.78,-1481.28C4219.5,-1485.78 4219.5,-1490.27 4221.78,-1492.52C4224.06,-1494.76 4228.62,-1494.76 4230.9,-1490.27Z" fill="currentColor"/>
+        </g>
+    </g>
+                    </svg>
+                  </button>
+                  <span className={styles.voteCount}>{votes[session.id] || 0}</span>
+                </div>
+                
                 <div className={styles.mainContent}>
                   <h3 className={styles.title}>{session.question}</h3>
                   
@@ -87,7 +149,7 @@ const LEAPGrid = () => {
                   </div>
 
                   <div className={styles.backgroundSection}>
-                    <p className={styles.backgroundText}>{session.background}</p>
+                    <p className={styles.backgroundText} dangerouslySetInnerHTML={{ __html: session.background }} />
                   </div>
                 </div>
 
@@ -98,9 +160,9 @@ const LEAPGrid = () => {
                       {session.questions.length > 0 ? (
                         <ul className={styles.questionsList}>
                           {session.questions.map((question, index) => (
-                            <li key={index} className={styles.questionItem}>
-                              {question}
-                            </li>
+                            <li key={index} className={styles.questionItem} dangerouslySetInnerHTML={{ __html: question }} />
+                          
+                            
                           ))}
                         </ul>
                       ) : (
