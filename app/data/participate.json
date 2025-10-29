@@ -1,5 +1,15 @@
 [
   {
+    "id": "survey-experiment",
+    "title": "<h1>A LEND Survey</h1>",
+    "location": "Online",
+    "date": "29 Oct 2026",
+    "duration": "10 minutes",
+    "description": "A regular survey that helps us to understand what people would like from a narrative",
+    "tags": ["online", "one-off"],
+    "formId": "1"
+  },
+  {
     "id": "dce-experiment",
     "title": "<h1>Discrete Choice Experiment</h1>",
     "location": "School of Computer Science",

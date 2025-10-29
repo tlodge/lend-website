@@ -1,0 +1,172 @@
+{
+  "1": {
+    "id": "1",
+    "title": "LEND Survey: Understanding Dementia Narratives",
+    "introduction": "Thank you for your interest in participating in our research. This survey helps us understand what narratives are important to people affected by dementia. Your responses are anonymous and will contribute to improving support for people living with dementia and their carers. The survey should take approximately 10 minutes to complete.",
+    "sections": [
+      {
+        "id": "personal-info",
+        "title": "Your Background",
+        "description": "We'd like to learn a little about your connection to dementia.",
+        "questions": [
+          {
+            "id": "connection",
+            "type": "radio",
+            "label": "How would you describe your connection to dementia?",
+            "required": true,
+            "options": [
+              "I am living with dementia",
+              "I care for someone with dementia",
+              "I am a family member of someone with dementia",
+              "I am a healthcare professional",
+              "I have another connection (please specify)"
+            ]
+          },
+          {
+            "id": "age-range",
+            "type": "select",
+            "label": "What is your age range?",
+            "required": true,
+            "options": [
+              "18-24",
+              "25-34",
+              "35-44",
+              "45-54",
+              "55-64",
+              "65-74",
+              "75+",
+              "Prefer not to say"
+            ]
+          },
+          {
+            "id": "location",
+            "type": "text",
+            "label": "What region of the UK are you based in? (Optional)",
+            "required": false,
+            "placeholder": "e.g., East Midlands, London, Scotland"
+          }
+        ]
+      },
+      {
+        "id": "narrative-experience",
+        "title": "Narrative Experience",
+        "description": "This section explores your experience with narratives and stories about dementia.",
+        "questions": [
+          {
+            "id": "story-source",
+            "type": "checkbox",
+            "label": "Where have you encountered stories or narratives about dementia? (Select all that apply)",
+            "required": false,
+            "options": [
+              "Books or literature",
+              "Movies or television",
+              "Online articles or blogs",
+              "Support groups",
+              "Social media",
+              "Personal conversations",
+              "Professional resources",
+              "Other"
+            ]
+          },
+          {
+            "id": "helpful-narrative",
+            "type": "textarea",
+            "label": "Can you describe a narrative or story about dementia that you found particularly helpful, comforting, or meaningful?",
+            "required": false,
+            "placeholder": "Please share your thoughts here...",
+            "rows": 5
+          },
+          {
+            "id": "narrative-importance",
+            "type": "radio",
+            "label": "How important do you think narratives and stories are for people affected by dementia?",
+            "required": true,
+            "options": [
+              "Very important",
+              "Somewhat important",
+              "Neutral",
+              "Not very important",
+              "Not important at all"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "needs-preferences",
+        "title": "Your Needs and Preferences",
+        "description": "Help us understand what features and content would be most valuable to you.",
+        "questions": [
+          {
+            "id": "top-priorities",
+            "type": "checkbox",
+            "label": "What aspects are most important to you in a dementia narrative resource? (Select up to 3)",
+            "required": false,
+            "options": [
+              "Real-life experiences",
+              "Practical advice and tips",
+              "Emotional support and comfort",
+              "Medical information",
+              "Carer perspectives",
+              "Hope and positivity",
+              "Accessibility and ease of use",
+              "Community and connection"
+            ]
+          },
+          {
+            "id": "platform-preference",
+            "type": "radio",
+            "label": "What format would you prefer for accessing narratives?",
+            "required": false,
+            "options": [
+              "Online website",
+              "Mobile app",
+              "Printed materials",
+              "Video content",
+              "Audio/podcast format",
+              "No preference"
+            ]
+          },
+          {
+            "id": "frequency",
+            "type": "select",
+            "label": "How often would you be interested in accessing new narratives?",
+            "required": false,
+            "options": [
+              "Daily",
+              "Weekly",
+              "Monthly",
+              "Occasionally",
+              "Only when needed"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "feedback",
+        "title": "Additional Feedback",
+        "description": "Any additional comments or suggestions are welcome.",
+        "questions": [
+          {
+            "id": "additional-comments",
+            "type": "textarea",
+            "label": "Is there anything else you would like to share about narratives, dementia support, or this research?",
+            "required": false,
+            "placeholder": "Your thoughts are valuable to us...",
+            "rows": 6
+          },
+          {
+            "id": "contact-permission",
+            "type": "radio",
+            "label": "Would you be open to being contacted about future research opportunities?",
+            "required": true,
+            "options": [
+              "Yes, I'm happy to be contacted",
+              "No, I prefer not to be contacted"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
+

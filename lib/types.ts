@@ -31,6 +31,7 @@ export interface Experiment {
   duration: string;
   description: string;
   tags: string[];
+  formId?: string; // Optional link to a form in forms.json
 }
 
 export type ExperimentData = Experiment[];
@@ -44,3 +45,29 @@ export interface LEAPSession {
 }
 
 export type LEAPData = LEAPSession[];
+
+export interface FormQuestion {
+  id: string;
+  type: "text" | "textarea" | "radio" | "checkbox" | "select";
+  label: string;
+  required: boolean;
+  placeholder?: string;
+  options?: string[];
+  rows?: number;
+}
+
+export interface FormSection {
+  id: string;
+  title: string;
+  description?: string;
+  questions: FormQuestion[];
+}
+
+export interface Form {
+  id: string;
+  title: string;
+  introduction: string;
+  sections: FormSection[];
+}
+
+export type FormsData = Record<string, Form>;

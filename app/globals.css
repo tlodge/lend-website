@@ -177,3 +177,7 @@ button {
 button:hover {
   background: #333;
 }
+
+a.back-link:hover {
+  opacity: 0.8;
+}

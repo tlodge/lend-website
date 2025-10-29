@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Link from "next/link"
 import styles from "./ExperimentGrid.module.css"
 import experimentData from "../app/data/participate.json"
 import type { ExperimentData } from "../lib/types"
@@ -59,7 +60,7 @@ const ExperimentGrid = () => {
             <article key={experiment.id} className={styles.card}>
               <div className={styles.cardTop}>
                 <div className={styles.titleContainer}>
-                <h3 
+                <div 
                   className={styles.title} 
                   dangerouslySetInnerHTML={{ __html: experiment.title }} 
                 />
@@ -83,7 +84,13 @@ const ExperimentGrid = () => {
               <div className={styles.cardBottom}>
                 <p className={styles.description} dangerouslySetInnerHTML={{ __html: experiment.description }} />
                 <div className={styles.buttons}>
-                  <button className={styles.button}>Find out more</button>
+                  {experiment.formId ? (
+                    <Link href={`/collect/${experiment.formId}`} className={styles.button}>
+                      Take survey
+                    </Link>
+                  ) : (
+                    <button className={styles.button}>Find out more</button>
+                  )}
                   <button className={styles.button}>Share</button>
                 </div>
               </div>
