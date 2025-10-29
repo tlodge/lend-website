@@ -7,14 +7,15 @@ import { notFound } from "next/navigation"
 import Link from "next/link"
 
 interface CollectPageProps {
-  params: {
+  params: Promise<{
     id: string
-  }
+  }>
 }
 
-const CollectPage = ({ params }: CollectPageProps) => {
+const CollectPage = async ({ params }: CollectPageProps) => {
+  const { id } = await params
   const forms: FormsData = formsData as FormsData
-  const form = forms[params.id]
+  const form = forms[id]
 
   if (!form) {
     notFound()
