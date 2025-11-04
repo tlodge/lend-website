@@ -13,8 +13,7 @@ const QuestionsSection = () => {
         </div>
         <p className={styles.description}>
           In a recent workshop at the University of Nottingham our lived-experience panel chatted about the challenges
-          that they face and the stories that have been helpful (and unhelpful!) to them. Find out what we learnt and
-          tell us about your own experiences.
+          that they face and the stories that have been helpful (and unhelpful!) to them. Find out what we learnt.
         </p>
         <div className={styles.buttonContainer}>
           <Link href="/blog/theme1" className="button">Find out more</Link>
