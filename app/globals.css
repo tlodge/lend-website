@@ -163,7 +163,7 @@ button {
   cursor: pointer;
 }
 
-button {
+button, .button {
   background: #000;
   color: white;
   border: none;

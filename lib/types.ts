@@ -71,3 +71,19 @@ export interface Form {
 }
 
 export type FormsData = Record<string, Form>;
+
+export interface Publication {
+  title: string;
+  authors: string;
+  journal?: string;
+  year: string;
+  volume?: string;
+  issue?: string;
+  pages?: string;
+  doi?: string;
+  type: "poster" | "paper" | "journal" | "conference" | "workshop" | "report" | "book" | "other";
+  link?: string;
+  venue?: string;
+}
+
+export type PublicationData = Publication[];

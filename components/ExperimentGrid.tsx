@@ -56,6 +56,7 @@ const ExperimentGrid = () => {
         </div>
 
         <div className={styles.grid}>
+          {filteredExperiments.length <= 0 && <p>No experiments found matching your filters.</p>}
           {filteredExperiments.map((experiment) => (
             <article key={experiment.id} className={styles.card}>
               <div className={styles.cardTop}>

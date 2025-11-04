@@ -1,6 +1,8 @@
 import styles from "./QuestionsSection.module.css"
+import Link from "next/link"
 
 const QuestionsSection = () => {
+
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -15,7 +17,7 @@ const QuestionsSection = () => {
           tell us about your own experiences.
         </p>
         <div className={styles.buttonContainer}>
-          <button>Share your own insights</button>
+          <Link href="/blog/theme1" className="button">Find out more</Link>
         </div>
       </div>
     </section>

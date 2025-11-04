@@ -16,7 +16,7 @@ const Header = () => {
     { name: "Participate", href: "/participate" },
     { name: "Contact", href: "/contact" },
     { name: "Blog", href: "/blog" },
-    { name: "Publications", href: "/publications" },
+    { name: "Outputs", href: "/outputs" },
   ]
 
   const toggleMenu = () => {

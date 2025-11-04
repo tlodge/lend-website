@@ -1,6 +1,7 @@
 .experimentSection {
   background-color: #E6EEF8;
   padding: 60px 60px;
+   min-height: calc(100vh - 460px);
 }
 
 .container {

@@ -11,7 +11,7 @@ export default function Home() {
       <div className="content-container">
         <HeroSection content={`Real-life stories may bring comfort, guidance, and hope to carers and people living with dementia. We are
           working with those affected to create an online resource to share helpful experiences. We are funded by the
-          <strong> National Institute for Health and Care Research (NIHR)</strong>.`} backgroundImage="pattern.png" isPattern={true} />
+          <strong> National Institute for Health and Care Research (NIHR)</strong>. The study is sponsored by <strong>Nottinghamshire Healthcare NHS Trust</strong>.`} backgroundImage="pattern.png" isPattern={true} />
         <QuestionsSection />
         <ContentSection />
       </div>

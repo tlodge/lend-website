@@ -1,8 +1,9 @@
 // app/resources/page.tsx
 
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Resources.module.css";
+import resourcesData from "../app/data/resources.json";
 
 // ------------------------------------------------------------------
 // Types
@@ -43,156 +44,43 @@ export type ResourceItem = {
 };
 
 // ------------------------------------------------------------------
-// Mock data — replace with your merged (BM25 + vector) backend results
+// Load data from JSON file
 // ------------------------------------------------------------------
 
-const MOCK: ResourceItem[] = [
+const RESOURCES: ResourceItem[] = resourcesData as ResourceItem[];
+
+// ------------------------------------------------------------------
+// Simple local search - lowercase string match on title and summary
+// ------------------------------------------------------------------
+
+function searchResources(query: string, filters: FiltersState): ResourceItem[] {
+  const queryLower = query.trim().toLowerCase();
   
-  {
-    id: "nhs-symptoms",
-    title: "Dementia: symptoms, diagnosis and treatment",
-    summary:
-      "How dementia is diagnosed, what to expect at the GP and memory clinic, and current treatment options.",
-    audience: ["Carer", "Person with dementia"],
-    topics: ["Diagnosis"],
-    format: "Guide",
-    geography: "England",
-    lastReviewed: "2025-04-18",
-    source: "NHS",
-    timeToRead: "7 min",
-    actions: [{ type: "view", label: "Read on NHS", href: "https://www.nhs.uk/conditions/dementia/" }],
-  },
-  {
-    id: "attendance-allowance",
-    title: "Attendance Allowance: how to claim",
-    summary:
-      "Step‑by‑step guide to claiming Attendance Allowance for people over State Pension age with care needs.",
-    audience: ["Carer", "Person with dementia"],
-    topics: ["Money & legal"],
-    format: "Checklist",
-    geography: "UK",
-    lastReviewed: "2025-06-05",
-    source: "GOV.UK",
-    timeToRead: "6 min",
-    actions: [{ type: "view", label: "Start your claim", href: "https://www.gov.uk/attendance-allowance" }],
-  },
-  {
-    id: "smi-discount",
-    title: "Council Tax: Severe Mental Impairment (SMI) discount",
-    summary:
-      "How to apply for a council tax exemption or discount due to severe mental impairment (including dementia).",
-    audience: ["Carer", "Person with dementia"],
-    topics: ["Money & legal"],
-    format: "Guide",
-    geography: "England",
-    lastReviewed: "2025-05-12",
-    source: "Local Authority",
-    timeToRead: "5 min",
-    actions: [{ type: "view", label: "Check eligibility", href: "https://www.gov.uk/council-tax/discounts-for-disabled-people" }],
-  },
-  {
-    id: "driving-dementia",
-    title: "Driving and dementia: staying safe and DVLA rules",
-    summary:
-      "When to tell the DVLA/DVA, assessments, and planning for stopping driving with confidence and dignity.",
-    audience: ["Carer", "Person with dementia"],
-    topics: ["Driving", "Care planning"],
-    format: "Factsheet",
-    geography: "UK",
-    lastReviewed: "2025-03-28",
-    source: "Alzheimer’s Society",
-    timeToRead: "8 min",
-    actions: [{ type: "view", label: "Read factsheet", href: "https://www.alzheimers.org.uk/" }],
-  },
-  {
-    id: "sleep-issues",
-    title: "Sleep problems and dementia: practical tips",
-    summary:
-      "Common sleep changes with dementia and evidence‑based strategies to improve rest for the person and carers.",
-    audience: ["Carer", "Person with dementia"],
-    topics: ["Sleep", "Behaviour"],
-    format: "Guide",
-    geography: "UK",
-    lastReviewed: "2025-01-19",
-    source: "Alzheimer’s Society",
-    timeToRead: "6 min",
-    actions: [{ type: "view", label: "Read guide", href: "https://www.alzheimers.org.uk/" }],
-  },
-  {
-    id: "wandering-safety",
-    title: "Wandering and safety: making home and walks safer",
-    summary:
-      "How to reduce risk of getting lost, tech options (GPS, door sensors), and what to do if someone goes missing.",
-    audience: ["Carer"],
-    topics: ["Wandering & safety", "Behaviour"],
-    format: "Guide",
-    geography: "UK",
-    lastReviewed: "2024-12-08",
-    source: "Dementia UK",
-    timeToRead: "5 min",
-    actions: [{ type: "view", label: "Read guidance", href: "https://www.dementiauk.org/" }],
-  },
-  {
-    id: "lpa-template",
-    title: "Lasting Power of Attorney (LPA) starter pack",
-    summary:
-      "What LPAs cover, when to set them up, and templates for talking with family and professionals.",
-    audience: ["Carer", "Person with dementia"],
-    topics: ["Money & legal", "Care planning"],
-    format: "Template",
-    geography: "England",
-    lastReviewed: "2025-02-10",
-    source: "Age UK",
-    timeToRead: "10 min",
-    actions: [{ type: "download", label: "Download pack (PDF)", href: "#" }],
-  },
-];
-
-// ------------------------------------------------------------------
-// Simple local search/rank combining keyword + loose semantic hints
-// Replace with server call to your hybrid pipeline later
-// ------------------------------------------------------------------
-
-function scoreItem(q: string, item: ResourceItem) {
-  const query = q.trim().toLowerCase();
-  if (!query) return 0.1; // slight default to keep ordering stable
-  const hay = (
-    item.title + " " + item.summary + " " + item.topics.join(" ") + " " + item.audience.join(" ")
-  ).toLowerCase();
-  let score = 0;
-  query.split(/\s+/).forEach((w) => {
-    if (!w) return;
-    if (hay.includes(w)) score += 1.25;
-    if (item.title.toLowerCase().includes(w)) score += 1.25;
-  });
-  const synonyms: Record<string, string[]> = {
-    gp: ["doctor", "memory clinic"],
-    money: ["benefit", "allowance", "discount"],
-    drive: ["driving", "dvla", "car"],
-    sleep: ["night", "insomnia"],
-    wander: ["wandering", "lost", "safety"],
-    help: ["support", "helpline"],
-  };
-  Object.entries(synonyms).forEach(([k, list]) => {
-    if (query.includes(k) || list.some((t) => query.includes(t))) score += 0.75;
-  });
-  if (item.format === "Helpline" && item.canonical) score += 3;
-  return score;
-}
-
-function fakeSearch(query: string, filters: FiltersState, postcode?: string): ResourceItem[] {
-  const base = MOCK.filter((r) => {
+  // Filter by audience, topics, formats, geography
+  const filtered = RESOURCES.filter((r) => {
     if (filters.audience.length && !filters.audience.some((a) => r.audience.includes(a))) return false;
     if (filters.topics.length && !filters.topics.some((t) => r.topics.includes(t))) return false;
     if (filters.formats.length && !filters.formats.includes(r.format)) return false;
     if (filters.localOnly && r.geography && r.geography !== "UK") return false;
     return true;
   });
-  const scored = base
-    .map((item) => ({ item, s: scoreItem(query, item) }))
-    .sort((a, b) => b.s - a.s)
-    .map((x) => x.item);
-  return scored;
+  
+  // If no query, return all filtered results
+  if (!queryLower) {
+    return filtered;
+  }
+  
+  // Split query by whitespace and require ALL words to match (AND logic)
+  const queryWords = queryLower.split(/\s+/).filter(word => word.length > 0);
+  
+  return filtered.filter((item) => {
+    const titleLower = item.title.toLowerCase();
+    const summaryLower = item.summary.toLowerCase();
+    const searchText = `${titleLower} ${summaryLower}`;
+    
+    // All words must be present in title or summary
+    return queryWords.every(word => searchText.includes(word));
+  });
 }
 
 // ------------------------------------------------------------------
@@ -217,55 +105,19 @@ const DEFAULT_FILTERS: FiltersState = {
 };
 
 // ------------------------------------------------------------------
-// Small UI helpers (CSS Modules)
-// ------------------------------------------------------------------
-
-function Chip({ children, onClick }: { children: React.ReactNode; onClick?: () => void }) {
-  return (
-    <button type="button" className={styles.chip} onClick={onClick}>
-      {children}
-    </button>
-  );
-}
-
-// ------------------------------------------------------------------
 // Components
 // ------------------------------------------------------------------
 
-function IntentChips({ onPick }: { onPick: (q: string) => void }) {
-  const intents = [
-    { label: "Carer", q: "carer support" },
-    { label: "Newly diagnosed", q: "diagnosis steps" },
-    { label: "Money & legal", q: "attendance allowance council tax SMI" },
-    { label: "Behaviour", q: "wandering safety" },
-    { label: "Sleep", q: "sleep problems" },
-    { label: "Driving", q: "driving dvla" },
-  ];
-  return (
-    <div className={styles.intentChips}>
-      {intents.map((i) => (
-        <Chip key={i.label} onClick={() => onPick(i.q)}>{i.label}</Chip>
-      ))}
-    </div>
-  );
-}
-
-function SearchBar({ value, setValue, onSearch }: { value: string; setValue: (v: string) => void; onSearch: () => void }) {
-  const inputRef = useRef<HTMLInputElement | null>(null);
+function SearchBar({ value, setValue }: { value: string; setValue: (v: string) => void }) {
   return (
     <div className={styles.searchBar}>
-      
       <input
-        ref={inputRef}
         value={value}
         onChange={(e) => setValue(e.target.value)}
-        onKeyDown={(e) => e.key === "Enter" && onSearch()}
         placeholder="What can I help you find?"
         className={styles.searchInput}
         aria-label="Search resources"
       />
-      
-      <button onClick={onSearch} aria-label="Search">Search</button>
     </div>
   );
 }
@@ -276,8 +128,8 @@ function ResultList({ items }: { items: ResourceItem[] }) {
   if (!items.length) {
     return (
       <div className={styles.card + " " + styles.center}>
-        <div className={styles.emptyIcon}>🔎</div>
-        <p className={styles.muted}>No results yet — try a broader search or open the personaliser.</p>
+       
+        <p className={styles.muted}>No results found </p>
       </div>
     );
   }
@@ -290,8 +142,41 @@ function ResultList({ items }: { items: ResourceItem[] }) {
   );
 }
 
+function encodeLink(link: string): string {
+  // Encode each path segment to handle special characters like spaces, #, etc.
+  return link.split('/').map(segment => 
+    segment ? encodeURIComponent(segment) : segment
+  ).join('/')
+}
+
+function formatDate(dateString: string): string {
+  // Use a consistent date format to avoid hydration mismatches
+  // Format: DD/MM/YYYY (e.g., 15/01/2025)
+  const date = new Date(dateString);
+  const day = String(date.getDate()).padStart(2, '0');
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const year = date.getFullYear();
+  return `${day}/${month}/${year}`;
+}
+
 function ResourceCard({ item }: { item: ResourceItem }) {
   const firstAction = item.actions[0];
+  
+  const getActionHref = (action: Action) => {
+    if (action.type === "view" || action.type === "download") {
+      const href = (action as { href: string }).href;
+      // If it's an internal link (starts with /), encode it
+      if (href.startsWith("/")) {
+        return encodeLink(href);
+      }
+      return href;
+    }
+    if (action.type === "call") {
+      return `tel:${(action as { tel: string }).tel}`;
+    }
+    return "#";
+  };
+  
   return (
     <article className={styles.card}>
       <div className={styles.cardContent}>
@@ -307,26 +192,42 @@ function ResourceCard({ item }: { item: ResourceItem }) {
           <div className={styles.metaRow}>
             <span className={styles.metaItem}>⏱ {item.timeToRead ?? "—"}</span>
             <span className={styles.metaItem}>↗ {item.source}</span>
-            <span className={styles.metaItem}>Reviewed {new Date(item.lastReviewed).toLocaleDateString()}</span>
+            <span className={styles.metaItem}>Reviewed {formatDate(item.lastReviewed)}</span>
           </div>
         </div>
       </div>
       
       <div className={styles.cardActions}>
-        {firstAction?.type === "view" && (
-          <a className={styles.actionChip} href={(firstAction as any).href} target="_blank" rel="noopener noreferrer">
-            Open
-          </a>
-        )}
-        {firstAction?.type === "download" && (
-          <a className={styles.actionChip} href={(firstAction as any).href}>
-            Download
-          </a>
-        )}
-        {firstAction?.type === "call" && (
-          <a className={styles.actionChip} href={`tel:${(firstAction as any).tel}`}>
-            Call now
-          </a>
+        {firstAction && (
+          <>
+            {firstAction.type === "view" && (
+              <a 
+                className={styles.actionChip} 
+                href={getActionHref(firstAction)} 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                {firstAction.label || "Open"}
+              </a>
+            )}
+            {firstAction.type === "download" && (
+              <a 
+                className={styles.actionChip} 
+                href={getActionHref(firstAction)}
+                download
+              >
+                {firstAction.label || "Download"}
+              </a>
+            )}
+            {firstAction.type === "call" && (
+              <a 
+                className={styles.actionChip} 
+                href={getActionHref(firstAction)}
+              >
+                {firstAction.label || "Call now"}
+              </a>
+            )}
+          </>
         )}
       </div>
     </article>
@@ -349,29 +250,19 @@ function ResourceCard({ item }: { item: ResourceItem }) {
 export default function Resources() {
   const [q, setQ] = useState("");
   const [filters] = useState<FiltersState>(DEFAULT_FILTERS);
-  const [results, setResults] = useState<ResourceItem[]>(MOCK);
+  const [results, setResults] = useState<ResourceItem[]>(RESOURCES);
 
   useEffect(() => {
-    setResults(fakeSearch(q, filters));
-  }, []);
-
-  const runSearch = () => {
-    const items = fakeSearch(q, filters);
+    const items = searchResources(q, filters);
     const sorted = sortItems(items, filters.sort);
     setResults(sorted);
-  };
-
-  useEffect(() => {
-    runSearch();
-  }, [filters]);
+  }, [filters, q]);
 
   return (
 
         <main className={styles.pageMain}>
              <div className={styles.panel}>
-                  <SearchBar value={q} setValue={(v) => setQ(v)} onSearch={runSearch} />
-                  {/* <IntentChips onPick={(val) => { setQ(val); setTimeout(runSearch, 0); }} /> */}
-                 
+                  <SearchBar value={q} setValue={setQ} />
                 </div>
           <div className={styles.maxWrap}>
          
