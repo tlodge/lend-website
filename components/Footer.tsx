@@ -36,12 +36,12 @@ const Footer = () => {
             src="/partners/uwl.svg"
             alt="University of West London"
             className={styles.partnerLogo}
-          />*/}
+          />
           <img
             src="/partners/nhs.svg"
             alt="Nottinghamshire Healthcare and Foundation Trust"
             className={styles.partnerLogo}
-          />
+          />*/}
         </div>
       </div>
     </footer>
