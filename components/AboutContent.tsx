@@ -36,8 +36,8 @@ export default function AboutContent() {
             <h2>Who we are</h2>
             <p>
               We are a mix of academics, clinical psychologists, psychiatrists, economists, statisticians,
-              technologists, and people with lived experience of dementia. The project lead is Professor Martin Orel,
-              who is the Director of the Institute at the University of Nottingham. 
+              technologists, and people with lived experience of dementia. The project lead is Professor Martin Orrell,
+              who is the Director of the Institute of  Mental Health at the University of Nottingham. 
             </p>
             <div className={styles.teamMembers}>
             
