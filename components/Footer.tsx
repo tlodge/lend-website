@@ -11,18 +11,18 @@ const Footer = () => {
       </div>
       <div className={styles.container}>
         <div className={styles.logoRow}>
-          <img
+          {/*<img
             src="/partners/exeter.svg"
             alt="University of Exeter"
             className={styles.partnerLogo}
-          />
+          />*/}
           <img
             src="/partners/nottingham.svg"
             alt="University of Nottingham"
             className={styles.partnerLogo}
           />
           
-          <img
+          {/*<img
             src="/partners/leicester.svg"
             alt="University of Leicester"
             className={styles.partnerLogo}
@@ -36,7 +36,7 @@ const Footer = () => {
             src="/partners/uwl.svg"
             alt="University of West London"
             className={styles.partnerLogo}
-          />
+          />*/}
           <img
             src="/partners/nhs.svg"
             alt="Nottinghamshire Healthcare and Foundation Trust"
