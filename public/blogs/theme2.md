@@ -22,7 +22,7 @@ We have tended to view a narrative intervention as a two-stage process; discover
 
 Conversational agents (AI chatbots) may offer a promising way to identify effective and appropriate narratives, but not without challenges. When participants used our simple prototype, there was some ambiguity about the chatbot’s role. Its friendly, but open-ended dialogue (i.e. answering user messages with follow-up questions) encouraged personal disclosures and expectations of emotional support.  This nudges it over the line between helpful assisant and therapist. We must either make it clear of the scope of the chatbot's role, so users don't expect it to address unmet emotional needs, or the systems must be capable of providing validated specialist support.  
 
-For now, we're cautiously interested and keen to dig a little deeper. Although conversational co-identification of narratives has excitin potential, it has must meet high standards of personalisation, cultural sensitivity and user safety.  There would need to be full transparency about AI’s role and limitations.
+For now, we're cautiously interested and keen to dig a little deeper. Although conversational co-identification of narratives has exciting potential, it has must meet high standards of personalisation, cultural sensitivity and user safety.  Full transparency, please, about AI’s role and limitations.
 
 We presented a poster that summarises some of these early observations to the University of Nottingham's Dementia Showcase.  You can find it [here](./publications)
 
