@@ -125,7 +125,7 @@
 
 .authors {
   font-size: 16px;
-  color: #5B85C2;
+  color: #183560;
   margin-bottom: 15px;
   font-weight: 500;
 }
@@ -160,12 +160,11 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: #5B85C2;
+  background-color: black;
+  padding: 12px 24px;
   color: white;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 25px;
   font-size: 14px;
   font-weight: 600;
   transition: background-color 0.2s ease;

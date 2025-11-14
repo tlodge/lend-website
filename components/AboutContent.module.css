@@ -88,14 +88,16 @@
   margin: 0;
 }
 
+
+
 .detailItem a {
-  color: #5b85c2;
+  color: #183560;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .detailItem a:hover {
-  color: #4a6fa5;
+  color: #183560;
   text-decoration: underline;
 }
 
@@ -114,13 +116,13 @@
 }
 
 .detailItem li a {
-  color: #5b85c2;
+  color: #183560;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .detailItem li a:hover {
-  color: #4a6fa5;
+  color:#183560;
   text-decoration: underline;
 }
 
@@ -158,7 +160,7 @@
 .teamMember h4 {
   font-size: 16px;
   font-weight: 500;
-  color: #5b85c2;
+  color: #183560;
   margin: 0 0 16px 0;
   line-height: 1.4;
   font-style: italic;

@@ -21,7 +21,7 @@ export default function Contact() {
               <h2 style={{ fontSize: "28px", marginBottom: "30px", color: "#333" }}>Get in Touch</h2>
 
               <div style={{ marginBottom: "30px" }}>
-                <h3 style={{ fontSize: "20px", marginBottom: "15px", color: "#5B85C2" }}>Research Team</h3>
+                <h3 style={{ fontSize: "20px", marginBottom: "15px", color: "#183560" }}>Research Team</h3>
                 <p style={{ fontSize: "16px", lineHeight: "1.6", color: "#666", marginBottom: "10px" }}>
                   <strong>Email:</strong> lend.research@nottingham.ac.uk
                 </p>
@@ -31,7 +31,7 @@ export default function Contact() {
               </div>
 
               <div style={{ marginBottom: "30px" }}>
-                <h3 style={{ fontSize: "20px", marginBottom: "15px", color: "#5B85C2" }}>Address</h3>
+                <h3 style={{ fontSize: "20px", marginBottom: "15px", color: "#183560" }}>Address</h3>
                 <p style={{ fontSize: "16px", lineHeight: "1.6", color: "#666" }}>
                   University of Nottingham
                   <br />
@@ -46,7 +46,7 @@ export default function Contact() {
               </div>
 
               <div>
-                <h3 style={{ fontSize: "20px", marginBottom: "15px", color: "#5B85C2" }}>Funding</h3>
+                <h3 style={{ fontSize: "20px", marginBottom: "15px", color: "#183560" }}>Funding</h3>
                 <p style={{ fontSize: "16px", lineHeight: "1.6", color: "#666" }}>
                   This project is funded by the National Institute for Health and Care Research (NIHR).
                 </p>

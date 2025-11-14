@@ -182,7 +182,7 @@
 .actionChip {
   display: inline-block;
  
-  background: #967E76;
+  background: black;
   color: white;
   padding: 8px 16px;
   border-radius: 20px;
@@ -194,7 +194,7 @@
 }
 
 .actionChip:hover {
-  background: #D7C0AE;
+  background: #8a9ba8;;
 
   transform: translateY(-1px);
   box-shadow: 0 2px 4px rgba(15, 118, 110, 0.2);
