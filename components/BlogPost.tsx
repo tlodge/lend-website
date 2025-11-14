@@ -124,40 +124,40 @@ const BlogPost = async ({ blog }: BlogPostProps) => {
           ← Back to all articles
         </Link>
         
-        <header className={styles.header}>
-          {blog.featured && <span className={styles.featuredBadge}>Featured</span>}
-          
-          <h1 className={styles.title}>{blog.title}</h1>
-          <h2 className={styles.subtitle}>{blog.subtitle}</h2>
-          <div className={styles.meta}>
-            <div className={styles.authorInfo}>
-              <span className={styles.author}>By {blog.author}</span>
-              <span className={styles.date}>{formatDate(blog.date)}</span>
+        <header 
+          className={styles.header}
+          style={blog.image ? {
+            backgroundImage: `url(${blog.image})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            height: '300px'
+          } : undefined}
+        >
+          {blog.image && <div className={styles.headerOverlay}></div>}
+          <div className={styles.headerContent}>
+            {blog.featured && <span className={styles.featuredBadge}>Featured</span>}
+            
+            <h1 className={styles.title}>{blog.title}</h1>
+            <h2 className={styles.subtitle}>{blog.subtitle}</h2>
+            <div className={styles.meta}>
+              <div className={styles.authorInfo}>
+                <span className={styles.author}>By {blog.author}</span>
+                <span className={styles.date}>{formatDate(blog.date)}</span>
+              </div>
             </div>
+            
+            {/*<div className={styles.tags}>
+              {blog.tags.map((tag) => (
+                <span key={tag} className={styles.tag}>{tag}</span>
+              ))}
+            </div>*/}
           </div>
-          
-          {/*<div className={styles.tags}>
-            {blog.tags.map((tag) => (
-              <span key={tag} className={styles.tag}>{tag}</span>
-            ))}
-          </div>*/}
         </header>
         
         {blog.callout && (
           <div className={styles.callout}>
             <p>{blog.callout}</p>
-          </div>
-        )}
-        
-        {blog.image && (
-          <div className={styles.imageContainer}>
-            <Image 
-              src={blog.image} 
-              alt={blog.title}
-              width={1280}
-              height={600}
-              className={styles.featuredImage}
-            />
           </div>
         )}
         

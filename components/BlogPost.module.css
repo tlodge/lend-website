@@ -30,16 +30,37 @@
 .header {
   position: relative;
   background: #E6EEF8;
-  padding: 50px 30px 5cqmin 30px;
+  padding: 30px 30px 50px 30px;
   margin-bottom: 50px;
   border-radius: 20px;
+  min-height: 300px;
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.headerOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 1;
+}
+
+.headerContent {
+  position: relative;
+  z-index: 2;
+  width: 100%;
 }
 
 .featuredBadge {
   position: absolute;
-  top: -60px;
-  right: 0;
-  background: #967E76;
+  top: 2px;
+  right: 2px;
+  background: #1e6692;
   color: white;
   padding: 8px 16px;
   border-radius: 20px;
@@ -47,15 +68,20 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  z-index: 3;
 }
 
 .title {
-  font-size: 38px;
+  font-size: 30px;
   font-weight: 700;
   color: #1a1a1a;
   margin: 0 0 8px 0;
   line-height: 1.2;
-  
+}
+
+.header[style*="backgroundImage"] .title {
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .subtitle {
@@ -64,6 +90,11 @@
   color: #797979;
   margin: 0 0 16px 0;
   line-height: 1.2;
+}
+
+.header[style*="backgroundImage"] .subtitle {
+  color: #f0f0f0;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .meta {
@@ -87,9 +118,19 @@
   color: #333;
 }
 
+.header[style*="backgroundImage"] .author {
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
 .date {
   font-size: 16px;
   color: #666;
+}
+
+.header[style*="backgroundImage"] .date {
+  color: #f0f0f0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .tags {
@@ -143,6 +184,9 @@
   line-height: 1.8;
   color: #333;
   font-size: 20px;
+  padding-left: 20px;
+  padding-right: 30px;
+  text-align: justify;
 }
 
 .h1 {
@@ -343,5 +387,17 @@
 
   .header {
     margin-bottom: 40px;
+    min-height: 250px;
+    padding: 20px 20px 40px 20px;
+    align-items: flex-start;
+    background-image: none !important;
+  }
+
+  .headerOverlay {
+    display: none;
+  }
+
+  .featuredBadge {
+    display: none;
   }
 }

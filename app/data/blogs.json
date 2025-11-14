@@ -10,7 +10,8 @@
     "tags": ["narratives", "news"],
     "featured": false,
     "frontpage": 2,
-    "callout": ""
+    "callout": "",
+     "image": "/blogs/images/narrative.png"
   },
   {
     "id": "theme2",
@@ -22,7 +23,8 @@
     "contentFile": "/blogs/theme2.md",
     "tags": ["AI", "narratives", "news"],
     "featured": true,
-    "frontpage": 1
+    "frontpage": 1,
+    "image": "/blogs/images/perils.png"
   },
   {
     "id": "theme3",
@@ -34,6 +36,7 @@
     "contentFile": "/blogs/theme3.md",
     "tags": ["narratives", "harms", "news"],
     "featured": false,
-    "frontpage": 3
+    "frontpage": 3,
+    "image": "/blogs/images/harmful.png"
   }
 ]
