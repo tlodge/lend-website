@@ -27,6 +27,13 @@ const Header = () => {
     setIsMenuOpen(false)
   }
 
+  const handleOverlayKeyDown = (e: React.KeyboardEvent) => {
+    // Close menu on Escape key
+    if (e.key === 'Escape') {
+      closeMenu()
+    }
+  }
+
   return (
     <header className={styles.header}>
       <div className={styles.container}>
@@ -74,7 +81,14 @@ const Header = () => {
 
       {/* Overlay for mobile menu */}
       {isMenuOpen && (
-        <div className={styles.overlay} onClick={closeMenu}></div>
+        <div 
+          className={styles.overlay} 
+          onClick={closeMenu}
+          onKeyDown={handleOverlayKeyDown}
+          tabIndex={-1}
+          aria-hidden="true"
+          role="presentation"
+        ></div>
       )}
     </header>
   )

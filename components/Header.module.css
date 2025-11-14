@@ -143,6 +143,13 @@
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
   z-index: 98;
+  outline: none;
+  border: none;
+}
+
+.overlay:focus {
+  outline: none;
+  border: none;
 }
 
 /* Responsive Design */

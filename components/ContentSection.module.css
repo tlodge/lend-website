@@ -102,9 +102,11 @@
 
 }
 .readMore {
-  color: #5b85c2;
-  text-align: center;
+ 
+  color: #183560;
   font-weight: 600;
+  font-size: 14px;
+  text-decoration: underline;
 }
 
 .readMore:hover {
@@ -149,9 +151,10 @@
 }
 
 .newsItemLink {
-  color: #5b85c2;
+  color: #183560;
   font-weight: 600;
   font-size: 14px;
+  text-decoration: underline;
 }
 
 .newsItemLink:hover {
