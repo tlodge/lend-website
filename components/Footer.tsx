@@ -21,7 +21,11 @@ const Footer = () => {
             alt="University of Nottingham"
             className={styles.partnerLogo}
           />
-          
+           <img
+            src="/partners/uwl.svg"
+            alt="University of West London"
+            className={styles.partnerLogo}
+          />
           {/*<img
             src="/partners/leicester.svg"
             alt="University of Leicester"
