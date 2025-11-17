@@ -9,7 +9,7 @@ This was our “take a step back” question. When and how might narratives be h
 3. **Shared-experience** : lived stories that build reassurance, empathy, and trust.
 4. **Hope-oriented** : highlighting positive experiences, ongoing interests, and quality of life.
 
-Narratives can, of course, contain a mix of the above. Perhaps the primary purpose of “shared-experience” narratives is to reaffirm a sense that “it’s not just me,” and “I’m not alone.” We expect that these narratives will resonate more strongly when they closely resemble a viewer’s own experiences. We discuss [here](./theme1) how there are multiple 'dimensions' where users might seek similarities: gender, relationship roles, dementia type, dementia stage and specific situations and circumstances. What does this mean for us? Irrespective of the challenge of appropriately matching user intent to a narrative, it also suggests that our library of 'similar experience' narratives will need to be broad and deep. 
+Narratives can, of course, contain a mix of the above. Perhaps the primary purpose of “shared-experience” narratives is to reaffirm a sense that “it’s not just me,” and “I’m not alone.” We expect that these narratives will resonate more strongly when they closely resemble a viewer’s own experiences. There are multiple 'dimensions' where users might seek similarities: gender, relationship roles, dementia type, dementia stage and specific situations and circumstances. Irrespective of the challenge of appropriately matching user intent to a narrative, it also suggests that our library of 'similar experience' narratives will need to be broad and deep. 
 
 ## Who the stories are for
 
