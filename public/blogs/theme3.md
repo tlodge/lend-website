@@ -1,6 +1,6 @@
-# How might narratives cause harm?
+# How might narratives cause distress?
 
- In the most recent Lived Experience Advisory Panel, we learned how narratives may cause harm (frustration, distress, feelings of exclusion) when they are poorly aligned with users’ circumstances, expectations, or identities. Though not an exhaustive list, our discussions identified several ways a narrative might be problematic:
+ In the most recent Lived Experience Advisory Panel, we learned how narratives may cause distress (including frustration and feelings of exclusion) when they are poorly aligned with users’ circumstances, expectations, or identities. Though not an exhaustive list, our discussions identified several ways a narrative might be problematic:
 
 - Unrepresentative content
 - Unconvincing or inauthentic narrators
@@ -15,17 +15,17 @@ Each example illustrates how a viewer's own experiences shape their reactions; i
 
 Although we cannot ever expect to perfectly match a narrative to a user's own experiences, given that mismatches can be harmful, we must consider approaches to mitigate and address harms as central to our intervention design.
 
-## Lowering the risk of harmful narratives
+## Lowering the risk of distressing narratives
 
-What options are available to reduce the harmful effects of a narrative?  From the LEAP workshop we identified **five** promising areas.  Four of them focus on preventing the delivery of a potentially harmful narrative, the fifth may provide support if a narrative causes harm.  
+What options are available to reduce the distressing effects of a narrative?  From the LEAP workshop we identified **five** promising areas.  Four of them focus on preventing the delivery of a potentially distressing narrative, the fifth may provide support if a narrative causes distress.  
 
 1. **Narrative production** Our discussions revealed some core concerns that might be dealt with when narratives are first produced. We must pay careful attention to the choice of narrator (that they can authentically discuss a chosen topic). We must ensure that sufficient attention paid to known key events (loss of independence was a highly emotive discussion in the workshop). We must ensure the narrative respectful and/or representative of different cultures or under-served communities.
 2. **Narrative coverage** Ensure a broad, representative range of narratives. Do we adequately represent different cultures, communities, types and stages of dementia, gender, relationship to person with dementia? 
 3. **User intent** Establish and match a user's intent to an appropriate narrative. This is not an insignificant challenge. We must be able to pick out what matters to a user and infer what is valuable, based on their experiences, world view, needs and immediate situation. We discussed how content that is distressing for a person at one point in time may be valuable or affirming, for the same person, at another time.
-4. **Signposting and anticipation**  Narratives won't always align with a user's own experiences, and we have seen that this can cause some distress and frustration. Therefore we must ensure that users' expectations are appropriately managed. In previous studies, content warnings were used to pre-warn participants of content that may cause distress (such as violence, self-harm, injustice and abuse). In our workshop, we found that harms may emerge from subtle, highly contextual reasons. Moreover, users may simply not know in advance what is likely to cause distress: a particular phrase, a familiar situation, a poor edit, a concept, idea or viewpoint. If there is no such thing thing as a universal set of content warnings; we'll need to help users build and articulate problematic narrative features as they use the intervention. Perhaps we should consider pre-consumption summaries that are capable to forewarning users about some of these more subtle aspects.
+4. **Signposting and anticipation**  Narratives won't always align with a user's own experiences, and we have seen that this can cause some distress and frustration. Therefore we must ensure that users' expectations are appropriately managed. In previous studies, content warnings were used to pre-warn participants of content that may cause distress (such as violence, self-harm, injustice and abuse). In our workshop, we found that distress may emerge from subtle, highly contextual reasons. Moreover, users may simply not know in advance what is likely to cause distress: a particular phrase, a familiar situation, a poor edit, a concept, idea or viewpoint. If there is no such thing thing as a universal set of content warnings; we'll need to help users build and articulate problematic narrative features as they use the intervention. Perhaps we should consider pre-consumption summaries that are capable to forewarning users about some of these more subtle aspects.
 5. **Reflection** We suspect, from observations on how workshop participants used our prototype, that there is a place for supporting reflection on watched narratives. We found that the conversational interface lent itself to follow-up discussions (several participants, unbidden, discussed what they liked and disliked about what they'd watched). Might reflection also help to redress moments of discomfort or distress? 
 
 
 ## In summary
 
-These early observations point to a core design challenge: maximising the benefits of dementia narratives while anticipating, minimising, and, when necessary, redressing harms.
+These early observations point to a core design challenge: maximising the benefits of dementia narratives while anticipating, minimising, and, when necessary, redressing distress.
