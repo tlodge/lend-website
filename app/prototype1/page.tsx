@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react"
 import Header from "../../components/Header"
+import PrototypeOverview from "./PrototypeOverview"
 import styles from "./prototype.module.css"
 
 interface IframeEvent {
@@ -99,6 +100,7 @@ const VIEW_INFO: Record<string, { title: string; description: string; details: s
 }
 
 export default function Prototype1() {
+  const [showOverview, setShowOverview] = useState(true)
   const [isLoading, setIsLoading] = useState(true)
   const [events, setEvents] = useState<IframeEvent[]>([])
   const [isPanelOpen, setIsPanelOpen] = useState(true)
@@ -177,6 +179,10 @@ export default function Prototype1() {
           }
         : VIEW_INFO[currentView])
     : null
+
+  if (showOverview) {
+    return <PrototypeOverview onProceed={() => setShowOverview(false)} />
+  }
 
   return (
     <>
