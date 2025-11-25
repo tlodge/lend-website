@@ -225,7 +225,7 @@
   font-weight: 600;
   color: #1e6692;
   padding: 12px 0;
-  border-bottom: 2px solid #e8ecf1;
+  border-bottom: 2px solid #6b727a;
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -241,7 +241,7 @@
 }
 
 .tableRow {
-  border-bottom: 1px solid #e8ecf1;
+  border-bottom: 1px solid #6b727a;
 }
 
 .tableRow:last-child {
