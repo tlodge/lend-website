@@ -16,6 +16,53 @@ interface IframeEvent {
   metadata?: Record<string, any>
 }
 
+
+const PROTOTTYPE_VERSION = "v1_24Nov25";
+
+const paragraphs = ["We’re taking a research-through-design approach [1] to the LEND intervention, iteratively creating a series of prototypes to explore and critically examine several early design hypotheses, and to prompt discussions within the project team. To do this, we’d like to periodically invite project members to engage with prototypes, prior to our co-design workshops with our LEAP group. These early explorations are preparatory and will complement co-design. ",
+"Insights from each round will feed into later prototypes and workshops, to support iterative design. "]
+
+const table = [
+              [
+                {
+                  "title": "Search as learning",
+                  "description": "Users may not know what they are looking for at the outset [2]. This can be supported  through dialogue and exploration rather than single, goal-directed queries [3].",
+                  "concepts":[{
+                    "title": "Conversational Search",
+                    "description": "where users interact with the system to clarify their needs and interests over time.",
+                  }]
+                },
+                {
+                  "title": "Emotional safety",
+                  "description": "The potential for distress in response to narrative content is highly individual and often unpredictable, both for the system and for users [4] ",
+                  "concepts":[{
+                    "title": "Transparent Recommendations",
+                    "description": "showing why particular narratives are suggested and allowing users to correct or refine assumptions",
+                  },{
+                    "title": "Pre-view summaries",
+                    "description": "that outline potentially sensitive content to support emotional safety.",
+                  }]
+                },
+                {
+                  "title": "Personalization and appropriation",
+                  "description": "Engagement deepens when people can appropriate an intervention to fit within their routines [5]",
+                  "concepts":[{
+                    "title": "Flexible engagement modes",
+                    "description": "such as playlists, enabling users to pace interaction in line with their own routines.",
+                  }]
+                },
+                {
+                  "title": "Reflection",
+                  "description": "Users value being able to reflect on narratives [6]; it supports their learning and may provide the intervention with further insight into their needs.",
+                  "concepts":[{
+                    "title": "Integrated reflection prompts",
+                    "description": "that invite users to discuss or comment on viewed narratives, feeding back into subsequent recommendations.",
+                  }]
+                }
+              ],
+
+
+]
 const VIEW_INFO: Record<string, { title: string; description: string; details: string[] }> = {
   'search': {
     title: 'Conversational Search',
