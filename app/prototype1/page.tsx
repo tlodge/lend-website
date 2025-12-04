@@ -1,6 +1,8 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
+import html2canvas from "html2canvas"
+import { Camera } from "lucide-react"
 import Header from "../../components/Header"
 import PrototypeOverview from "./PrototypeOverview"
 import styles from "./prototype.module.css"
@@ -106,7 +108,9 @@ export default function Prototype1() {
   const [isPanelOpen, setIsPanelOpen] = useState(true)
   const [currentView, setCurrentView] = useState<string | null>(null)
   const [lastViewedStory, setLastViewedStory] = useState<{ id: string; title: string } | null>(null)
+  const [isCapturing, setIsCapturing] = useState(false)
   const eventsEndRef = useRef<HTMLDivElement>(null)
+  const iframeRef = useRef<HTMLIFrameElement>(null)
 
   const figmaPrototypeUrl = "https://tlodge.github.io/lend-prototype-2/"
 
@@ -141,6 +145,134 @@ export default function Prototype1() {
   useEffect(() => {
     eventsEndRef.current?.scrollIntoView({ behavior: 'smooth' })
   }, [events])
+
+  const captureScreenshot = async () => {
+    if (!iframeRef.current || isCapturing) return
+
+    // Show a brief instruction before the browser prompt appears
+    const userConfirmed = window.confirm(
+      'Screenshot will capture this tab.\n\n' +
+      'When prompted:\n' +
+      '• Select "Tab"\n' +
+      '• Choose this prototype tab\n' +
+      '• Click "Share"\n\n' +
+      'Continue?'
+    )
+    
+    if (!userConfirmed) {
+      return
+    }
+
+    setIsCapturing(true)
+    
+    // Set up a one-time listener for screenshot response from iframe
+    const handleScreenshotResponse = (event: MessageEvent) => {
+      console.log('Parent received message:', event.origin, event.data);
+      
+      // Check origin - allow from the prototype domain
+      if (event.origin !== 'https://tlodge.github.io' && event.origin !== window.location.origin) {
+        console.log('Origin mismatch, ignoring:', event.origin);
+        return;
+      }
+      
+      if (event.data && event.data.type === 'screenshot-response' && event.data.imageData) {
+        console.log('Screenshot response received, processing...');
+        try {
+          // Convert base64 to blob and download
+          const base64Data = event.data.imageData
+          // Handle both data:image/png;base64,xxx and just xxx formats
+          const base64String = base64Data.includes(',') ? base64Data.split(',')[1] : base64Data
+          const byteCharacters = atob(base64String)
+          const byteNumbers = new Array(byteCharacters.length)
+          for (let i = 0; i < byteCharacters.length; i++) {
+            byteNumbers[i] = byteCharacters.charCodeAt(i)
+          }
+          const byteArray = new Uint8Array(byteNumbers)
+          const blob = new Blob([byteArray], { type: 'image/png' })
+          
+          const url = URL.createObjectURL(blob)
+          const link = document.createElement('a')
+          link.href = url
+          link.download = `prototype-screenshot-${new Date().toISOString().slice(0, 19).replace(/:/g, '-')}.png`
+          document.body.appendChild(link)
+          link.click()
+          document.body.removeChild(link)
+          URL.revokeObjectURL(url)
+          
+          console.log('Screenshot downloaded successfully');
+          window.removeEventListener('message', handleScreenshotResponse)
+          setIsCapturing(false)
+        } catch (error) {
+          console.error('Error processing screenshot:', error);
+          window.removeEventListener('message', handleScreenshotResponse)
+          setIsCapturing(false)
+          alert('Error processing screenshot: ' + error);
+        }
+      }
+    }
+
+    window.addEventListener('message', handleScreenshotResponse)
+
+    try {
+      const iframe = iframeRef.current
+      
+      console.log('Requesting screenshot from iframe...');
+      // Request screenshot from iframe (it will capture itself and send back)
+      iframe.contentWindow?.postMessage({ type: 'request-screenshot' }, 'https://tlodge.github.io')
+      console.log('Screenshot request sent to iframe');
+      
+      // Fallback: If iframe doesn't respond within 3 seconds, try html2canvas on wrapper
+      const fallbackTimeout = setTimeout(async () => {
+        try {
+          const iframeWrapper = iframe.parentElement
+          if (iframeWrapper) {
+            const canvas = await html2canvas(iframeWrapper as HTMLElement, {
+              allowTaint: true,
+              useCORS: false,
+              logging: false,
+            })
+            
+            canvas.toBlob((blob) => {
+              if (blob) {
+                const url = URL.createObjectURL(blob)
+                const link = document.createElement('a')
+                link.href = url
+                link.download = `prototype-screenshot-${new Date().toISOString().slice(0, 19).replace(/:/g, '-')}.png`
+                document.body.appendChild(link)
+                link.click()
+                document.body.removeChild(link)
+                URL.revokeObjectURL(url)
+              }
+              window.removeEventListener('message', handleScreenshotResponse)
+              setIsCapturing(false)
+            }, 'image/png')
+          }
+        } catch (error) {
+          console.error('Fallback capture failed:', error)
+          window.removeEventListener('message', handleScreenshotResponse)
+          setIsCapturing(false)
+          alert('Unable to capture screenshot. The prototype may need to be updated to support screenshots.')
+        }
+      }, 3000)
+      
+      // Clear timeout if iframe responds
+      const originalHandler = handleScreenshotResponse
+      const wrappedHandler = (event: MessageEvent) => {
+        if (event.data.type === 'screenshot-response') {
+          clearTimeout(fallbackTimeout)
+        }
+        originalHandler(event)
+      }
+      window.removeEventListener('message', handleScreenshotResponse)
+      window.addEventListener('message', wrappedHandler)
+      
+    } catch (error) {
+      console.error('Error requesting screenshot:', error)
+      window.removeEventListener('message', handleScreenshotResponse)
+      setIsCapturing(false)
+      alert('Unable to request screenshot from prototype.')
+    }
+  }
 
  
 
@@ -189,6 +321,7 @@ export default function Prototype1() {
                 </div>
               )}
               <iframe
+                ref={iframeRef}
                 src={figmaPrototypeUrl}
                 className={styles.prototypeFrame}
                 allowFullScreen
@@ -219,6 +352,16 @@ export default function Prototype1() {
                       Interact with the prototype to see contextual information about each screen.
                     </p>
                   )}
+                  
+                  <button
+                    className={styles.screenshotButton}
+                    onClick={captureScreenshot}
+                    disabled={isCapturing}
+                    aria-label="Capture screenshot"
+                  >
+                    <Camera size={20} />
+                    <span>{isCapturing ? 'Capturing...' : 'Screenshot'}</span>
+                  </button>
                 </div>
               </div>
             )}
