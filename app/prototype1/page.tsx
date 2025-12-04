@@ -149,20 +149,6 @@ export default function Prototype1() {
   const captureScreenshot = async () => {
     if (!iframeRef.current || isCapturing) return
 
-    // Show a brief instruction before the browser prompt appears
-    const userConfirmed = window.confirm(
-      'Screenshot will capture this tab.\n\n' +
-      'When prompted:\n' +
-      '• Select "Tab"\n' +
-      '• Choose this prototype tab\n' +
-      '• Click "Share"\n\n' +
-      'Continue?'
-    )
-    
-    if (!userConfirmed) {
-      return
-    }
-
     setIsCapturing(true)
     
     // Set up a one-time listener for screenshot response from iframe
@@ -217,7 +203,100 @@ export default function Prototype1() {
       const iframe = iframeRef.current
       
       console.log('Requesting screenshot from iframe...');
-      // Request screenshot from iframe (it will capture itself and send back)
+      
+      // Check if we should use Screen Capture API from parent (better user gesture context)
+      // The Screen Capture API needs to be called from a direct user interaction
+      // Since the button is in the parent, we can call it here instead of in the iframe
+      if (navigator.mediaDevices && navigator.mediaDevices.getDisplayMedia) {
+        try {
+          // Call Screen Capture API from parent page (has user gesture context)
+          const options: any = {
+            video: {
+              width: { ideal: window.innerWidth },
+              height: { ideal: window.innerHeight }
+            },
+            audio: false,
+            preferCurrentTab: true
+          };
+          
+          const stream = await navigator.mediaDevices.getDisplayMedia(options);
+          
+          // Create video element to capture frame
+          const video = document.createElement('video');
+          video.srcObject = stream;
+          video.autoplay = true;
+          video.playsInline = true;
+          video.muted = true;
+          
+          // Wait for video to be ready
+          await new Promise<void>((resolve, reject) => {
+            const timeout = setTimeout(() => {
+              reject(new Error('Video load timeout'));
+            }, 5000);
+            
+            video.onloadedmetadata = () => {
+              clearTimeout(timeout);
+              video.play()
+                .then(() => {
+                  setTimeout(() => resolve(), 200);
+                })
+                .catch(reject);
+            };
+            video.onerror = (error) => {
+              clearTimeout(timeout);
+              reject(error);
+            };
+            
+            if (video.readyState >= 1) {
+              clearTimeout(timeout);
+              video.play()
+                .then(() => {
+                  setTimeout(() => resolve(), 200);
+                })
+                .catch(reject);
+            }
+          });
+          
+          // Create canvas and draw frame
+          const canvas = document.createElement('canvas');
+          canvas.width = video.videoWidth;
+          canvas.height = video.videoHeight;
+          const ctx = canvas.getContext('2d');
+          
+          if (!ctx) {
+            throw new Error('Could not get canvas context');
+          }
+          
+          ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+          
+          // Stop the stream
+          stream.getTracks().forEach(track => track.stop());
+          video.srcObject = null;
+          
+          // Convert to blob and download
+          canvas.toBlob((blob) => {
+            if (blob) {
+              const url = URL.createObjectURL(blob);
+              const link = document.createElement('a');
+              link.href = url;
+              link.download = `prototype-screenshot-${new Date().toISOString().slice(0, 19).replace(/:/g, '-')}.png`;
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link);
+              URL.revokeObjectURL(url);
+              console.log('Screenshot captured and downloaded');
+              setIsCapturing(false);
+            }
+          }, 'image/png');
+          
+          return; // Success, exit early
+        } catch (screenCaptureError) {
+          console.log('Screen Capture API failed in parent, trying iframe approach:', screenCaptureError);
+          // Fall through to iframe approach
+        }
+      }
+      
+      // Fallback: Request screenshot from iframe
       iframe.contentWindow?.postMessage({ type: 'request-screenshot' }, 'https://tlodge.github.io')
       console.log('Screenshot request sent to iframe');
       
