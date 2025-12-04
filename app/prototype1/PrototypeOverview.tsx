@@ -11,7 +11,8 @@ interface PrototypeOverviewProps {
 const PROTOTTYPE_VERSION = "v1_24Nov25";
 
 const paragraphs = ["We’re taking a research-through-design approach [1] to the LEND intervention, iteratively creating a series of prototypes to explore and critically examine several early design hypotheses, and to prompt discussions within the project team. To do this, we’d like to periodically invite project members to engage with prototypes, prior to our co-design workshops with our LEAP group. These early explorations are preparatory and will complement co-design. ",
-"Insights from each round will feed into later prototypes and workshops, to support iterative design. "]
+"Insights from each round will feed into later prototypes and workshops, to support iterative design. ",
+"Please send any feedback (with screenshots if appropriate) to <strong>tom.lodge1@nottingham.ac.uk</strong>","This protototype is exploring a few of the hypotheses set out below:"]
 
 const table = [
               [
@@ -97,7 +98,7 @@ export default function PrototypeOverview({ onProceed }: PrototypeOverviewProps)
                           </a>
                         );
                       }
-                      return <span key={partIndex}>{part}</span>;
+                      return <span key={partIndex} dangerouslySetInnerHTML={{__html: part}}></span>;
                     })}
                   </p>
                 );
