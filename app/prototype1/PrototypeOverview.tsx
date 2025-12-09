@@ -10,7 +10,7 @@ interface PrototypeOverviewProps {
 
 const PROTOTTYPE_VERSION = "v1_24Nov25";
 
-const paragraphs = ["We’re taking a research-through-design approach [1] to the LEND intervention, iteratively creating a series of prototypes to explore and critically examine several early design hypotheses, and to prompt discussions within the LEND project team. To do this, we’d like to periodically invite project members to engage with prototypes. Note these prototypes will <strong>not</strong> be show to LEAP members - they are only intended as early explorations and provocations to help identify promising directions for the LEND intervention.","<strong> Please also note that prototypes are not fully functional - they are not using AI and do not collect any data.</strong>",
+const paragraphs = ["We’re taking a research-through-design approach [1] to the LEND intervention, iteratively creating a series of prototypes to explore and critically examine several early design hypotheses and to prompt discussions within the LEND project team. To do this, we’d like to periodically invite project members to engage with prototypes. These prototypes will <strong>not</strong> be show to LEAP members - they are only intended as early explorations and provocations to help identify promising directions for the LEND intervention.","<strong> Please also note that prototypes are not fully functional - they are not using AI and do not collect any data.</strong>",
 "Please send any feedback (with screenshots if appropriate) to <strong>tom.lodge1@nottingham.ac.uk</strong>","This protototype is exploring a few of the hypotheses set out below:"]
 
 const table = [

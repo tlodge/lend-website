@@ -1,12 +1,12 @@
 .prototypeContainer {
-  min-height: calc(100vh - 80px);
+  min-height: 100vh;
   background-color: #ececec;
   padding: 0;
 }
 
 .layoutWrapper {
   display: flex;
-  height: calc(100vh - 80px);
+  height: 100vh;
   gap: 0;
   position: relative;
   overflow: visible;
@@ -61,9 +61,9 @@
 .infoColumn {
   position: fixed;
   right: 0;
-  top: 80px;
+  top: 0;
   width: 400px;
-  height: calc(100vh - 80px);
+  height: 100vh;
   background: white;
   box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -82,7 +82,7 @@
 
 .toggleButton {
   position: fixed;
-  top: 100px;
+  top: 20px;
   right: 20px;
   padding: 10px 20px;
   background: #000;
@@ -317,13 +317,13 @@
   }
 
   .iframeColumn {
-    height: calc(100vh - 80px);
-    min-height: calc(100vh - 80px);
+    height: 100vh;
+    min-height: 100vh;
     flex: 1;
   }
 
   .iframeWrapper {
-    min-height: calc(100vh - 80px);
+    min-height: 100vh;
   }
 
   .infoColumn {
@@ -339,7 +339,7 @@
   }
 
   .toggleButton {
-    top: 90px;
+    top: 20px;
     right: 20px;
   }
 

@@ -3,7 +3,6 @@
 import { useState, useEffect, useRef } from "react"
 import html2canvas from "html2canvas"
 import { Camera } from "lucide-react"
-import Header from "../../components/Header"
 import PrototypeOverview from "./PrototypeOverview"
 import styles from "./prototype.module.css"
 
@@ -380,7 +379,6 @@ export default function Prototype1() {
 
   return (
     <>
-      <Header />
       {/* Floating Toggle Button */}
       <button
         className={styles.toggleButton}
