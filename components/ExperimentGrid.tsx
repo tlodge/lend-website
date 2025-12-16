@@ -96,7 +96,7 @@ const ExperimentGrid = () => {
                   ) : (
                     <button className={styles.button}>Find out more</button>
                   )}
-                  <button className={styles.button}>Share</button>
+                  {/*<button className={styles.button}>Share</button>*/}
                 </div>
               </div>
             </article>
