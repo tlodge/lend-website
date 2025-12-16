@@ -32,6 +32,7 @@ export interface Experiment {
   description: string;
   tags: string[];
   formId?: string; // Optional link to a form in forms.json
+  formUrl?: string; // Optional external URL to a form
 }
 
 export type ExperimentData = Experiment[];

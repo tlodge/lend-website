@@ -85,7 +85,11 @@ const ExperimentGrid = () => {
               <div className={styles.cardBottom}>
                 <p className={styles.description} dangerouslySetInnerHTML={{ __html: experiment.description }} />
                 <div className={styles.buttons}>
-                  {experiment.formId ? (
+                  {experiment.formUrl ? (
+                    <a href={experiment.formUrl} target="_blank" rel="noopener noreferrer" className={styles.button}>
+                      Take survey
+                    </a>
+                  ) : experiment.formId ? (
                     <Link href={`/collect/${experiment.formId}`} className={styles.button}>
                       Take survey
                     </Link>
