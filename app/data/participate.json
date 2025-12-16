@@ -1,2 +1,13 @@
-[]
+[
+    {
+        "id": "survey-experiment",
+        "title": "<h1>LEND Technology Survey</h1>",
+        "location": "Online",
+        "date": "16 Dec 2025",
+        "duration": "10 minutes",
+        "description": "Exploring the changing use of technology, social media and online narratives (stories) for people living with dementia and carers.",
+        "tags": ["online", "one-off"],
+        "formUrl": "https://forms.office.com/Pages/ResponsePage.aspx?id=7qe9Z4D970GskTWEGCkKHj3QYzAI49JAinZABgNX2WZUM0RSRTNCUFhKU0dLTVRRMUpUSVpFS1hDTy4u"
+      }
+]
 
