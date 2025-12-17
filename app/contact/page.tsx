@@ -33,15 +33,17 @@ export default function Contact() {
               <div style={{ marginBottom: "30px" }}>
                 <h3 style={{ fontSize: "20px", marginBottom: "15px", color: "#183560" }}>Address</h3>
                 <p style={{ fontSize: "16px", lineHeight: "1.6", color: "#666" }}>
-                  University of Nottingham
+                  Institute of Mental Health
                   <br />
-                  School of Health Sciences
+                  Jubilee Campus
                   <br />
-                  Queen&apos;s Medical Centre
+                  University of Nottingham Innovation Park
                   <br />
-                  Nottingham NG7 2UH
+                  Triumph Road
                   <br />
-                  United Kingdom
+                  Nottingham, UK
+                  <br/>
+                  NG7 2TU
                 </p>
               </div>
 
