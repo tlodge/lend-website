@@ -20,15 +20,12 @@ export default function Contact() {
             >
               <h2 style={{ fontSize: "28px", marginBottom: "30px", color: "#333" }}>Get in Touch</h2>
 
-              {/*<div style={{ marginBottom: "30px" }}>
+              <div style={{ marginBottom: "30px" }}>
                 <h3 style={{ fontSize: "20px", marginBottom: "15px", color: "#183560" }}>Research Team</h3>
                 <p style={{ fontSize: "16px", lineHeight: "1.6", color: "#666", marginBottom: "10px" }}>
-                  <strong>Email:</strong> lend.research@nottingham.ac.uk
+                  <strong>Email:</strong> LEND@nottingham.ac.uk
                 </p>
-                <p style={{ fontSize: "16px", lineHeight: "1.6", color: "#666" }}>
-                  <strong>Phone:</strong> +44 (0)115 823 0000
-                </p>
-              </div>*/}
+              </div>
 
               <div style={{ marginBottom: "30px" }}>
                 <h3 style={{ fontSize: "20px", marginBottom: "15px", color: "#183560" }}>Address</h3>
