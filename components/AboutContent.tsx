@@ -12,12 +12,7 @@ export default function AboutContent() {
           <div className={styles.aboutProject}>
             <h2>About the LEND project</h2>
             <p>
-              Dementia affects over 850,000 people in the UK and 700,000 carers, often leading to loss of identity,
-              reduced quality of life, and &quot;excess disability.&quot;
-            </p>
-            <p>
-              Support gaps are particularly stark for disadvantaged and minority groups. Research shows that personal
-              stories can improve coping and wellbeing.
+              Research shows that personal stories can improve coping and wellbeing.
             </p>
             <p>
               Building on the successful NEON study in mental health, this project will develop the Lived Experience
