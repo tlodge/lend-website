@@ -2,6 +2,7 @@ export interface Person {
   name: string;
   institution: string;
   profile: string;
+  url?: string;
 }
 
 export type PeopleData = Person[];
