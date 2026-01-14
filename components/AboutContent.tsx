@@ -15,7 +15,7 @@ export default function AboutContent() {
               Research shows that personal stories can improve coping and wellbeing.
             </p>
             <p>
-              Building on the successful NEON study in mental health, this project will develop the Lived Experience
+              Building on the successful <a href="https://www.researchintorecovery.com/research/neon/">NEON</a> study in mental health, this project will develop the Lived Experience
               Narratives in Dementia (LEND) Intervention, an online platform of diverse first-person stories from people
               with dementia and carers. Stories will be safely collected, culturally tailored, and accessible via text,
               audio, and video, with filters to help users find personally meaningful accounts.
@@ -40,7 +40,7 @@ export default function AboutContent() {
             <div className={styles.teamGrid}>
               {teamMembers.map((person, index) => (
                 <div key={index} className={styles.teamMember}>
-                  <h3><a href={""} target="_blank" rel="noopener noreferrer">{person.name}</a></h3>
+                  <h3><a href={person.url || ""} target="_blank" rel="noopener noreferrer">{person.name}</a></h3>
                   <h4>{person.institution}</h4>
                   <p>{person.profile}</p>
                 </div>
@@ -86,27 +86,27 @@ export default function AboutContent() {
               <h3>Project Partners</h3>
               <ul>
                 <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.nottingham.ac.uk/" target="_blank" rel="noopener noreferrer">
                     University of Nottingham
                   </a>
                 </li>
                 <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.uwl.ac.uk/" target="_blank" rel="noopener noreferrer">
                     University of West London
                   </a>
                 </li>
                 <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a href="https://le.ac.uk/" target="_blank" rel="noopener noreferrer">
                     University of Leicester
                   </a>
                 </li>
                 <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.bangor.ac.uk/" target="_blank" rel="noopener noreferrer">
                     Bangor University
                   </a>
                 </li>
                 <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.exeter.ac.uk/" target="_blank" rel="noopener noreferrer">
                     University of Exeter
                   </a>
                 </li>
