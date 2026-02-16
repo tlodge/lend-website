@@ -11,10 +11,10 @@ const Header = () => {
 
   const navItems = [
     { name: "Home", href: "/" },
-    { name: "Resources", href: "/resources" },
+    { name: "Team", href: "/team" },
     { name: "Participate", href: "/participate" },
     { name: "Contact", href: "/contact" },
-    { name: "Outputs", href: "/outputs" },
+    { name: "Findings", href: "/findings" },
   ]
 
   const toggleMenu = () => {
@@ -36,7 +36,9 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <Image src="/lendlogo.svg" alt="LEND" width={308} height={50} />
+          <Link href="/">
+            <Image src="/lendlogo.svg" alt="LEND" width={308} height={50} />
+          </Link>
         </div>
         
         {/* Desktop Navigation */}

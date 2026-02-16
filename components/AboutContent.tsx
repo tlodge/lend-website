@@ -1,120 +1,69 @@
 import styles from "./AboutContent.module.css"
 import peopleData from "../app/data/people.json"
 import type { PeopleData } from "../lib/types"
-
+import blogData from "../app/data/blogs.json"
+import type { BlogData } from "../lib/types"
+import Link from "next/link"
 export default function AboutContent() {
   const teamMembers: PeopleData = peopleData as PeopleData;
-  
+  const blogs: BlogData = blogData as BlogData;
+  const newsArticles = blogs
+    .filter(blog => blog.tags.includes("news"))
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, 3);
+  const formatDate = (dateString: string) => {
+    const date = new Date(dateString);
+    return date.toLocaleDateString('en-GB', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    });
+  };
   return (
     <section className={styles.aboutSection}>
       <div className={styles.container}>
         <div className={styles.leftColumn}>
           <div className={styles.aboutProject}>
+            <h2 className={styles.withSubtitle}>A two minute video overview of LEND</h2>
+            <div className={styles.subtitle}>By our LEND programme manager, Linda O'Raw</div>
+            <video className={styles.videoContainer} controls>
+              <source src="/lend.mp4" type="video/mp4" />
+            </video>
             <h2>About the LEND project</h2>
-            <p>
-              Research shows that personal stories can improve coping and wellbeing.
-            </p>
-            <p>
-              Building on the successful <a href="https://www.researchintorecovery.com/research/neon/">NEON</a> study in mental health, this project will develop the Lived Experience
-              Narratives in Dementia (LEND) Intervention, an online platform of diverse first-person stories from people
-              with dementia and carers. Stories will be safely collected, culturally tailored, and accessible via text,
-              audio, and video, with filters to help users find personally meaningful accounts.
-            </p>
-            <p>
-              Two clinical trials will evaluate LEND&apos;s benefits and cost-effectiveness for people with dementia and
-              their carers. A Lived Experience Advisory Panel will co-develop the intervention, ensuring cultural
-              competence, relevance, and impact.
-            </p>
-          </div>
 
-          <div className={styles.whoWeAre}>
-            <h2>Who we are</h2>
             <p>
-              We are a mix of academics, clinical psychologists, psychiatrists, economists, statisticians,
-              technologists, and people with lived experience of dementia. The project lead is Professor Martin Orrell,
-              who is the Director of the Institute of  Mental Health at the University of Nottingham. 
+             Sharing lived experience stories can be beneficial for the quality of life of people with long-term conditions, including dementia. First-person stories, also known as narratives, can provide a form of peer support and validation for people going through similar experiences, and they can also provide learning opportunities for people with dementia and their carers. The use of stories to support others can also empower people with long-term conditions and their carers to live a life that is meaningful to them.
             </p>
-            <div className={styles.teamMembers}>
-            
-            
-            <div className={styles.teamGrid}>
-              {teamMembers.map((person, index) => (
-                <div key={index} className={styles.teamMember}>
-                  <h3><a href={person.url || ""} target="_blank" rel="noopener noreferrer">{person.name}</a></h3>
-                  <h4>{person.institution}</h4>
-                  <p>{person.profile}</p>
-                </div>
-              ))}
-            </div>
+            <p>
+              Our research team are working with a Lived Experience Advisory Panel (LEAP) who provide feedback that drives our work. The LEAP group are people with dementia and their carers, both current and former, from a range of backgrounds and cultures. The LEAP group, as well as previous conversations with people with lived experience of dementia, have stated that there is a lack of stories and appropriate information for people from ethnic minorities, those who have rarer dementias, the LGBTQIA+ community, and people diagnosed with Young-Onset dementia. 
+            </p>
+            <p>
+              These discussions with people with lived experience have suggested that a platform that has lots of diverse stories about dementia would be useful to both people with dementia and their carers. As a result, the Lived Experience Narratives in Dementia (LEND) programme aims to provide a range of first-person narratives that reflect the different experiences of living with dementia. We hope that LEND will improve quality of life for people with dementia, bring sources of hope, and provide support for individuals with dementia and their carers. 
+            </p>
           </div>
-          </div>
-
-          
         </div>
 
-        <div className={styles.rightColumn}>
-          <div className={styles.projectDetails}>
-            <div className={styles.detailItem}>
-              <h3>The Project started</h3>
-              <p>June 2024</p>
-            </div>
+        
+          <aside className={styles.rightColumn}>
+            <h2 className={styles.newsTitle}>Latest news</h2>
 
-            <div className={styles.detailItem}>
-              <h3>The Project will end</h3>
-              <p>May 2029</p>
-            </div>
-
-            <div className={styles.detailItem}>
-              <h3>NIHR award ID</h3>
-              <p>
-                <a href="https://fundingawards.nihr.ac.uk/award/NIHR206255" target="_blank" rel="noopener noreferrer">
-                  NIHR206255
-                </a>
-              </p>
-            </div>
-
-            <div className={styles.detailItem}>
-              <h3>Contracting Organisation</h3>
-              <p>
-                <a href="https://www.nottinghamshirehealthcare.nhs.uk/" target="_blank" rel="noopener noreferrer">
-                  Nottingham Healthcare NHS Trust
-                </a>
-              </p>
-            </div>
-
-            <div className={styles.detailItem}>
-              <h3>Project Partners</h3>
-              <ul>
-                <li>
-                  <a href="https://www.nottingham.ac.uk/" target="_blank" rel="noopener noreferrer">
-                    University of Nottingham
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.uwl.ac.uk/" target="_blank" rel="noopener noreferrer">
-                    University of West London
-                  </a>
-                </li>
-                <li>
-                  <a href="https://le.ac.uk/" target="_blank" rel="noopener noreferrer">
-                    University of Leicester
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.bangor.ac.uk/" target="_blank" rel="noopener noreferrer">
-                    Bangor University
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.exeter.ac.uk/" target="_blank" rel="noopener noreferrer">
-                    University of Exeter
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+            {newsArticles.length > 0 ? (
+              newsArticles.map((article) => (
+                <article key={article.id} className={styles.newsItem}>
+                  <h3 className={styles.newsItemTitle}>{article.title}</h3>
+                  <p className={styles.newsItemDate}>{formatDate(article.date)}</p>
+                  <p className={styles.newsItemText} dangerouslySetInnerHTML={{ __html: article.excerpt }} />
+                  <Link href={`/blog/${article.id}`} className={styles.newsItemLink}>
+                    Read all about it
+                  </Link>
+                </article>
+              ))
+            ) : (
+              <p className={styles.newsItemText}>No news articles available at the moment.</p>
+            )}
+          </aside>
         </div>
-      </div>
+      
     </section>
   )
 }

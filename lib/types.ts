@@ -3,6 +3,7 @@ export interface Person {
   institution: string;
   profile: string;
   url?: string;
+  image?: string;
 }
 
 export type PeopleData = Person[];

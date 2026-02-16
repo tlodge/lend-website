@@ -1,63 +1,76 @@
 [
   {
-    "name": "Professor Martin Orrell",
+    "name": "Martin Orrell",
     "institution": "University of Nottingham",
     "profile": "Professor of old age psychiatry and Director of the Institute of Mental Health. Expertise in dementia care research, complex intervention development, digital interventions for people living with dementia, outcome and well-being interventions, programme leadership, and complex psychosocial trials. Experience as a family carer for my mother who had dementia.",
     "url":"https://www.nottingham.ac.uk/medicine/people/m.orrell"
   },
   {
-    "name": "Professor Mike Slade",
+    "name": "Mike Slade",
     "institution": "University of Nottingham",
     "profile": "Clinical psychologist with expertise in mental health recovery, complex interventions, lived experience narratives and systematic review. Also adds expertise as Chief Investigator NEON programme.",
      "url":"https://www.nottingham.ac.uk/healthsciences/people/m.slade"
   },
   {
-    "name": "Professor George Christopher Fox",
+    "name": "George Christopher Fox",
     "institution": "University of Exeter",
     "profile": "Old age psychiatrist with expertise in dementia, development and evaluation of complex interventions, digital platforms. Lead of feasibility study WP3.",
     "url":"https://experts.exeter.ac.uk/36926-chris-fox"
   },
   {
-    "name": "Professor Rhiannon Tudor Edwards",
+    "name": "Rhiannon Tudor Edwards",
     "institution": "Bangor University",
     "profile": "Health economics, cost consequence evaluations, dementia health economic evaluations. Lead of health economic evaluation.",
     "url":"https://research.bangor.ac.uk/en/persons/rhiannon-tudor-edwards/"
   },
   {
-    "name": "Dr Zoe Hoare",
+    "name": "Zoe Hoare",
     "institution": "Bangor University",
     "profile": "Interim director of NWORTH CTU, principal senior statistician with expertise in design, methodology, statistics and experience in dementia trials and programme grants.",
     "url":"https://www.bangor.ac.uk/staff/nwms/zoe-hoare-011473/en"
   },
   {
-    "name": "Professor Neil Coulson",
+    "name": "Neil Coulson",
     "institution": "University of Nottingham",
     "profile": "Registered health psychologist, expertise in psychosocial aspects of chronic illness, intervention development and behaviour change, systematic reviews. Joint lead of work package 5.",
-    "url":"https://www.nottingham.ac.uk/medicine/people/neil.coulson"
+    "url":"https://www.nottingham.ac.uk/medicine/people/neil.coulson",
+    "image": "/people/neil_coulson.jpg"
   },
   {
-    "name": "Professor Praminda Caleb-Solly",
+    "name": "Praminda Caleb-Solly",
     "institution": "University of Nottingham",
     "profile": "Computer science, machine learning, technologies to assist people with age related disabilities and long term conditions. Joint lead of LEND Intervention work package 2.",
     "url":"https://www.nottingham.ac.uk/computerscience/people/praminda.caleb-solly"
   },
   {
-    "name": "Dr Claudio Di Lorito",
+    "name": "Claudio Di Lorito",
     "institution": "University College London",
     "profile": "Qualitative research, process evaluation, realist methods, PPI, dementia, inclusion of people who identify as LGBT+ in research. Lead of process evaluation.",
     "url":"https://profiles.ucl.ac.uk/88992-claudio-di-lorito"
   },
   {
-    "name": "Dr Stefan Rennick-Egglestone",
+    "name": "Stefan Rennick-Egglestone",
     "institution": "University of Nottingham",
-    "profile": "Joint lead for development of LEND Intervention work package. Rennick-Egglestone has experience of digital intervention development, the use of lived experience narratives in health research and practice, and a background that encompasses trial management, systematic reviewing, human computer interaction research, and research data management practice. He has personal experience as a carer for a relative with dementia for 10 years, including as the primary carer for three.",
+    "profile": "Joint lead for development of LEND Intervention work package. Stef has experience of digital intervention development, the use of lived experience narratives in health research and practice, and a background that encompasses trial management, systematic reviewing, human computer interaction research, and research data management practice. He has personal experience as a carer for a relative with dementia for 10 years, including as the primary carer for three.",
     "url":"https://www.nottingham.ac.uk/healthsciences/people/stefan.egglestone"
   },
   {
-    "name": "Dr Fiona Ng",
+    "name": "Fiona Ng",
     "institution": "University of Nottingham",
     "profile": "Expertise in mental health, behaviour change, qualitative methods, developing programme theory. Lead of programme theory work package 1. Named Point of Contact for Training with success in 3 fellowship awards.",
     "url":"https://www.nottingham.ac.uk/healthsciences/people/fiona.ng"
+  },
+  {
+    "name": "Katie Featherstone",
+    "institution": "University of West London",
+    "profile": "Katie is a medical sociologist working in the field of dementia. Having worked at the University of Bristol and Cardiff University, she moved to UWL to head up the GIAM research institute in 2021. Katie&apos;s programme of detailed ethnographeuro milliic research, funded by the National Institute for Health & Care Research (NIHR), examines institutional cultures of care, to address a pressing NHS",
+    "url":"https://www.uwl.ac.uk/staff/katie-featherstone"
+  },
+  {
+    "name": "Juanita Hoe",
+    "institution": "University of West London",
+    "profile": "Juanita Hoe is Professor of Dementia Care at the Geller Institute of Ageing and Memory, School of Medicine, University of West London. Previously she worked as Reader in Mental Health at City, University of London and as Clinical Lecturer in Dementia and Nursing at UCL Division of Psychiatry, where she retains honorary positions. Juanita is also a Senior Researcher & Visiting Professor at the Millennium Institute for Caregiving Research (MICARE), Universidad Andrés Bello, Santiago, Chile ",
+    "url":"https://www.uwl.ac.uk/staff/juanita-hoe"
   },
   {
     "name": "The LEAP Group",
