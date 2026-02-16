@@ -25,7 +25,7 @@ export default function AboutContent() {
         <div className={styles.leftColumn}>
           <div className={styles.aboutProject}>
             <h2 className={styles.withSubtitle}>A two minute video overview of LEND</h2>
-            <div className={styles.subtitle}>By our LEND programme manager, Linda O'Raw</div>
+            <div className={styles.subtitle}>By our LEND programme manager, Linda O&apos;Raw</div>
             <video className={styles.videoContainer} controls>
               <source src="/lend.mp4" type="video/mp4" />
             </video>
