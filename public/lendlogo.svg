@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 388 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-miterlimit:8;">
-    <g transform="matrix(16,0,0,16,388.729,62.8291)">
-    </g>
-    <text x="86.948px" y="62.829px" style="font-family:'OpenSans-Regular', 'Open Sans';font-size:16px;">Lived Experience Narratives in Dementia</text>
+<svg width="100%" height="100%" viewBox="0 0 377 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-miterlimit:8;">
+    <text x="86.948px" y="62.829px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:16px;">Lived Experience Narratives in Dementia</text>
     <path d="M38.805,41.354l-2.174,-5.554c-13.985,-3.975 -18.925,-12.911 -11.033,-19.957c7.891,-7.046 25.625,-9.535 39.61,-5.559c13.985,3.976 18.925,12.911 11.034,19.957c-5.825,5.201 -17.332,8.1 -29.085,7.327l-8.352,3.786Z" style="fill:#0e9fb2;"/>
-    <path d="M35.604,43.209c-1.129,-2.422 -0.899,-4.568 -2.247,-6.27c-18.501,-7.075 -19.537,-21.942 -2.703,-27.866c6.797,-4.67 17.405,-2.618 26.414,-2.334c18.903,2.734 27.154,15.942 15.526,25.395c-7.262,4.176 -15.1,7.791 -28.358,6.801c-2.181,1.465 -4.795,2.112 -8.632,4.274Z" style="fill:none;fill-rule:nonzero;stroke:#1e1c1a;stroke-width:1.5px;"/>
-    <text x="-2.105px" y="66.657px" style="font-family:'Helvetica';font-size:27.63px;fill:#0e9fb2;">L<tspan x="12.985px 31.138px 50.815px " y="66.657px 66.657px 66.657px ">END</tspan></text>
+    <path d="M35.604,43.209c-1.129,-2.422 -0.899,-4.568 -2.247,-6.27c-18.501,-7.075 -19.537,-21.942 -2.703,-27.866c6.797,-4.67 17.405,-2.618 26.414,-2.334c18.903,2.734 27.154,15.942 15.526,25.395c-7.262,4.176 -15.1,7.791 -28.358,6.801c-2.181,1.465 -4.795,2.112 -8.632,4.274Z" style="fill:none;fill-rule:nonzero;stroke:#000;stroke-width:1.5px;"/>
+    <text x="-2.105px" y="66.657px" style="font-family:'Helvetica';font-size:27.63px;fill:#0e9fb2;">L</text>
+    <text x="12.985px" y="66.657px" style="font-family:'Helvetica';font-size:27.63px;fill:#0e9fb2;">END</text>
 </svg>

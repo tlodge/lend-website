@@ -120,8 +120,8 @@ const BlogPost = async ({ blog }: BlogPostProps) => {
   return (
     <article className={styles.blogPost}>
       <div className={styles.container}>
-        <Link href="/blog" className={styles.backLink}>
-          ← Back to all articles
+        <Link href="/" className={styles.backLink}>
+          ← Back to home
         </Link>
         
         <header 
@@ -166,8 +166,8 @@ const BlogPost = async ({ blog }: BlogPostProps) => {
         </div>
         
         <footer className={styles.footer}>
-          <Link href="/blog" className={styles.backToBlog}>
-            ← Back to all articles
+          <Link href="/" className={styles.backToBlog}>
+            ← Back to home
           </Link>
         </footer>
       </div>

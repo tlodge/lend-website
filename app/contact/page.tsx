@@ -44,12 +44,7 @@ export default function Contact() {
                 </p>
               </div>
 
-              <div>
-                <h3 style={{ fontSize: "20px", marginBottom: "15px", color: "#183560" }}>Funding</h3>
-                <p style={{ fontSize: "16px", lineHeight: "1.6", color: "#666" }}>
-                  This project is funded by the National Institute for Health and Care Research (NIHR).
-                </p>
-              </div>
+              
             </div>
           </div>
         </main>

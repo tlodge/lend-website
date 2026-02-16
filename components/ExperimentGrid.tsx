@@ -42,7 +42,7 @@ const ExperimentGrid = () => {
   return (
     <section className={styles.experimentSection}>
       <div className={styles.container}>
-        <div className={styles.filterBar}>
+        {/*<div className={styles.filterBar}>
           <span className={styles.filterLabel}>Filters:</span>
           {filterOptions.map((option) => (
             <button
@@ -53,7 +53,7 @@ const ExperimentGrid = () => {
               {option.label}
             </button>
           ))}
-        </div>
+        </div>*/}
 
         <div className={styles.grid}>
           {filteredExperiments.length <= 0 && <p>No experiments found matching your filters.</p>}
@@ -68,15 +68,15 @@ const ExperimentGrid = () => {
                 </div>
                 <div className={styles.meta}>
                   <div className={styles.metaItem}>
-                    <span className={styles.metaLabel}>Location:</span>
+                    <span className={styles.metaLabel}>{experiment.location && "Location:"}</span>
                     <span className={styles.metaValue}>{experiment.location}</span>
                   </div>
                   <div className={styles.metaItem}>
-                    <span className={styles.metaLabel}>Study date:</span>
+                    <span className={styles.metaLabel}>{experiment.date && "Study date:"}</span>
                     <span className={styles.metaValue}>{experiment.date}</span>
                   </div>
                   <div className={styles.metaItem}>
-                    <span className={styles.metaLabel}>Study duration:</span>
+                    <span className={styles.metaLabel}>{experiment.duration && "Study duration:"}</span>
                     <span className={styles.metaValue}>{experiment.duration}</span>
                   </div>
                 </div>
