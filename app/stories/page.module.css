@@ -1,0 +1,31 @@
+.main {
+  max-width: 720px;
+  margin: 50px auto;
+  padding: 40px 24px 80px;
+  ;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--color-text);
+  margin-bottom: 8px;
+  text-wrap: balance;
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding: 24px 16px 60px;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+}
