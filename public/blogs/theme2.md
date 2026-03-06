@@ -1,5 +1,5 @@
 
-In our most recent Lived Experience Advisory Panel workshop we presented a very early stage prototype to kickstart discussions about possible features of the LEND intervention. Participants were asked to use the prototype to ‘bookmark’ up to four narratives that they felt were valuable. They were also asked to try two different approaches to find narratives:
+In our August 2025 Experience Advisory Panel workshop we presented a very early stage prototype to kickstart discussions about possible features of the LEND intervention. Participants were asked to use the prototype to ‘bookmark’ up to four narratives that they felt were valuable. They were also asked to try two different approaches to find narratives:
 
 i. *structured browsing* which displayed thumbnails of videos alongside titles and summaries, with simple filters to refine the list of available videos and 
 ii. *a conversational interface* that provides clips from narratives in response to discussions with a chatbot.   
