@@ -33,8 +33,14 @@ export interface Experiment {
   duration: string;
   description: string;
   tags: string[];
+  action?: {
+    type: "internal-form" | "external-form" | "mailto";
+    value: string;
+    buttonLabel?: string;
+  };
   formId?: string; // Optional link to a form in forms.json
   formUrl?: string; // Optional external URL to a form
+  buttonLabel?: string; // Optional label override for legacy formId/formUrl actions
 }
 
 export type ExperimentData = Experiment[];

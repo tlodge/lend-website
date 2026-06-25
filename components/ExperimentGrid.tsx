@@ -39,6 +39,57 @@ const ExperimentGrid = () => {
     return activeFilters.some(filter => experiment.tags.includes(filter));
   });
 
+  const renderActionButton = (experiment: ExperimentData[number]) => {
+    if (experiment.action) {
+      const label = experiment.action.buttonLabel || "Take part";
+
+      if (experiment.action.type === "mailto") {
+        const href = experiment.action.value.startsWith("mailto:")
+          ? experiment.action.value
+          : `mailto:${experiment.action.value}`;
+        return (
+          <a href={href} className={styles.button}>
+            {label}
+          </a>
+        );
+      }
+
+      if (experiment.action.type === "external-form") {
+        return (
+          <a href={experiment.action.value} target="_blank" rel="noopener noreferrer" className={styles.button}>
+            {label}
+          </a>
+        );
+      }
+
+      if (experiment.action.type === "internal-form") {
+        return (
+          <Link href={`/collect/${experiment.action.value}`} className={styles.button}>
+            {label}
+          </Link>
+        );
+      }
+    }
+
+    if (experiment.formUrl) {
+      return (
+        <a href={experiment.formUrl} target="_blank" rel="noopener noreferrer" className={styles.button}>
+          {experiment.buttonLabel || "Take survey"}
+        </a>
+      );
+    }
+
+    if (experiment.formId) {
+      return (
+        <Link href={`/collect/${experiment.formId}`} className={styles.button}>
+          {experiment.buttonLabel || "Take survey"}
+        </Link>
+      );
+    }
+
+    return <button className={styles.button}>Find out more</button>;
+  };
+
   return (
     <section className={styles.experimentSection}>
       <div className={styles.container}>
@@ -85,17 +136,7 @@ const ExperimentGrid = () => {
               <div className={styles.cardBottom}>
                 <p className={styles.description} dangerouslySetInnerHTML={{ __html: experiment.description }} />
                 <div className={styles.buttons}>
-                  {experiment.formUrl ? (
-                    <a href={experiment.formUrl} target="_blank" rel="noopener noreferrer" className={styles.button}>
-                      Take survey
-                    </a>
-                  ) : experiment.formId ? (
-                    <Link href={`/collect/${experiment.formId}`} className={styles.button}>
-                      Take survey
-                    </Link>
-                  ) : (
-                    <button className={styles.button}>Find out more</button>
-                  )}
+                  {renderActionButton(experiment)}
                   {/*<button className={styles.button}>Share</button>*/}
                 </div>
               </div>

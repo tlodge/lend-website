@@ -1,10 +1,35 @@
 [
-     
+    {
+        "id": "gitfing-individually",
+        "title": "<h1>Gifting narrative to LEND individually</h1>",
+        "location": "Online",
+        "date": "ongoing",
+        "description": "If you have been affected by dementia, you can gift your story to LEND, where we will use it to help others. Please email us to ask for more information: LEND@nottingham.ac.uk",
+        "tags": ["online", "one-off"],
+        "action": {
+            "type": "mailto",
+            "value": "LEND@nottingham.ac.uk",
+            "buttonLabel": "Email your story"
+        }
+    },
+     {
+        "id": "gitfing-collection",
+        "title": "<h1>Gifting collections of narratives to LEND</h1>",
+        "location": "Online",
+        "date": "ongoing",
+        "description": "If you have worked with others to collect narratives about dementia, you might be able to gift narratives from your collection to LEND. Please email us to ask for more information: LEND@nottingham.ac.uk",
+        "tags": ["online", "one-off"],
+        "action": {
+            "type": "mailto",
+            "value": "LEND@nottingham.ac.uk",
+            "buttonLabel": "Email us"
+        }
+    },
     {
         "id": "survey-experiment",
         "title": "<h1>LEND Technology Survey</h1>",
         "location": "Online",
-        "date": "16 Dec 2025",
+        "date": "ongoing",
         "duration": "10 minutes",
         "description": "Exploring the changing use of technology, social media and online narratives (stories) for people living with dementia and carers.",
         "tags": ["online", "one-off"],
