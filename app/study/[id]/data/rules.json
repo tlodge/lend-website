@@ -1,0 +1,829 @@
+{
+  "participantAttributes": {
+    "userType": [
+      "carer",
+      "person_with_dementia"
+    ],
+    "ethnicBackground": [
+      "white",
+      "mixed",
+      "asian",
+      "black",
+      "other"
+    ],
+    "ageBand": [
+      "under_40",
+      "40_59",
+      "60_79",
+      "80_plus"
+    ],
+    "sexuality": [
+      "heterosexual",
+      "gay_or_lesbian",
+      "bisexual"
+    ]
+  },
+  "attributeMatchingRules": {
+    "default": {
+      "useAgeBand": false,
+      "useEthnicBackground": false,
+      "useSexuality": false,
+      "useUserType": true
+    },
+    "activatedByNarratorAnswer": {
+      "Someone my age": {
+        "useAgeBand": true
+      },
+      "Someone with a similar background or culture": {
+        "useEthnicBackground": true,
+        "useSexuality": true
+      },
+      "Someone with similar experiences": {
+        "useUserType": true
+      },
+      "Someone different to me": {
+        "preferDifferentAttributes": true
+      },
+      "I don’t mind": {},
+      "I don’t know": {}
+    }
+  },
+  "dimensionDefinitions": {
+    "topic": {
+      "diagnosis": "Stories about diagnosis as a process or event, including being told, understanding what the diagnosis means, and its immediate impact.",
+      "life_before": "Stories about a person’s earlier life, identity, work, relationships, routines, or sense of self before dementia became central.",
+      "symptoms_leading_to_diagnosis": "Stories about signs, changes, or symptoms noticed before diagnosis.",
+      "relationships": "Stories where relationships with other people are central, including family, friends, partners, carers, neighbours, or community connections.",
+      "family": "Stories mainly involving relatives, partners, family roles, family support, or family tensions.",
+      "friends": "Stories mainly involving friendship, companionship, social circles, or maintaining friendships.",
+      "roles": "Stories about what people do for one another, responsibilities, identity roles, caring roles, family roles, work roles, or how roles change as needs change.",
+      "living_with_dementia": "Stories about everyday life with dementia and how dementia becomes part of ordinary life.",
+      "hobbies": "Stories involving interests, pastimes, creative activities, leisure, enjoyment, or meaningful activities.",
+      "routines": "Stories about ordinary days, repeated patterns, habits, familiar activities, and structure.",
+      "public_perceptions": "Stories about how other people or wider society view dementia.",
+      "stigma": "Stories involving shame, judgement, embarrassment, exclusion, or negative assumptions.",
+      "interactions": "Stories about encounters with other people in public, social, work, care, or everyday settings.",
+      "misconceptions": "Stories correcting misunderstandings or inaccurate beliefs about dementia.",
+      "loss": "Stories where loss is a major emotional or practical theme.",
+      "loss_of_a_life": "Stories about losing a previous way of life, identity, future, career, independence, or expected path.",
+      "anticipatory_grief": "Stories about grief or sadness before an expected future loss.",
+      "daily_challenges": "Stories about practical, emotional, or social difficulties in day-to-day life.",
+      "frustrations": "Stories where irritation, difficulty, blocked independence, or repeated obstacles are central.",
+      "coping_strategies": "Stories about practical or emotional strategies used to manage, adapt, communicate, remember, stay calm, or get through difficulties.",
+      "overcoming": "Stories about progress, resilience, success, confidence, or achieving something despite difficulty.",
+      "new_challenges": "Stories about changing circumstances, unfamiliar situations, or newly emerging difficulties.",
+      "health_and_social_care": "Stories involving services, professionals, formal care, assessments, or support systems.",
+      "resources": "Stories that provide or discuss practical support, information, tools, organisations, or services.",
+      "healthcare_interactions": "Stories involving doctors, nurses, hospitals, clinics, social workers, care providers, or appointments.",
+      "memories": "Stories centred on remembering, reminiscing, past experiences, or meaningful recollection.",
+      "memories_of_a_person": "Stories remembering a specific person or relationship.",
+      "memories_of_a_life_lived": "Stories reflecting on someone’s life, history, achievements, places, work, family, or identity.",
+      "policies_and_rights": "Stories about systems, laws, entitlements, advocacy, or structural issues affecting people with dementia or carers.",
+      "law": "Stories specifically involving legal matters, capacity, rights, duties, powers of attorney, safeguarding, or legal protections.",
+      "policies": "Stories involving institutional, government, organisational, or care-system policies.",
+      "rights": "Stories about entitlement, fairness, access, dignity, autonomy, or being treated properly.",
+      "campaigns": "Stories involving activism, awareness raising, public campaigning, or efforts to change systems.",
+      "the_future": "Stories about what may happen later, future needs, decisions, or uncertainty.",
+      "anticipated_challenges": "Stories about difficulties expected in the future.",
+      "planning": "Stories about preparing, organising care, legal/financial planning, future decisions, or making arrangements.",
+      "worries": "Stories centred on anxiety, uncertainty, fear, or concern about what may happen."
+    },
+    "tone": {
+      "formal": "Clear, structured, professional, or official in style.",
+      "upbeat": "Positive, energetic, cheerful, or encouraging.",
+      "hopeful": "Emphasises possibility, reassurance, resilience, or a better way forward.",
+      "funny": "Uses humour, lightness, or amusing moments.",
+      "sad": "Emotionally heavy, sorrowful, grief-related, or reflective of pain.",
+      "educational": "Designed to explain, teach, inform, or improve understanding.",
+      "conversational": "Natural, informal, personal, and easy to follow.",
+      "comforting": "Gentle, reassuring, emotionally safe, and supportive.",
+      "realistic": "Honest about difficulty without necessarily being negative.",
+      "light": "Easy-going, low emotional intensity, relaxing, or not demanding."
+    },
+    "narrator": {
+      "carer": "The story is told by, or primarily represents, someone caring for or supporting a person with dementia.",
+      "similar_age": "The narrator is broadly similar in age to the participant.",
+      "similar_background_or_culture": "The narrator has a broadly similar cultural, ethnic, religious, language, or background context.",
+      "similar_experiences": "The narrator has life experiences, care experiences, diagnosis experiences, or daily circumstances similar to the participant.",
+      "different_to_me": "The narrator offers a different perspective or life context from the participant.",
+      "any_narrator": "No strong narrator preference."
+    }
+  },
+  "rules": {
+    "a-topics": {
+      "Being diagnosed with dementia": {
+        "topic": {
+          "diagnosis": 5,
+          "symptoms_leading_to_diagnosis": 3
+        }
+      },
+      "How people live with dementia": {
+        "topic": {
+          "living_with_dementia": 5,
+          "routines": 3,
+          "daily_challenges": 3,
+          "coping_strategies": 3
+        }
+      },
+      "Family and relationships": {
+        "topic": {
+          "relationships": 5,
+          "family": 4,
+          "friends": 4,
+          "roles": 2
+        }
+      },
+      "Planning for the future": {
+        "topic": {
+          "the_future": 5,
+          "planning": 5,
+          "anticipated_challenges": 3,
+          "worries": 2,
+          "policies_and_rights": 1
+        }
+      },
+      "The challenges of caring for a person with dementia": {
+        "topic": {
+          "daily_challenges": 5,
+          "frustrations": 3,
+          "coping_strategies": 4,
+          "overcoming": 3,
+          "relationships": 2,
+          "roles": 2,
+          "health_and_social_care": 3
+        },
+        "narrator": {
+          "carer": 5
+        }
+      },
+      "Perceptions from others and stigma": {
+        "topic": {
+          "public_perceptions": 5,
+          "stigma": 5,
+          "misconceptions": 4,
+          "interactions": 3
+        }
+      },
+      "Campaigns and rights": {
+        "topic": {
+          "policies_and_rights": 5,
+          "campaigns": 5,
+          "rights": 4,
+          "law": 3,
+          "policies": 3
+        },
+        "tone": {
+          "educational": 2
+        }
+      },
+      "Support and social care": {
+        "topic": {
+          "health_and_social_care": 5,
+          "resources": 5,
+          "healthcare_interactions": 4,
+          "daily_challenges": 2,
+          "coping_strategies": 2
+        },
+        "tone": {
+          "educational": 2
+        }
+      },
+      "Dementia and working": {
+        "topic": {
+          "roles": 5,
+          "life_before": 3,
+          "living_with_dementia": 3,
+          "daily_challenges": 3,
+          "public_perceptions": 4,
+          "interactions": 3
+        }
+      },
+      "Hobbies, interests and everyday life": {
+        "topic": {
+          "living_with_dementia": 4,
+          "hobbies": 5,
+          "routines": 4,
+          "memories": 2,
+          "memories_of_a_life_lived": 1
+        }
+      },
+      "I don’t know": {}
+    },
+    "a-purpose": {
+      "Help me understand dementia": {
+        "topic": {
+          "diagnosis": 3,
+          "symptoms_leading_to_diagnosis": 2,
+          "living_with_dementia": 3,
+          "misconceptions": 2,
+          "resources": 1
+        },
+        "tone": {
+          "educational": 5,
+          "conversational": 2
+        }
+      },
+      "Give practical advice": {
+        "topic": {
+          "resources": 5,
+          "health_and_social_care": 4,
+          "coping_strategies": 4,
+          "planning": 3,
+          "daily_challenges": 3
+        },
+        "tone": {
+          "educational": 4,
+          "formal": 2
+        }
+      },
+      "Show support and reassurance": {
+        "topic": {
+          "coping_strategies": 4,
+          "overcoming": 3,
+          "relationships": 2,
+          "living_with_dementia": 2
+        },
+        "tone": {
+          "comforting": 5,
+          "hopeful": 4,
+          "conversational": 3
+        }
+      },
+      "Feel positive or hopeful": {
+        "topic": {
+          "overcoming": 4,
+          "coping_strategies": 3,
+          "hobbies": 2,
+          "living_with_dementia": 2
+        },
+        "tone": {
+          "hopeful": 5,
+          "upbeat": 5,
+          "comforting": 3
+        }
+      },
+      "Help me relax or take my mind off things": {
+        "topic": {
+          "hobbies": 4,
+          "memories": 3,
+          "routines": 2,
+          "memories_of_a_life_lived": 2
+        },
+        "tone": {
+          "light": 5,
+          "upbeat": 3,
+          "funny": 2,
+          "comforting": 2
+        }
+      },
+      "I don’t know": {}
+    },
+    "a-tone": {
+      "Comforting / uplifting": {
+        "tone": {
+          "comforting": 5,
+          "hopeful": 5,
+          "upbeat": 4,
+          "conversational": 2
+        }
+      },
+      "Honest and realistic": {
+        "tone": {
+          "realistic": 5,
+          "conversational": 4,
+          "sad": 2,
+          "educational": 1
+        },
+        "topic": {
+          "daily_challenges": 2,
+          "frustrations": 2,
+          "loss": 1,
+          "coping_strategies": 2
+        }
+      },
+      "Light-hearted": {
+        "tone": {
+          "light": 5,
+          "funny": 5,
+          "upbeat": 4,
+          "hopeful": 2
+        }
+      },
+      "Informative": {
+        "tone": {
+          "educational": 5,
+          "formal": 3,
+          "conversational": 1
+        },
+        "topic": {
+          "health_and_social_care": 2,
+          "resources": 2,
+          "policies_and_rights": 2,
+          "diagnosis": 2,
+          "planning": 2
+        }
+      },
+      "I don’t know": {}
+    },
+    "a-relatable": {
+      "Yes": {
+        "narrator": {
+          "similar_experiences": 3
+        }
+      },
+      "No": {
+        "narrator": {
+          "different_to_me": 3,
+          "any_narrator": 2
+        }
+      },
+      "Not sure": {
+        "narrator": {
+          "any_narrator": 2
+        }
+      }
+    },
+    "a-narrator": {
+      "Someone my age": {
+        "narrator": {
+          "similar_age": 5
+        }
+      },
+      "Someone with a similar background or culture": {
+        "narrator": {
+          "similar_background_or_culture": 5
+        }
+      },
+      "Someone with similar experiences": {
+        "narrator": {
+          "similar_experiences": 5
+        }
+      },
+      "Someone different to me": {
+        "narrator": {
+          "different_to_me": 5
+        }
+      },
+      "I don’t mind": {
+        "narrator": {
+          "any_narrator": 5
+        }
+      },
+      "I don’t know": {}
+    },
+    "b-important-people": {
+      "Family": {
+        "topic": {
+          "relationships": 4,
+          "family": 5,
+          "roles": 2,
+          "memories_of_a_person": 2
+        },
+        "narrator": {
+          "similar_experiences": 1
+        }
+      },
+      "Friends": {
+        "topic": {
+          "relationships": 4,
+          "friends": 5,
+          "interactions": 2,
+          "memories_of_a_person": 2
+        }
+      },
+      "Partner": {
+        "topic": {
+          "relationships": 5,
+          "family": 3,
+          "roles": 3,
+          "loss": 1,
+          "memories_of_a_person": 2
+        }
+      },
+      "People I spend time with": {
+        "topic": {
+          "relationships": 4,
+          "interactions": 3,
+          "living_with_dementia": 2,
+          "routines": 2
+        }
+      },
+      "Community or group": {
+        "topic": {
+          "relationships": 3,
+          "interactions": 3,
+          "public_perceptions": 2,
+          "stigma": 1,
+          "roles": 2
+        }
+      },
+      "Prefer not to say": {}
+    },
+    "b-identity": {
+      "Language I speak": {
+        "narrator": {
+          "similar_background_or_culture": 4
+        },
+        "topic": {
+          "memories": 2,
+          "life_before": 2,
+          "relationships": 1
+        }
+      },
+      "Religion or belief": {
+        "narrator": {
+          "similar_background_or_culture": 4
+        },
+        "topic": {
+          "memories": 2,
+          "relationships": 2,
+          "routines": 1,
+          "coping_strategies": 1
+        }
+      },
+      "Cultural background": {
+        "narrator": {
+          "similar_background_or_culture": 5
+        },
+        "topic": {
+          "memories": 3,
+          "life_before": 2,
+          "relationships": 2
+        }
+      },
+      "Traditions or celebrations": {
+        "narrator": {
+          "similar_background_or_culture": 4
+        },
+        "topic": {
+          "memories": 3,
+          "memories_of_a_life_lived": 3,
+          "family": 2,
+          "relationships": 2
+        },
+        "tone": {
+          "hopeful": 1,
+          "comforting": 1
+        }
+      },
+      "Food or cooking": {
+        "topic": {
+          "hobbies": 3,
+          "routines": 2,
+          "memories": 3,
+          "memories_of_a_life_lived": 2,
+          "family": 1
+        },
+        "tone": {
+          "comforting": 1,
+          "light": 1
+        }
+      },
+      "Music or cultural activities": {
+        "topic": {
+          "hobbies": 4,
+          "memories": 3,
+          "routines": 2,
+          "living_with_dementia": 2
+        },
+        "tone": {
+          "upbeat": 1,
+          "comforting": 1
+        }
+      },
+      "Prefer not to say": {}
+    },
+    "b-day": {
+      "At home": {
+        "topic": {
+          "routines": 4,
+          "living_with_dementia": 3,
+          "daily_challenges": 1
+        },
+        "tone": {
+          "comforting": 1
+        }
+      },
+      "With family": {
+        "topic": {
+          "relationships": 4,
+          "family": 5,
+          "routines": 2,
+          "roles": 2
+        }
+      },
+      "Out and about": {
+        "topic": {
+          "living_with_dementia": 3,
+          "hobbies": 2,
+          "interactions": 3,
+          "overcoming": 2,
+          "daily_challenges": 1
+        },
+        "tone": {
+          "upbeat": 1
+        }
+      },
+      "Quiet time": {
+        "topic": {
+          "routines": 3,
+          "coping_strategies": 2,
+          "memories": 2
+        },
+        "tone": {
+          "comforting": 3,
+          "light": 2
+        }
+      },
+      "Watching / listening to things": {
+        "topic": {
+          "hobbies": 2,
+          "routines": 2,
+          "memories": 1
+        }
+      },
+      "Most days are the same": {
+        "topic": {
+          "routines": 5,
+          "living_with_dementia": 2,
+          "daily_challenges": 1
+        },
+        "tone": {
+          "comforting": 1
+        }
+      },
+      "Different every day": {
+        "topic": {
+          "living_with_dementia": 3,
+          "new_challenges": 3,
+          "daily_challenges": 2,
+          "overcoming": 2
+        }
+      },
+      "At work": {
+        "topic": {
+          "roles": 5,
+          "life_before": 2,
+          "daily_challenges": 2,
+          "interactions": 2,
+          "public_perceptions": 1
+        }
+      },
+      "Prefer not to say": {}
+    },
+    "b-enjoy": {
+      "Talking and socialising with people": {
+        "topic": {
+          "relationships": 4,
+          "friends": 3,
+          "interactions": 3,
+          "living_with_dementia": 2
+        },
+        "tone": {
+          "conversational": 3,
+          "upbeat": 1
+        }
+      },
+      "Watching TV / films": {
+        "topic": {
+          "hobbies": 3,
+          "routines": 2,
+          "memories": 1
+        },
+        "tone": {
+          "light": 2
+        }
+      },
+      "Listening to stories": {
+        "topic": {
+          "memories": 3,
+          "memories_of_a_life_lived": 2,
+          "living_with_dementia": 1
+        },
+        "tone": {
+          "conversational": 3,
+          "comforting": 2
+        }
+      },
+      "Hobbies (e.g. gardening, crafts)": {
+        "topic": {
+          "hobbies": 5,
+          "routines": 3,
+          "living_with_dementia": 2,
+          "coping_strategies": 2,
+          "memories": 1
+        },
+        "tone": {
+          "upbeat": 1,
+          "comforting": 1
+        }
+      },
+      "Learning new things": {
+        "topic": {
+          "resources": 3,
+          "health_and_social_care": 2,
+          "diagnosis": 2,
+          "policies_and_rights": 2,
+          "misconceptions": 2
+        },
+        "tone": {
+          "educational": 5,
+          "formal": 2
+        }
+      },
+      "Prefer not to say": {}
+    },
+    "b-places": {
+      "Home": {
+        "topic": {
+          "routines": 3,
+          "memories": 2,
+          "relationships": 2,
+          "living_with_dementia": 2
+        },
+        "tone": {
+          "comforting": 2
+        }
+      },
+      "A place of worship": {
+        "narrator": {
+          "similar_background_or_culture": 3
+        },
+        "topic": {
+          "memories": 3,
+          "relationships": 2,
+          "coping_strategies": 2,
+          "routines": 1
+        },
+        "tone": {
+          "comforting": 2,
+          "hopeful": 1
+        }
+      },
+      "Where I grew up": {
+        "topic": {
+          "life_before": 5,
+          "memories": 5,
+          "memories_of_a_life_lived": 4,
+          "relationships": 2
+        }
+      },
+      "A place from the past": {
+        "topic": {
+          "life_before": 4,
+          "memories": 5,
+          "memories_of_a_life_lived": 4,
+          "loss_of_a_life": 1
+        }
+      },
+      "Holidays": {
+        "topic": {
+          "memories": 4,
+          "memories_of_a_life_lived": 3,
+          "family": 2,
+          "hobbies": 2
+        },
+        "tone": {
+          "upbeat": 2,
+          "light": 2,
+          "hopeful": 1
+        }
+      },
+      "A particular country or culture": {
+        "narrator": {
+          "similar_background_or_culture": 5
+        },
+        "topic": {
+          "memories": 4,
+          "life_before": 3,
+          "relationships": 2,
+          "public_perceptions": 1
+        }
+      },
+      "Prefer not to say": {}
+    },
+    "b-day-to-day": {
+      "Working in a job": {
+        "topic": {
+          "roles": 5,
+          "life_before": 3,
+          "daily_challenges": 2,
+          "interactions": 2,
+          "public_perceptions": 1
+        }
+      },
+      "Looking after family or home": {
+        "topic": {
+          "roles": 4,
+          "family": 4,
+          "relationships": 3,
+          "routines": 3,
+          "memories_of_a_life_lived": 2
+        }
+      },
+      "Caring for someone": {
+        "topic": {
+          "roles": 4,
+          "relationships": 3,
+          "daily_challenges": 4,
+          "coping_strategies": 3,
+          "health_and_social_care": 2
+        },
+        "narrator": {
+          "carer": 3
+        }
+      },
+      "Volunteering or helping others": {
+        "topic": {
+          "roles": 4,
+          "relationships": 2,
+          "interactions": 2,
+          "campaigns": 1,
+          "rights": 1
+        },
+        "tone": {
+          "hopeful": 1,
+          "upbeat": 1
+        }
+      },
+      "Retired": {
+        "topic": {
+          "life_before": 3,
+          "memories_of_a_life_lived": 3,
+          "routines": 2,
+          "roles": 2
+        }
+      },
+      "Not working at the moment": {
+        "topic": {
+          "routines": 2,
+          "living_with_dementia": 2,
+          "daily_challenges": 1
+        },
+        "tone": {
+          "comforting": 1
+        }
+      },
+      "Prefer not to say": {}
+    },
+    "b-carer-role": {
+      "I provide daily care": {
+        "narrator": {
+          "carer": 5,
+          "similar_experiences": 3
+        },
+        "topic": {
+          "daily_challenges": 5,
+          "coping_strategies": 4,
+          "health_and_social_care": 3,
+          "relationships": 2,
+          "roles": 2,
+          "anticipatory_grief": 1
+        }
+      },
+      "I help regularly": {
+        "narrator": {
+          "carer": 5,
+          "similar_experiences": 3
+        },
+        "topic": {
+          "daily_challenges": 4,
+          "coping_strategies": 3,
+          "relationships": 3,
+          "roles": 2,
+          "health_and_social_care": 2
+        }
+      },
+      "I support occasionally": {
+        "narrator": {
+          "carer": 4,
+          "similar_experiences": 2
+        },
+        "topic": {
+          "relationships": 3,
+          "interactions": 2,
+          "coping_strategies": 2,
+          "resources": 2
+        }
+      },
+      "I mainly help make decisions": {
+        "narrator": {
+          "carer": 4,
+          "similar_experiences": 2
+        },
+        "topic": {
+          "planning": 5,
+          "the_future": 4,
+          "health_and_social_care": 3,
+          "resources": 3,
+          "policies_and_rights": 2,
+          "rights": 2,
+          "roles": 2
+        },
+        "tone": {
+          "educational": 2
+        }
+      }
+    }
+  }
+}

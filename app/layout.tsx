@@ -23,7 +23,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      <body style={{ fontFamily: '"Open Sans", sans-serif' }}>{children}</body>
     </html>
   )
 }

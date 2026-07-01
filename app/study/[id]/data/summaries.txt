@@ -1,0 +1,366 @@
+dd_01.txt
+A 62-year-old person with dementia describes playing golf and how it helps with relaxation, fitness, meditation, and spending time with his wife.
+topic: living_with_dementia, hobbies
+tone: upbeat, conversational, light
+pwd_narrator: male, young_onset, 60_79
+
+dd_02.txt
+A person with dementia describes joining a creative group of musicians and artists. The group finds that dementia has changed their perceptions and made creative expression feel clearer and easier.
+topic: living_with_dementia, hobbies, friends
+tone: upbeat, conversational, light
+pwd_narrator:: male
+
+dd_03.txt
+A person with dementia says he is pleased to meet good friends and be part of a group. He describes feeling positive about dementia despite initial nerves when speaking.
+topic: living_with_dementia, hobbies, friends
+tone: upbeat, conversational, light, hopeful
+pwd_narrator: male
+
+dd_04.txt
+A younger person with dementia argues that there is life after diagnosis. They challenge stigma and explain that people with dementia are experts in their own experiences.
+topic: misconceptions, stigma
+tone: educational
+pwd_narrator: 40_59
+
+dd_05.txt
+Paul from Liverpool describes a happy evening with friends and family at a music video event. He sang with the band and mentions reading an article about dementia.
+topic: friends, family, hobbies
+tone: conversational, upbeat
+pwd_narrator: male
+
+dd_06.txt
+A person with dementia says that keeping a sense of humour helps them cope. They describe laughter as important for getting through life with dementia.
+topic: coping_strategies, living_with_dementia
+tone: conversational, upbeat
+pwd_narrator: female
+
+dd_07.txt
+Agnes describes accidentally leaving porridge cooking after confusing breakfast time with bedtime. She reflects on living alone with dementia, daily challenges, and how a message from a friend gave her a sense of support.
+topic: daily_challenges, routines, interactions
+tone: conversational, upbeat, funny
+pwd_narrator: female
+
+dd_08.txt
+Jo Bennet describes returning from a week away and completing a race in Monaco. She enjoyed the route and found the event amazing.
+topic: hobbies, overcoming
+tone: conversational, upbeat
+pwd_narrator: female
+
+dd_09.txt
+A man with dementia describes relearning and practising French after a holiday in France. Speaking French with an old friend and a local teacher helps keep him going.
+topic: hobbies, overcoming
+tone: conversational, upbeat
+pwd_narrator: male
+
+dd_10.txt
+A person with dementia describes starting a slate carving art project based on a sailing ship. They also say they enjoy therapy sessions because the people are nice and the sessions are fun.
+topic: hobbies, interactions
+tone: conversational, upbeat
+pwd_narrator: male
+
+dd_11.txt
+A person with dementia reflects on what living with dementia means and focuses on what they can still do. They describe staying busy, taking part in adventurous activities, and fighting back with a positive attitude.
+topic: living_with_dementia, overcoming, coping_strategies
+tone: conversational, upbeat
+pwd_narrator: male
+
+video02_llm.txt
+A partner describes Nellie’s memory deterioration, emotional changes, and the patience needed in daily life. The story emphasizes shared enjoyment, challenges going out, and a broader sense of loss.
+topic: living_with_dementia, relationships, loss
+tone: conversational, realistic
+carer_narrator: white,  60_79, heterosexual
+pwd_narrator: black, female, 60_79, heterosexual
+
+video03_llm.txt
+A daughter describes her mother’s dementia diagnosis and becoming her full-time carer. She explains documenting their experience to raise awareness, funding, and recognition for dementia.
+topic: relationships, campaigns, living_with_dementia
+tone: hopeful, sad
+carer_narrator: carer, female, white, under_40, heterosexual
+pwd: 80_plus, female, heterosexual
+
+video04_llm.txt
+Sheila describes her husband Stefan’s dementia diagnosis at age 39. The story focuses on life before dementia, behavioural changes, loss, and educating people that dementia can affect younger adults.
+topic: diagnosis, symptoms_leading_to_diagnosis, public_perceptions
+tone: sad, educational
+carer_narrator: carer, white, heterosexual
+pwd: under_40, female, heterosexual
+
+video05_llm.txt
+A wife describes Graham’s long and difficult path from early signs to formal diagnosis. The story focuses on deterioration, fear, lack of control, and the need for better support and guidance.
+topic: symptoms_leading_to_diagnosis, diagnosis, resources
+tone: realistic, sad
+carer_narrator: white, female, 60_79, heterosexual
+pwd: male, 60_79, heterosexual
+
+video06_llm.txt
+A wife describes Mark’s dementia, his personality changes, communication decline, and daily care needs. The story focuses heavily on family loss, exhaustion, parenting, and continuing to care for him out of love and commitment.
+topic: daily_challenges, loss, relationships
+tone: sad, realistic
+carer_narrator: carer, female,  white, 40_59, heterosexual
+pwd:  white, male, 40_59, heterosexual
+
+video07_llm.txt
+Jayden, a 19-year-old grandson, describes learning about dementia after his granddad’s diagnosis. He focuses on patience, involving his granddad, using memories, and encouraging other young people to help.
+topic: coping_strategies, relationships, memories
+tone: upbeat, educational
+carer_narrator: black, male, under_40, heterosexual
+pwd: black, male, 80_plus, heterosexual
+
+video08_llm.txt
+Bill reflects on his long marriage to Joe, her dementia diagnosis, repeated experiences of loss, residential care, her death, and his later campaigning work. The story combines grief, memories and continuing Joe’s legacy.
+topic: anticipatory_grief, memories, campaigns
+tone: sad, hopeful
+narrator: carer, white, 60_79, heterosexual
+pwd: female, white, 60_79, heterosexual
+
+video09_llm.txt
+Alanga and Joanna reflect on their mixed-cultural marriage, shared memories, and Alanga’s Alzheimer’s diagnosis. The story focuses on loss, daily challenges, carer support, and how they stay connected and active.
+topic: relationships, loss, resources
+tone: realistic, hopeful
+carer_narrator:  white, female, 60_79, heterosexual
+pwd_narrator:  male, black, 60_79, heterosexual
+
+video10_llm.txt
+A married couple describe their love, dementia diagnosis, and the support they receive. The story is hopeful and relationship-centred, emphasizing togetherness and not feeling alone.
+topic: relationships, resources, coping_strategies
+tone: hopeful, comforting
+narrator:  white, female, 80_plus, gay_or_lesbian
+pwd_narrator:  white, female, 80_plus, gay_or_lesbian
+
+video11_llm.txt
+Cynthia and Raymond reflect on their long marriage and the changes caused by Alzheimer’s. The story focuses on loss, adjustment, sadness, and the value of carer support groups.
+topic: loss, relationships, resources
+tone: sad, realistic
+carer_narrator:  black, female, 60_79, heterosexual
+pwd:  black, male, 60_79, heterosexual
+
+video12_llm.txt
+A grandson describes his close bond with his grandad through football and how dementia changed their relationship. He uses football, music, touch, and reassurance to keep his grandad connected and in the moment.
+topic: relationships, hobbies, coping_strategies
+tone: hopeful, comforting
+carer_narrator:  male, white, heterosexual
+pwd: white, male, 80_plus, heterosexual
+
+video13_llm.txt
+Bob and Joe describe frustration, diagnosis, emotional change, and the loss of companionship. The story is realistic but also shows determination to keep going with support.
+topic: living_with_dementia, loss, diagnosis
+tone: realistic, sad
+carer_narrator:  white, female, 60_79, heterosexual
+pwd:  white, male, 60_79, heterosexual
+
+video14_llm.txt
+Sheila and Graham describe her dementia diagnosis, initial fear, lack of practical help, and later finding dementia cafés. The story highlights how support and community changed their understanding and improved their lives.
+topic: resources, diagnosis, coping_strategies
+tone: hopeful, educational
+carer_narrator: female, white, 60_79, heterosexual
+pwd_narrator: male, white, 60_79, heterosexual
+
+video16_llm.txt
+Paul’s diagnosis is described as devastating for the family. The story focuses on peer support, learning how to communicate, and feeling understood by others in the same situation.
+topic: resources, diagnosis, coping_strategies
+tone: comforting, realistic
+carer_narrator:  white, female, 60_79, heterosexual
+pwd_narrator: white, male, 60_79, heterosexual
+
+video17_llm.txt
+A woman diagnosed with dementia at 51 describes how her symptoms were initially thought to be due to menopause or depression. She describes her fear and eventual relief at diagnosis. She emphasizes online resources and not feeling alone.
+topic: diagnosis, resources, worries
+tone: realistic, hopeful
+pwd_narrator: female, white, 40_59, heterosexual
+
+video18_llm.txt
+Kevin describes his deep relationship with Jean, her move into residential care, and the heartbreak of being separated during lockdown.
+topic: loss, relationships, resources
+tone: sad, comforting
+carer_narrator: male, white, 60_79, heterosexual
+pwd: female, white, 60_79, heterosexual
+
+video19_llm.txt
+A husband describes Helen’s dementia, her love of jigsaws and singing, and how he adapts activities to keep her happy. The story focuses on routines, frustrations, support and acceptance after diagnosis.
+topic: routines, hobbies, coping_strategies
+tone: realistic, hopeful
+carer_narrator: male, white, 80_plus, heterosexual
+pwd: female, white, 80_plus, heterosexual
+
+video20_llm.txt
+A couple describe the relief of finally receiving a diagnosis after doctors suspected depression. They focus on frustration, daily coping, humour, staying active, and living day to day.
+topic: living_with_dementia, frustrations, coping_strategies
+tone: conversational, upbeat
+carer_narrator: white, 40_59, male, heterosexual
+pwd_narrator: white, 40_59, female, heterosexual
+
+video21_llm.txt
+Multiple carers and people affected by dementia describe loss, isolation, frustration, reduced social lives, care-home decisions, and uncertainty about the future. The story gives a broad, realistic picture of dementia’s emotional and practical impact.
+topic: loss, daily_challenges, the_future
+tone: realistic, sad
+carer_narrator: white, mixed, male, female, asian, black, 40_59, 60_79, 80_plus, heterosexual
+
+video22_llm.txt
+Cricketers describe family memories around cricket and the effect of dementia on a father who once shared that passion.
+topic: campaigns, family, loss
+tone: educational, hopeful
+carer_narrator: white, female, under_40, heterosexual
+carer_narrator: white, male, 40_59, heterosexual
+
+
+video24_llm.txt
+A daughter remembers her mother’s strength and the shock of diagnosis. She explains how support helped her feel less alone and gave reassurance about the future.
+topic: resources, diagnosis, the_future, loss_of_a_life
+tone: sad, comforting
+carer_narrator: white, 40_59, heterosexual
+
+
+video26_llm.txt
+Askia describes her mother Theresa’s dementia, delayed diagnosis, and practical challenges. The story focuses on dementia, preparation, rights, and family loss.
+topic: diagnosis, policies_and_rights, family
+tone: realistic, sad
+carer_narrator: white, female, under_40, heterosexual
+pwd: white, female, 60_79, heterosexual
+
+video27_llm.txt
+Bill describes early diagnosis as the start of a new life with Joe. He focuses on emotional connection, love, adaptation, and the continuing strength of Joe’s personality.
+topic: coping_strategies, relationships, living_with_dementia
+tone: comforting, hopeful
+carer_narrator: white, male, 60_79, heterosexual
+pwd_narrator: white, female, 60_79, heterosexual
+
+video28_llm.txt
+Gina describes symptoms after a stroke, receiving a dementia diagnosis, and feeling both shocked and relieved. She encourages people to seek diagnosis, use support, and keep living well.
+topic: diagnosis, symptoms_leading_to_diagnosis, coping_strategies
+tone: hopeful, educational
+pwd_narrator: female, white, 40_59, heterosexual
+
+video29_llm.txt
+A carer describes loneliness, emotional distance, and trying to comfort Roy through affection. The story emphasizes the difference that support can make.
+topic: resources, loss, relationships
+tone: sad, comforting
+carer_narrator: female, white, 80_plus, heterosexual
+pwd: male, white, 80_plus,heterosexual
+
+video30_llm.txt
+A carer describes using Trinidadian food to trigger her mother’s memories and maintain cultural connection. She also discusses culturally appropriate care and the importance of support for carers.
+topic: memories, culture_and_identity
+tone: realistic, educational, comforting
+carer_narrator: black, 60_79, heterosexual
+pwd: female, black, 80_plus,heterosexual
+
+
+video31_llm.txt
+A person with dementia describes how music remains joyful and accessible even when memory is affected. The story also includes a reflection on a grandmother’s dementia and music as a point of connection.
+topic: hobbies, coping_strategies, memories
+tone: upbeat, comforting
+pwd_narrator: white, 40_59, heterosexual
+carer_narrator: white, female, 40_59, heterosexual
+
+video32_llm.txt
+Diane discusses cooking, Alzheimer’s, embarrassment, stigma, and having to retire early. The story emphasizes staying active, using services, and still having fun despite memory loss.
+topic: living_with_dementia, stigma, coping_strategies
+tone: upbeat, realistic
+narrator: similar_experiences, white, 40_59, heterosexual
+
+video33_llm.txt
+Pete describes living with Alzheimer’s, including memory problems, speech difficulties, family worries, and support. Despite frustration, he finds meaning in nature and being alive.
+topic: living_with_dementia, daily_challenges, resources
+tone: realistic, hopeful
+pwd_narrator: male, white, 60_79, heterosexual
+
+video34_llm.txt
+A daughter describes her mother’s dementia, delayed diagnosis, mood swings, pain, and how she has grown into a caring role. The story focuses on family closeness, fear of future decline, and taking things day by day.
+topic: family, daily_challenges, worries
+tone: sad, realistic
+carer_narrator: female, white, 40_59, heterosexual
+pwd: female, 60_79, white, heterosexual
+
+video35_llm.txt
+Michelle describes how dementia has changed her relationship with Adrian from partner to carer. The story also mentions family strain, loss, symptoms after bereavement, and wanting something to stop progression.
+topic: relationships, roles, loss
+tone: sad, conversational
+carer_narrator: female, white, 60_79,  heterosexual
+pwd_narrator: male, white, 60_79,  heterosexual
+
+video36_llm.txt
+Joan describes seeing her mother in a care home through glass during the pandemic and feeling that she had changed dramatically. The story focuses on separation, loss of interaction, and the mother not understanding why family visits stopped.
+topic: loss, interactions, health_and_social_care
+tone: sad, realistic
+carer_narrator: white, female, 60_79, heterosexual
+pwd: white, female, 80_plus, heterosexual
+
+video37_llm.txt
+Clarice and family describe diagnosis, memory loss, mood changes, reduced church involvement, her Jamaican background, skills with numbers and baking, and continued humour. The tone is warm and realistic, with strong focus on identity and family support.
+topic: relationships, culture_and_identity, frustrations
+tone: conversational, funny
+carer_narrator: black, female, 40_59, heterosexual
+pwd_narrator: black, female, 80_plus, heterosexual
+
+video38_llm.txt
+Peter and his partner describe early memory symptoms, diagnosis, and the relief of knowing what was wrong. Singing groups and memory cafés provide enjoyment, confidence, relaxation, and support.
+topic: resources, diagnosis, hobbies
+tone: hopeful, comforting
+carer_narrator: female, white, 80_plus, heterosexual
+carer_narrator: male, white, 80_plus, heterosexual
+
+video39_llm.txt
+Sue, her family, and friend Wendy describe life after diagnosis, family love, friendship, gardening, and support. The tone is upbeat, emphasizing normal life, humour, and staying active.
+topic: relationships, resources, friends
+tone: upbeat, light
+carer_narrator: carer, female,  white, 60_79, heterosexual
+pwd_narrator: carer, female,  white, 60_79, heterosexual
+
+video40_llm.txt
+Rose lives independently with support from family, neighbours, daycare, and memory groups. The story focuses on routines, maintaining independence, and worries about future care.
+topic: routines, resources, worries
+tone: realistic, conversational
+pwd_narrator: white, female, 80_plus, heterosexual
+
+video42_llm.txt
+A person with dementia describes diagnosis, initial reluctance, and finding community through Alzheimer’s Society groups. The story emphasizes support, confidence, quality of life, and being seen as a person.
+topic: resources, living_with_dementia, coping_strategies
+tone: hopeful, educational
+carer_narrator:  white, female, under_40, heterosexual
+
+video43_llm.txt
+A granddaughter and grandfather describe their close relationship and how she helps him with presentations, gardening, and confidence. The story highlights intergenerational support, learning about dementia, and shared humour.
+topic: relationships, coping_strategies, family
+tone: upbeat, funny
+carer_narrator: white, female, under_40, heterosexual
+pwd_narrator: male, white, 80_plus, heterosexual
+
+video44_llm.txt
+A person diagnosed with Alzheimer’s describes symptoms, diagnosis, adapting with diaries and alarms, and staying connected. The story is practical and educational, focusing on living well and planning.
+topic: coping_strategies, living_with_dementia, planning
+tone: educational, hopeful
+pwd_narrator: white,  60_79, female, heterosexual, person_with_dementia
+
+video45_llm.txt
+Gordon describes caring for his wife Sue, whose dementia has left her needing help with basic tasks. Lockdown removed care and daycare support, leaving him exhausted and critical of social care provision.
+topic: daily_challenges, health_and_social_care, policies
+tone: sad, realistic
+carer_narrator: male, white, 60_79, heterosexual
+pwd: female, white, 60_79, heterosexual
+
+video46_llm.txt
+Peter describes fear and depression after diagnosis, then finding life and purpose through support networks. He goes on to help create a dementia café for younger people and support others.
+topic: overcoming, resources, campaigns
+tone: hopeful, educational
+pwd_narrator:  white, male, 60_79, heterosexual
+
+video48_llm.txt
+Janet describes her father being stuck in hospital despite being ready for discharge, while care homes refuse him because of falls risk. She calls for campaigning and better social care funding for people with dementia.
+topic: health_and_social_care, campaigns, policies
+tone: sad, realistic
+carer_narrator: white, female, 80_plus, heterosexual
+pwd: male, white, 80_plus, heterosexual
+
+video49_llm.txt
+A close family describes Andrew’s life, personality, diagnosis, and unusually positive approach. The story focuses on family, continuing hobbies, asking for help, and carrying on with life.
+topic: family, coping_strategies, hobbies
+tone: upbeat, conversational
+carer_narrator:  carer, female, white, 40_59, heterosexual
+pwd_narrator:  male, white, 60_79, heterosexual
+
+video50_llm.txt
+A person with Alzheimer’s describes feeling excluded during assessment, then becoming involved with research campaigning. The story focuses on contribution, research, and living better with Alzheimer’s.
+topic: campaigns, health_and_social_care, living_with_dementia
+tone: educational, hopeful
+pwd_narrator: female, white, 60_79, heterosexual
+

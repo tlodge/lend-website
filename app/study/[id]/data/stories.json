@@ -1,0 +1,1574 @@
+{
+  "generatedAt": "2026-05-05T16:41:27.244Z",
+  "sourceFiles": {
+    "summaries": "src/data/summaries.txt"
+  },
+  "stories": [
+    {
+      "id": "dd_01.txt",
+      "storyFile": "dd_01.txt",
+      "summary": "A 62-year-old person with dementia describes playing golf and how it helps with relaxation, fitness, meditation and spending time with his wife.",
+      "tags": {
+        "topic": [
+          "living_with_dementia",
+          "hobbies"
+        ],
+        "tone": [
+          "upbeat",
+          "conversational",
+          "light"
+        ],
+        "pwd_narrator": [
+          "male",
+          "young_onset",
+          "60_79",
+          "white"
+        ],
+        "carer_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image001.jpg"
+    },
+    {
+      "id": "dd_02.txt",
+      "storyFile": "dd_02.txt",
+      "summary": "A person with dementia describes joining a creative group of musicians and artists. The group finds that dementia has changed their perceptions and made creative expression feel clearer and easier.",
+      "tags": {
+        "topic": [
+          "living_with_dementia",
+          "hobbies",
+          "friends"
+        ],
+        "tone": [
+          "upbeat",
+          "conversational",
+          "light"
+        ],
+        "pwd_narrator": [
+          "female",
+          "white",
+          "60_79"
+        ],
+        "carer_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image002.jpg"
+    },
+    {
+      "id": "dd_03.txt",
+      "storyFile": "dd_03.txt",
+      "summary": "A person with dementia says he is pleased to meet good friends and be part of a group. He describes feeling positive about dementia despite initial nerves when speaking.",
+      "tags": {
+        "topic": [
+          "living_with_dementia",
+          "hobbies",
+          "friends"
+        ],
+        "tone": [
+          "upbeat",
+          "conversational",
+          "light",
+          "hopeful"
+        ],
+        "pwd_narrator": [
+          "male",
+          "asian"
+        ],
+        "carer_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image003.jpg"
+    },
+    {
+      "id": "dd_04.txt",
+      "storyFile": "dd_04.txt",
+      "summary": "A younger person with dementia argues that there is life after diagnosis. They challenge stigma and explain that people with dementia are experts in their own experiences.",
+      "tags": {
+        "topic": [
+          "misconceptions",
+          "stigma"
+        ],
+        "tone": [
+          "educational"
+        ],
+        "pwd_narrator": [
+          "40_59",
+          "female",
+          "white"
+        ],
+        "carer_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image004.jpg"
+    },
+    {
+      "id": "dd_05.txt",
+      "storyFile": "dd_05.txt",
+      "summary": "David from Liverpool describes a happy evening with friends and family at a music video event. He sang with the band and mentions reading an article about dementia.",
+      "tags": {
+        "topic": [
+          "friends",
+          "family",
+          "hobbies"
+        ],
+        "tone": [
+          "conversational",
+          "upbeat"
+        ],
+        "pwd_narrator": [
+          "male",
+          "white",
+          "60_79"
+        ],
+        "carer_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image005.jpg"
+    },
+    {
+      "id": "dd_06.txt",
+      "storyFile": "dd_06.txt",
+      "summary": "A person with dementia says that keeping a sense of humour helps them cope. They describe laughter as important for getting through life with dementia.",
+      "tags": {
+        "topic": [
+          "coping_strategies",
+          "living_with_dementia"
+        ],
+        "tone": [
+          "conversational",
+          "upbeat"
+        ],
+        "pwd_narrator": [
+          "female",
+          "white",
+          "60_79"
+        ],
+        "carer_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image006.jpg"
+    },
+    {
+      "id": "dd_07.txt",
+      "storyFile": "dd_07.txt",
+      "summary": "Agnes describes accidentally leaving porridge cooking after confusing breakfast time with bedtime. She reflects on living alone with dementia, daily challenges, and how a message from a friend gave her a sense of peer support.",
+      "tags": {
+        "topic": [
+          "daily_challenges",
+          "routines",
+          "interactions"
+        ],
+        "tone": [
+          "conversational",
+          "upbeat",
+          "funny"
+        ],
+        "pwd_narrator": [
+          "female",
+          "white",
+          "60_79"
+        ],
+        "carer_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image007.jpg"
+    },
+    {
+      "id": "dd_08.txt",
+      "storyFile": "dd_08.txt",
+      "summary": "Jo Bennet describes returning from a week away and completing a race in Monaco. She enjoyed the route and found the event amazing.",
+      "tags": {
+        "topic": [
+          "hobbies",
+          "overcoming"
+        ],
+        "tone": [
+          "conversational",
+          "upbeat"
+        ],
+        "pwd_narrator": [
+          "female",
+          "white",
+          "40_59"
+        ],
+        "carer_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image008.jpg"
+    },
+    {
+      "id": "dd_09.txt",
+      "storyFile": "dd_09.txt",
+      "summary": "A man with dementia describes relearning and practising French after a holiday in France. Speaking French with an old friend and a local teacher helps keep him going.",
+      "tags": {
+        "topic": [
+          "hobbies",
+          "overcoming"
+        ],
+        "tone": [
+          "conversational",
+          "upbeat"
+        ],
+        "pwd_narrator": [
+          "male",
+          "asian",
+          "60_79"
+        ],
+        "carer_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image009.jpg"
+    },
+    {
+      "id": "dd_10.txt",
+      "storyFile": "dd_10.txt",
+      "summary": "A person with dementia describes starting a slate carving art project based on a sailing ship. They also say they enjoy therapy sessions because the people are nice and the sessions are fun.",
+      "tags": {
+        "topic": [
+          "hobbies",
+          "interactions"
+        ],
+        "tone": [
+          "conversational",
+          "upbeat"
+        ],
+        "pwd_narrator": [
+          "male",
+          "white",
+          "60_79"
+        ],
+        "carer_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image010.jpg"
+    },
+    {
+      "id": "dd_11.txt",
+      "storyFile": "dd_11.txt",
+      "summary": "A person with dementia reflects on what living with dementia means and focuses on what they can still do. They describe staying busy, taking part in adventurous activities, and fighting back with a positive attitude.",
+      "tags": {
+        "topic": [
+          "living_with_dementia",
+          "overcoming",
+          "coping_strategies"
+        ],
+        "tone": [
+          "conversational",
+          "upbeat"
+        ],
+        "pwd_narrator": [
+          "female",
+          "white",
+          "60_79"
+        ],
+        "carer_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image011.jpg"
+    },
+    {
+      "id": "video02",
+      "storyFile": "video02_llm.txt",
+      "summary": "A partner describes Nellie’s memory deterioration, emotional changes, and the patience needed in daily life. The story emphasizes shared enjoyment, challenges going out, and a broader sense of loss across dementia stories.",
+      "tags": {
+        "topic": [
+          "living_with_dementia",
+          "relationships",
+          "loss"
+        ],
+        "tone": [
+          "conversational",
+          "realistic"
+        ],
+        "carer_narrator": [
+          "white",
+          "male. 80_plus",
+          "heterosexual"
+        ],
+        "pwd_narrator": [
+          "white",
+          "female",
+          "80_plus",
+          "heterosexual"
+        ]
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image012.jpg"
+    },
+    {
+      "id": "video03",
+      "storyFile": "video03_llm.txt",
+      "summary": "A daughter describes her father's dementia diagnosis and becoming his full-time carer. She explains documenting their experience to raise awareness, funding, and recognition for dementia.",
+      "tags": {
+        "topic": [
+          "relationships",
+          "campaigns",
+          "living_with_dementia"
+        ],
+        "tone": [
+          "hopeful",
+          "sad"
+        ],
+        "carer_narrator": [
+          "carer",
+          "female",
+          "white",
+          "under_40",
+          "heterosexual"
+        ],
+        "pwd": [
+          "80_plus",
+          "female",
+          "heterosexual"
+        ],
+        "pwd_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image013.jpg"
+    },
+    {
+      "id": "video04",
+      "storyFile": "video04_llm.txt",
+      "summary": "Helen describes her husband Chali's dementia diagnosis at age 39. The story focuses on life before dementia, behavioural changes, loss, and educating people that dementia can affect younger adults.",
+      "tags": {
+        "topic": [
+          "diagnosis",
+          "symptoms_leading_to_diagnosis",
+          "public_perceptions"
+        ],
+        "tone": [
+          "sad",
+          "educational"
+        ],
+        "carer_narrator": [
+          "carer",
+          "black",
+          "40_59",
+          "female",
+          "heterosexual"
+        ],
+        "pwd": [
+          "under_40",
+          "female",
+          "heterosexual"
+        ],
+        "pwd_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image014.jpg"
+    },
+    {
+      "id": "video05",
+      "storyFile": "video05_llm.txt",
+      "summary": "A wife describes Stephen's long and difficult path from early signs to formal diagnosis. The story focuses on deterioration, fear, lack of control, and the need for better support and guidance.",
+      "tags": {
+        "topic": [
+          "symptoms_leading_to_diagnosis",
+          "diagnosis",
+          "resources"
+        ],
+        "tone": [
+          "realistic",
+          "sad"
+        ],
+        "carer_narrator": [
+          "white",
+          "female",
+          "40_59",
+          "heterosexual"
+        ],
+        "pwd": [
+          "male",
+          "60_79",
+          "heterosexual"
+        ],
+        "pwd_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image015.jpg"
+    },
+    {
+      "id": "video06",
+      "storyFile": "video06_llm.txt",
+      "summary": "A wife describes Paul's dementia, his personality changes, communication decline, and daily care needs. The story focuses heavily on family loss, exhaustion, parenting, and continuing to care for him out of love and commitment.",
+      "tags": {
+        "topic": [
+          "daily_challenges",
+          "loss",
+          "relationships"
+        ],
+        "tone": [
+          "sad",
+          "realistic"
+        ],
+        "carer_narrator": [
+          "carer",
+          "female",
+          "white",
+          "60_79",
+          "heterosexual"
+        ],
+        "pwd": [
+          "white",
+          "male",
+          "40_59",
+          "heterosexual"
+        ],
+        "pwd_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image016.jpg"
+    },
+    {
+      "id": "video07",
+      "storyFile": "video07_llm.txt",
+      "summary": "Leon, a 15-year-old grandson, describes learning about dementia after his granddad’s diagnosis. He focuses on patience, involving his granddad, using memories, and encouraging other young people to help.",
+      "tags": {
+        "topic": [
+          "coping_strategies",
+          "relationships",
+          "memories"
+        ],
+        "tone": [
+          "upbeat",
+          "educational"
+        ],
+        "carer_narrator": [
+          "black",
+          "male",
+          "under_40",
+          "heterosexual"
+        ],
+        "pwd": [
+          "black",
+          "male",
+          "80_plus",
+          "heterosexual"
+        ],
+        "pwd_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image018.jpg"
+    },
+    {
+      "id": "video08",
+      "storyFile": "video08_llm.txt",
+      "summary": "Graham reflects on his long marriage to Lisa, her dementia diagnosis, repeated experiences of loss, residential care, her death, and his later campaigning work. The story combines grief, memories, support and continuing Lisa's legacy.",
+      "tags": {
+        "topic": [
+          "anticipatory_grief",
+          "memories",
+          "campaigns"
+        ],
+        "tone": [
+          "sad",
+          "hopeful"
+        ],
+        "pwd": [
+          "female",
+          "white",
+          "60_79",
+          "heterosexual"
+        ],
+        "narrator": [
+          "carer",
+          "white",
+          "60_79",
+          "heterosexual"
+        ],
+        "pwd_narrator": [],
+        "carer_narrator": [
+          "carer",
+          "male",
+          "white",
+          "60_79",
+          "heterosexual"
+        ]
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image019.jpg"
+    },
+    {
+      "id": "video09",
+      "storyFile": "video09_llm.txt",
+      "summary": "Amani and Paula reflect on their mixed-cultural marriage, shared memories, and Amani's Alzheimer’s diagnosis. The story focuses on loss, daily challenges, carer support, and how they stay connected and active.",
+      "tags": {
+        "topic": [
+          "relationships",
+          "loss",
+          "resources"
+        ],
+        "tone": [
+          "realistic",
+          "hopeful"
+        ],
+        "carer_narrator": [
+          "white",
+          "female",
+          "60_79",
+          "heterosexual"
+        ],
+        "pwd_narrator": [
+          "male",
+          "black",
+          "60_79",
+          "heterosexual"
+        ]
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image020.jpg"
+    },
+    {
+      "id": "video10",
+      "storyFile": "video10_llm.txt",
+      "summary": "A married couple describe their love, dementia diagnosis, and the support they receive through activities. The story is hopeful and relationship-centred, emphasizing togetherness and not feeling alone.",
+      "tags": {
+        "topic": [
+          "relationships",
+          "resources",
+          "coping_strategies"
+        ],
+        "tone": [
+          "hopeful",
+          "comforting"
+        ],
+        "pwd_narrator": [
+          "white",
+          "female",
+          "60_79",
+          "gay_or_lesbian"
+        ],
+        "narrator": [
+          "white",
+          "female",
+          "80_plus",
+          "gay_or_lesbian"
+        ],
+        "carer_narrator": [
+          "white",
+          "female",
+          "60_79",
+          "gay_or_lesbian"
+        ]
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image021.jpg"
+    },
+    {
+      "id": "video11",
+      "storyFile": "video11_llm.txt",
+      "summary": "Elizabeth and Barry reflect on their long marriage and the changes caused by Alzheimer’s. The story focuses on loss, adjustment, sadness, and the value of carer support groups.",
+      "tags": {
+        "topic": [
+          "loss",
+          "relationships",
+          "resources"
+        ],
+        "tone": [
+          "sad",
+          "realistic"
+        ],
+        "carer_narrator": [
+          "white",
+          "female",
+          "60_79",
+          "heterosexual"
+        ],
+        "pwd": [
+          "black",
+          "male",
+          "60_79",
+          "heterosexual"
+        ],
+        "pwd_narrator": [
+          "white",
+          "male",
+          "60_79",
+          "heterosexual"
+        ]
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image022.jpg"
+    },
+    {
+      "id": "video12",
+      "storyFile": "video12_llm.txt",
+      "summary": "A grandson describes his close bond with his grandad through football and how dementia changed their relationship. He uses football, music, touch, and reassurance to keep his grandad connected and in the moment.",
+      "tags": {
+        "topic": [
+          "relationships",
+          "hobbies",
+          "coping_strategies"
+        ],
+        "tone": [
+          "hopeful",
+          "comforting"
+        ],
+        "carer_narrator": [
+          "male",
+          "white",
+          "heterosexual"
+        ],
+        "pwd": [
+          "white",
+          "male",
+          "80_plus",
+          "heterosexual"
+        ],
+        "pwd_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image023.jpg"
+    },
+    {
+      "id": "video13",
+      "storyFile": "video13_llm.txt",
+      "summary": "Tim and Ellie describe frustration, diagnosis, emotional change, and the loss of companionship. The story is realistic but also shows determination to keep going with support.",
+      "tags": {
+        "topic": [
+          "living_with_dementia",
+          "loss",
+          "diagnosis"
+        ],
+        "tone": [
+          "realistic",
+          "sad"
+        ],
+        "carer_narrator": [
+          "white",
+          "female",
+          "60_79",
+          "heterosexual"
+        ],
+        "pwd": [
+          "white",
+          "male",
+          "60_79",
+          "heterosexual"
+        ],
+        "pwd_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image024.jpg"
+    },
+    {
+      "id": "video14",
+      "storyFile": "video14_llm.txt",
+      "summary": "Maddie and Dan describe her dementia diagnosis, initial fear, lack of practical help, and later finding dementia cafés. The story highlights how support and community changed their understanding and improved their lives.",
+      "tags": {
+        "topic": [
+          "resources",
+          "diagnosis",
+          "coping_strategies"
+        ],
+        "tone": [
+          "hopeful",
+          "educational"
+        ],
+        "carer_narrator": [
+          "female",
+          "white",
+          "60_79",
+          "heterosexual"
+        ],
+        "pwd_narrator": [
+          "male",
+          "white",
+          "60_79",
+          "heterosexual"
+        ]
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image025.jpg"
+    },
+    {
+      "id": "video16",
+      "storyFile": "video16_llm.txt",
+      "summary": "Joseph's diagnosis is described as devastating for the family, and Anita turns to a forum for advice and comfort. The story focuses on peer support, learning how to communicate, and feeling understood by others in the same situation.",
+      "tags": {
+        "topic": [
+          "resources",
+          "diagnosis",
+          "coping_strategies"
+        ],
+        "tone": [
+          "comforting",
+          "realistic"
+        ],
+        "carer_narrator": [
+          "white",
+          "female",
+          "60_79",
+          "heterosexual"
+        ],
+        "pwd_narrator": [
+          "white",
+          "male",
+          "60_79",
+          "heterosexual"
+        ]
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image026.jpg"
+    },
+    {
+      "id": "video17",
+      "storyFile": "video17_llm.txt",
+      "summary": "A woman diagnosed with dementia at 51 describes how her symptoms were thought to be menopause or depression. She descrives her fear, and eventual relief at diagnosis. She emphasizes online resources and not feeling alone.",
+      "tags": {
+        "topic": [
+          "diagnosis",
+          "resources",
+          "worries"
+        ],
+        "tone": [
+          "realistic",
+          "hopeful"
+        ],
+        "pwd_narrator": [
+          "female",
+          "black",
+          "40_59",
+          "heterosexual"
+        ],
+        "carer_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image027.jpg"
+    },
+    {
+      "id": "video18",
+      "storyFile": "video18_llm.txt",
+      "summary": "Richard describes his deep relationship with Helen, her move into residential care, and the heartbreak of being separated during lockdown.",
+      "tags": {
+        "topic": [
+          "loss",
+          "relationships",
+          "resources"
+        ],
+        "tone": [
+          "sad",
+          "comforting"
+        ],
+        "carer_narrator": [
+          "male",
+          "white",
+          "80_plus",
+          "heterosexual"
+        ],
+        "pwd": [
+          "female",
+          "white",
+          "60_79",
+          "heterosexual"
+        ],
+        "pwd_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image028.jpg"
+    },
+    {
+      "id": "video19",
+      "storyFile": "video19_llm.txt",
+      "summary": "A husband describes Jean's dementia, her love of jigsaws and singing, and how he adapts activities to keep her happy. The story focuses on routines, frustrations, support and acceptance after diagnosis.",
+      "tags": {
+        "topic": [
+          "routines",
+          "hobbies",
+          "coping_strategies"
+        ],
+        "tone": [
+          "realistic",
+          "hopeful"
+        ],
+        "carer_narrator": [
+          "male",
+          "white",
+          "80_plus",
+          "heterosexual"
+        ],
+        "pwd": [
+          "female",
+          "white",
+          "80_plus",
+          "heterosexual"
+        ],
+        "pwd_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image029.jpg"
+    },
+    {
+      "id": "video20",
+      "storyFile": "video20_llm.txt",
+      "summary": "A couple describe the relief of finally receiving an Alzheimer’s diagnosis after doctors suspected depression. They focus on frustration, daily coping, humour, staying active, and living day to day.",
+      "tags": {
+        "topic": [
+          "living_with_dementia",
+          "frustrations",
+          "coping_strategies"
+        ],
+        "tone": [
+          "conversational",
+          "upbeat"
+        ],
+        "carer_narrator": [
+          "white",
+          "40_59",
+          "male",
+          "heterosexual"
+        ],
+        "pwd_narrator": [
+          "white",
+          "40_59",
+          "female",
+          "heterosexual"
+        ]
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image030.jpg"
+    },
+    {
+      "id": "video21",
+      "storyFile": "video21_llm.txt",
+      "summary": "Multiple carers and people affected by dementia describe loss, isolation, frustration, reduced social lives, care-home decisions, and uncertainty about the future. The story gives a broad, realistic picture of dementia’s emotional and practical impact.",
+      "tags": {
+        "topic": [
+          "loss",
+          "daily_challenges",
+          "the_future"
+        ],
+        "tone": [
+          "realistic",
+          "sad"
+        ],
+        "carer_narrator": [
+          "white",
+          "mixed",
+          "male",
+          "female",
+          "asian",
+          "black",
+          "40_59",
+          "60_79",
+          "80_plus",
+          "heterosexual"
+        ],
+        "pwd_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image031.jpg"
+    },
+    {
+      "id": "video22",
+      "storyFile": "video22_llm.txt",
+      "summary": "Cricketers describe family memories around cricket and the effect of dementia on a father who once shared that passion.",
+      "tags": {
+        "topic": [
+          "campaigns",
+          "family",
+          "loss"
+        ],
+        "tone": [
+          "educational",
+          "hopeful"
+        ],
+        "carer_narrator": [
+          "white",
+          "female",
+          "under_40",
+          "heterosexual",
+          "male",
+          "40_59"
+        ],
+        "pwd_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image032.jpg"
+    },
+    {
+      "id": "video24",
+      "storyFile": "video24_llm.txt",
+      "summary": "A daughter remembers her mother’s strength and the shock of diagnosis and how support helped her feel less alone and gave reassurance about the future.",
+      "tags": {
+        "topic": [
+          "resources",
+          "diagnosis",
+          "the_future",
+          "loss_of_a_life"
+        ],
+        "tone": [
+          "sad",
+          "comforting"
+        ],
+        "carer_narrator": [
+          "white",
+          "40_59",
+          "heterosexual"
+        ],
+        "pwd_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image033.jpg"
+    },
+    {
+      "id": "video26",
+      "storyFile": "video26_llm.txt",
+      "summary": "Shani describes her mother Jina's dementia, delayed diagnosis, and challenges. The story focuses on dementia, preparation, rights, and family loss.",
+      "tags": {
+        "topic": [
+          "diagnosis",
+          "policies_and_rights",
+          "family"
+        ],
+        "tone": [
+          "realistic",
+          "sad"
+        ],
+        "carer_narrator": [
+          "black",
+          "female",
+          "under_40",
+          "heterosexual"
+        ],
+        "pwd": [
+          "white",
+          "female",
+          "60_79",
+          "heterosexual"
+        ],
+        "pwd_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image034.jpg"
+    },
+    {
+      "id": "video27",
+      "storyFile": "video27_llm.txt",
+      "summary": "Graham describes early diagnosis as the start of a new life with Tracey. He focuses on emotional connection, love, adaptation, and the continuing strength of Tracey's personality.",
+      "tags": {
+        "topic": [
+          "coping_strategies",
+          "relationships",
+          "living_with_dementia"
+        ],
+        "tone": [
+          "comforting",
+          "hopeful"
+        ],
+        "carer_narrator": [],
+        "pwd_narrator": [
+          "white",
+          "male",
+          "60_79",
+          "heterosexual"
+        ]
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image035.jpg"
+    },
+    {
+      "id": "video28",
+      "storyFile": "video28_llm.txt",
+      "summary": "Gina describes symptoms after a stroke, receiving a dementia diagnosis, and feeling both shocked and relieved. She encourages people to seek diagnosis, use support, and keep living well.",
+      "tags": {
+        "topic": [
+          "diagnosis",
+          "symptoms_leading_to_diagnosis",
+          "coping_strategies"
+        ],
+        "tone": [
+          "hopeful",
+          "educational"
+        ],
+        "pwd_narrator": [
+          "female",
+          "asian",
+          "40_59",
+          "heterosexual"
+        ],
+        "carer_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image036.jpg"
+    },
+    {
+      "id": "video29",
+      "storyFile": "video29_llm.txt",
+      "summary": "A carer describes loneliness, emotional distance, and trying to comfort Roy through affection. The story emphasizes seeking help and the difference that support can make.",
+      "tags": {
+        "topic": [
+          "resources",
+          "loss",
+          "relationships"
+        ],
+        "tone": [
+          "sad",
+          "comforting"
+        ],
+        "carer_narrator": [
+          "female",
+          "asian",
+          "40_59",
+          "heterosexual"
+        ],
+        "pwd": [
+          "male",
+          "white",
+          "40_59",
+          "heterosexual"
+        ],
+        "pwd_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image037.jpg"
+    },
+    {
+      "id": "video30",
+      "storyFile": "video30_llm.txt",
+      "summary": "A carer describes using Trinidadian food to trigger her mother’s memories and maintain cultural connection. She also discusses culturally appropriate care and the importance of support for carers.",
+      "tags": {
+        "topic": [
+          "memories",
+          "culture_and_identity"
+        ],
+        "tone": [
+          "realistic",
+          "educational",
+          "comforting"
+        ],
+        "carer_narrator": [
+          "black",
+          "female",
+          "60_79",
+          "heterosexual"
+        ],
+        "pwd": [
+          "female",
+          "black",
+          "80_plus",
+          "heterosexual"
+        ],
+        "pwd_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image038.jpg"
+    },
+    {
+      "id": "video31",
+      "storyFile": "video31_llm.txt",
+      "summary": "A person with dementia describes how music remains joyful and accessible even when memory is affected. The story also includes a reflection on a grandmother’s dementia and music as a point of connection.",
+      "tags": {
+        "topic": [
+          "hobbies",
+          "coping_strategies",
+          "memories"
+        ],
+        "tone": [
+          "upbeat",
+          "comforting"
+        ],
+        "carer_narrator": [
+          "white",
+          "female",
+          "40_59",
+          "heterosexual"
+        ],
+        "pwd_narrator": [
+          "white",
+          "40_59",
+          "heterosexual"
+        ]
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image039.jpg"
+    },
+    {
+      "id": "video32",
+      "storyFile": "video32_llm.txt",
+      "summary": "Hanna discusses cooking, Alzheimer’s, embarrassment, stigma, and having to retire early. The story emphasizes staying active, using services, and still having fun despite memory loss.",
+      "tags": {
+        "topic": [
+          "living_with_dementia",
+          "stigma",
+          "coping_strategies"
+        ],
+        "tone": [
+          "upbeat",
+          "realistic"
+        ],
+        "narrator": [
+          "similar_experiences",
+          "white",
+          "40_59",
+          "heterosexual"
+        ],
+        "pwd_narrator": [
+          "asian",
+          "female",
+          "60_79"
+        ],
+        "carer_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image040.jpg"
+    },
+    {
+      "id": "video33",
+      "storyFile": "video33_llm.txt",
+      "summary": "Charlie describes living with Alzheimer’s, including memory problems, speech difficulties, notes, family worries, and support. Despite frustration, he finds meaning in nature and being alive.",
+      "tags": {
+        "topic": [
+          "living_with_dementia",
+          "daily_challenges",
+          "resources"
+        ],
+        "tone": [
+          "realistic",
+          "hopeful"
+        ],
+        "pwd_narrator": [
+          "male",
+          "white",
+          "60_79",
+          "heterosexual"
+        ],
+        "carer_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image041.jpg"
+    },
+    {
+      "id": "video34",
+      "storyFile": "video34_llm.txt",
+      "summary": "A daughter describes her mother’s dementia, delayed diagnosis, mood swings, pain, and how she has grown into a caring role. The story focuses on family closeness, fear of future decline, and taking things day by day.",
+      "tags": {
+        "topic": [
+          "family",
+          "daily_challenges",
+          "worries"
+        ],
+        "tone": [
+          "sad",
+          "realistic"
+        ],
+        "carer_narrator": [
+          "female",
+          "white",
+          "40_59",
+          "heterosexual"
+        ],
+        "pwd": [
+          "female",
+          "60_79",
+          "white",
+          "heterosexual"
+        ],
+        "pwd_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image042.jpg"
+    },
+    {
+      "id": "video35",
+      "storyFile": "video35_llm.txt",
+      "summary": "Josephine describes how dementia has changed her relationship with Tony from partner to carer. The story also mentions family strain, loss, symptoms after bereavement, and wanting something to stop progression.",
+      "tags": {
+        "topic": [
+          "relationships",
+          "roles",
+          "loss"
+        ],
+        "tone": [
+          "sad",
+          "conversational"
+        ],
+        "carer_narrator": [
+          "female",
+          "white",
+          "60_79",
+          "heterosexual"
+        ],
+        "pwd_narrator": [
+          "male",
+          "white",
+          "60_79",
+          "heterosexual"
+        ]
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image043.jpg"
+    },
+    {
+      "id": "video36",
+      "storyFile": "video36_llm.txt",
+      "summary": "Hayley describes seeing her mother in a care home through glass during the pandemic and feeling that she had changed dramatically. The story focuses on separation, loss of interaction, and the mother not understanding why family visits stopped.",
+      "tags": {
+        "topic": [
+          "loss",
+          "interactions",
+          "health_and_social_care"
+        ],
+        "tone": [
+          "sad",
+          "realistic"
+        ],
+        "carer_narrator": [
+          "white",
+          "female",
+          "60_79",
+          "heterosexual"
+        ],
+        "pwd": [
+          "white",
+          "female",
+          "80_plus",
+          "heterosexual"
+        ],
+        "pwd_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image044.jpg"
+    },
+    {
+      "id": "video37",
+      "storyFile": "video37_llm.txt",
+      "summary": "Clarice and family describe diagnosis, memory loss, mood changes, reduced church involvement, Jamaican background, skills with numbers and baking, and continued humour. The tone is warm and realistic, with strong focus on identity and family support.",
+      "tags": {
+        "topic": [
+          "relationships",
+          "culture_and_identity",
+          "frustrations"
+        ],
+        "tone": [
+          "conversational",
+          "funny"
+        ],
+        "carer_narrator": [
+          "black",
+          "female",
+          "40_59",
+          "heterosexual"
+        ],
+        "pwd_narrator": [
+          "black",
+          "female",
+          "80_plus",
+          "heterosexual"
+        ]
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image059.jpg"
+    },
+    {
+      "id": "video38",
+      "storyFile": "video38_llm.txt",
+      "summary": "Peter and his partner describe early memory symptoms, diagnosis, and the relief of knowing what was wrong. Singing groups and memory cafés provide enjoyment, confidence, relaxation, and support.",
+      "tags": {
+        "topic": [
+          "resources",
+          "diagnosis",
+          "hobbies"
+        ],
+        "tone": [
+          "hopeful",
+          "comforting"
+        ],
+        "carer_narrator": [
+          "female",
+          "white",
+          "80_plus",
+          "heterosexual",
+          "male"
+        ],
+        "pwd_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image046.jpg"
+    },
+    {
+      "id": "video39",
+      "storyFile": "video39_llm.txt",
+      "summary": "Sue, her family, and friend Wendy describe life after diagnosis, family love, friendship, and gardening. The tone is upbeat, emphasizing normal life, humour, and staying active.",
+      "tags": {
+        "topic": [
+          "relationships",
+          "resources",
+          "friends"
+        ],
+        "tone": [
+          "upbeat",
+          "light"
+        ],
+        "carer_narrator": [
+          "carer",
+          "female",
+          "white",
+          "60_79",
+          "heterosexual"
+        ],
+        "pwd_narrator": [
+          "carer",
+          "female",
+          "white",
+          "60_79",
+          "heterosexual"
+        ]
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image047.jpg"
+    },
+    {
+      "id": "video40",
+      "storyFile": "video40_llm.txt",
+      "summary": "Rose lives independently with support from family, neighbours, daycare, and memory groups. The story focuses on routines, maintaining independence, and worries about future care.",
+      "tags": {
+        "topic": [
+          "routines",
+          "resources",
+          "worries"
+        ],
+        "tone": [
+          "realistic",
+          "conversational"
+        ],
+        "pwd_narrator": [
+          "white",
+          "female",
+          "80_plus",
+          "heterosexual"
+        ],
+        "carer_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image048.jpg"
+    },
+    {
+      "id": "video42",
+      "storyFile": "video42_llm.txt",
+      "summary": "A person with dementia describes diagnosis, initial reluctance, and finding community through groups. The story emphasizes support, confidence, quality of life, and being seen as a person.",
+      "tags": {
+        "topic": [
+          "resources",
+          "living_with_dementia",
+          "coping_strategies"
+        ],
+        "tone": [
+          "hopeful",
+          "educational"
+        ],
+        "carer_narrator": [
+          "white",
+          "female",
+          "under_40",
+          "heterosexual"
+        ],
+        "pwd_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image049.jpg"
+    },
+    {
+      "id": "video43",
+      "storyFile": "video43_llm.txt",
+      "summary": "A granddaughter and grandfather describe their close relationship and how she helps him with presentations, gardening, and confidence. The story highlights intergenerational support, learning about dementia, and shared humour.",
+      "tags": {
+        "topic": [
+          "relationships",
+          "coping_strategies",
+          "family"
+        ],
+        "tone": [
+          "upbeat",
+          "funny"
+        ],
+        "carer_narrator": [
+          "white",
+          "female",
+          "under_40",
+          "heterosexual"
+        ],
+        "pwd_narrator": [
+          "male",
+          "white",
+          "80_plus",
+          "heterosexual"
+        ]
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image050.jpg"
+    },
+    {
+      "id": "video44",
+      "storyFile": "video44_llm.txt",
+      "summary": "A person describes symptoms, diagnosis, adapting with diaries and alarms, and staying connected. The story is practical and educational, focusing on living well and planning.",
+      "tags": {
+        "topic": [
+          "coping_strategies",
+          "living_with_dementia",
+          "planning"
+        ],
+        "tone": [
+          "educational",
+          "hopeful"
+        ],
+        "pwd_narrator": [
+          "white",
+          "60_79",
+          "female",
+          "heterosexual",
+          "person_with_dementia"
+        ],
+        "carer_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image051.jpg"
+    },
+    {
+      "id": "video45",
+      "storyFile": "video45_llm.txt",
+      "summary": "Gordon describes caring for his wife Sue, whose dementia has left her needing help with basic tasks. Lockdown removed care and daycare support, leaving him exhausted and critical of government/social care provision.",
+      "tags": {
+        "topic": [
+          "daily_challenges",
+          "health_and_social_care",
+          "policies"
+        ],
+        "tone": [
+          "sad",
+          "realistic"
+        ],
+        "carer_narrator": [
+          "male",
+          "white",
+          "60_79",
+          "heterosexual"
+        ],
+        "pwd": [
+          "female",
+          "white",
+          "60_79",
+          "heterosexual"
+        ],
+        "pwd_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image053.jpg"
+    },
+    {
+      "id": "video46",
+      "storyFile": "video46_llm.txt",
+      "summary": "Peter describes fear and depression after diagnosis, then finding life and purpose. He goes on to help create a dementia café for younger people and support others.",
+      "tags": {
+        "topic": [
+          "overcoming",
+          "resources",
+          "campaigns"
+        ],
+        "tone": [
+          "hopeful",
+          "educational"
+        ],
+        "pwd_narrator": [
+          "white",
+          "male",
+          "60_79",
+          "heterosexual"
+        ],
+        "carer_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image057.jpg"
+    },
+    {
+      "id": "video48",
+      "storyFile": "video48_llm.txt",
+      "summary": "Janet describes her father being stuck in hospital despite being ready for discharge, while care homes refuse him because of falls risk. She calls for campaigning and better social care funding for people with dementia.",
+      "tags": {
+        "topic": [
+          "health_and_social_care",
+          "campaigns",
+          "policies"
+        ],
+        "tone": [
+          "sad",
+          "realistic"
+        ],
+        "carer_narrator": [
+          "white",
+          "female",
+          "80_plus",
+          "heterosexual"
+        ],
+        "pwd": [
+          "male",
+          "white",
+          "80_plus",
+          "heterosexual"
+        ],
+        "pwd_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image056.jpg"
+    },
+    {
+      "id": "video49",
+      "storyFile": "video49_llm.txt",
+      "summary": "A close family describes Andrew’s life, personality, diagnosis, and unusually positive approach. The story focuses on family, continuing hobbies, asking for help, and carrying on with life.",
+      "tags": {
+        "topic": [
+          "family",
+          "coping_strategies",
+          "hobbies"
+        ],
+        "tone": [
+          "upbeat",
+          "conversational"
+        ],
+        "carer_narrator": [
+          "carer",
+          "female",
+          "asian",
+          "40_59",
+          "heterosexual"
+        ],
+        "pwd_narrator": [
+          "male",
+          "asian",
+          "60_79",
+          "heterosexual"
+        ]
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image060.jpg"
+    },
+    {
+      "id": "video50",
+      "storyFile": "video50_llm.txt",
+      "summary": "A person with Alzheimer’s describes feeling excluded during assessment, then becoming involved with research campaigning. The story focuses on contribution, research, and living better with Alzheimer’s.",
+      "tags": {
+        "topic": [
+          "campaigns",
+          "health_and_social_care",
+          "living_with_dementia"
+        ],
+        "tone": [
+          "educational",
+          "hopeful"
+        ],
+        "pwd_narrator": [
+          "female",
+          "white",
+          "60_79",
+          "heterosexual"
+        ],
+        "carer_narrator": []
+      },
+      "source": "Alzheimer's Society",
+      "image": "/thumbnails/image055.jpg"
+    }
+  ],
+  "stats": {
+    "totalStories": 55
+  }
+}
