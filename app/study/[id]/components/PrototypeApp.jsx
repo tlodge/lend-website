@@ -43,7 +43,7 @@ function pickRandomFlowOrderId() {
   return FLOW_ORDERS[randomIndex]?.id || FLOW_ORDERS[0].id;
 }
 
-export default function PrototypeApp({ deploymentMode = "inperson" }) {
+export default function PrototypeApp({ deploymentMode = "inperson", studyId = "" }) {
   const isInPersonMode = deploymentMode === "inperson";
   const REMOTE_SETUP_STEP_COUNT = 5;
   const tracker = useSessionTracker();
@@ -79,6 +79,9 @@ export default function PrototypeApp({ deploymentMode = "inperson" }) {
     sexuality
   };
   const resolvedResearcherName = researcherName.trim() || "A researcher";
+  const researchQuestionsHref = studyId
+    ? `/study/${studyId}/research-questions?section=pre-task`
+    : "/research-questions?section=pre-task";
 
   // Auto-skip story screens when the candidate pool is empty
   useEffect(() => {
@@ -564,7 +567,7 @@ export default function PrototypeApp({ deploymentMode = "inperson" }) {
         <section className={styles.setupLayout}>
           {isInPersonMode ? (
             <nav aria-label="Research question guides">
-              <Link className={styles.questionsLink} href="/research-questions?section=pre-task">
+              <Link className={styles.questionsLink} href={researchQuestionsHref}>
                 Researcher questions
               </Link>
             </nav>

@@ -1,0 +1,146 @@
+.shell {
+  min-height: 100vh;
+  padding: 1.5rem 0.9rem 2.5rem;
+}
+
+.panel {
+  width: min(980px, 100%);
+  margin: 0 auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-strong);
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(1.5rem, 2.8vw, 2.2rem);
+}
+
+.intro {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+  max-width: 62ch;
+}
+
+.nav {
+  display: grid;
+  gap: 0.6rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.navLink {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 2.7rem;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 700;
+  background: var(--surface-soft);
+  padding: 0.5rem 0.8rem;
+}
+
+.navLink:hover {
+  border-color: var(--border-strong);
+}
+
+.navLink:focus-visible,
+.backLink:focus-visible {
+  outline: 3px solid rgba(47, 107, 105, 0.22);
+  outline-offset: 2px;
+}
+
+.navLinkActive {
+  border-color: var(--accent);
+  background: rgba(47, 107, 105, 0.1);
+  color: var(--accent-strong);
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface-soft);
+  padding: 1.1rem 1rem;
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: clamp(1.2rem, 2.2vw, 1.5rem);
+}
+
+.sectionIntro {
+  margin: 0.55rem 0 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.groupStack {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.95rem;
+}
+
+.group {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.5);
+  padding: 0.9rem 0.95rem;
+}
+
+.groupTitle {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.questionList {
+  margin: 0.65rem 0 0;
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.questionList li {
+  line-height: 1.45;
+}
+
+.backLink {
+  align-self: flex-start;
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--accent-strong);
+}
+
+@media (max-width: 700px) {
+  .panel {
+    border-radius: var(--radius-lg);
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 0.9rem 0.85rem;
+  }
+}
