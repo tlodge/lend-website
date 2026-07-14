@@ -10,7 +10,7 @@ export default function AboutContent() {
   const newsArticles = blogs
     .filter(blog => blog.tags.includes("news"))
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-    .slice(0, 3);
+    .slice(0, 2);
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
     return date.toLocaleDateString('en-GB', {
@@ -45,7 +45,20 @@ export default function AboutContent() {
 
         
           <aside className={styles.rightColumn}>
+
+            <h2 className={styles.newsTitle}>Take part in LEND</h2>
+            <h3 className={styles.newsItemTitle}><Link href="/collect">Donate your story</Link></h3>
+            <p className={styles.newsItemText}>
+              We are creating a collection of stories describing people&apos;s experiences of dementia. Our collection includes stories from caregivers, from people with dementia, and from groups of people talking together. If you have a story to share, please get in touch.  You can find more information on the <Link href="/collect">Narrative collection</Link> page.
+            </p>
+            <h3 className={styles.newsItemTitle}><Link href="https://forms.office.com/Pages/ResponsePage.aspx?id=7qe9Z4D970GskTWEGCkKHj3QYzAI49JAinZABgNX2WZUM0RSRTNCUFhKU0dLTVRRMUpUSVpFS1hDTy4u" target="_blank" rel="noopener noreferrer">Participate in our survey</Link></h3>
+             <p className={styles.newsItemText}>
+              We are designing a website that will provide access to Lived Experience stories about dementia.  We want to learn more about how people that might benefit from accessing these stories currently make use of technology.  If you have a spare few minutes, please take part in our technology survey.  You can acces it <Link href="https://forms.office.com/Pages/ResponsePage.aspx?id=7qe9Z4D970GskTWEGCkKHj3QYzAI49JAinZABgNX2WZUM0RSRTNCUFhKU0dLTVRRMUpUSVpFS1hDTy4u" target="_blank" rel="noopener noreferrer">here</Link>.
+            </p>
             <h2 className={styles.newsTitle}>Latest news</h2>
+            <div className={styles.newsSubtitle}>
+              <Link href="/news">View all news</Link>
+            </div>
 
             {newsArticles.length > 0 ? (
               newsArticles.map((article) => (

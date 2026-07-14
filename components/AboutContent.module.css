@@ -257,7 +257,18 @@
   font-size: 24px;
   font-weight: 700;
   color: #333;
-  margin-bottom: 30px;
+  margin-bottom: 8px;
+}
+
+.newsSubtitle {
+  margin-bottom: 24px;
+  font-size: 15px;
+}
+
+.newsSubtitle a {
+  color: #183560;
+  text-decoration: underline;
+  font-weight: 600;
 }
 
 .newsItem {
@@ -284,7 +295,7 @@
 }
 
 .newsItemText {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.7;
   color: #333;
   margin-bottom: 12px;

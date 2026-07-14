@@ -1,8 +1,7 @@
 [
-  
-    {
+  {
     "id": "pmg-14-05-26",
-    "title": "Recruitment progress and shaping the intervention",
+    "title": "Recruitment, narratives and next steps",
     "subtitle": "Programme Management Group meeting 14th May 2026",
     "author": "LEND Team",
     "date": "2026-05-14",
@@ -15,10 +14,10 @@
   },
   {
     "id": "pmg-12-01-26",
-    "title": "Moving to the next stage",
+    "title": "Recruitment, narratives and next steps",
     "subtitle": "Programme Management Group meeting 12th January 2026",
     "author": "LEND Team",
-    "date": "2026-01-12",
+    "date": "2026-12-01",
     "excerpt": "At our January programme meeting, the LEND team reviewed progress across the project as work moves into the next phase of recruitment, intervention design, and public involvement.",
     "contentFile": "/blogs/pmg-12-01-26.md",
     "tags": ["update", "news"],
@@ -64,45 +63,5 @@
     "featured": false,
     "frontpage": 2,
     "callout": ""
-  },
-  {
-    "id": "theme1",
-    "title": "What is in a Narrative?",
-    "subtitle": "Do different narratives serve different purposes?",
-    "author": "Tom Lodge",
-    "date": "2025-08-20",
-    "excerpt": "In our August Lived Experience Advisory Panel workshop we discussed the <strong>value</strong> of dementia narratives. Which features of a narrative are most likely to shape impact? In this short article we cover some of the insights from the session: thinking about what subjects and themes narratives might cover, who they're for, who is telling them and how they should be delivered.",
-    "contentFile": "/blogs/theme1.md",
-    "tags": ["narratives", "news"],
-    "featured": false,
-    "frontpage": 2,
-    "callout": "",
-     "image": "/blogs/images/narrative.png"
-  },
-  {
-    "id": "theme2",
-    "title": "The promise and perils of conversational agents.",
-    "subtitle": "For surfacing user intent.",
-    "author": "Tom Lodge",
-    "date": "2025-08-20",
-    "excerpt": "In our August Lived Experience Advisory Panel workshop we presented a very early stage prototype to kickstart discussions about possible features of the LEND intervention. Participants were asked to use the prototype to ‘bookmark’ up to four narratives that they felt were valuable. They were asked to use two approaches to discover narratives: i. <i>Structured browsing</i>: an interface with thumbnails of videos alongside titles and summaries, with filters to refine the list of available videos and ii. <i>A conversational interface</i> that provides clips from narratives in response to discussions.",
-    "contentFile": "/blogs/theme2.md",
-    "tags": ["AI", "narratives", "news"],
-    "featured": true,
-    "frontpage": 1,
-    "image": "/blogs/images/perils.png"
-  },
-  {
-    "id": "theme3",
-    "title": "Distressing narratives.",
-    "subtitle": "The risks of delivering the wrong narrative at the wrong time.",
-    "author": "Tom Lodge",
-    "date": "2025-08-20",
-    "excerpt": "In our August Lived Experience Advisory Panel, we learned how narratives may cause distress when they are poorly aligned with users' circumstances, expectations, or identities.  Rather than offer support, they may cause frustration or feelings of exclusion. How might we design to mitigate this risk?",
-    "contentFile": "/blogs/theme3.md",
-    "tags": ["narratives", "distress", "news"],
-    "featured": false,
-    "frontpage": 3,
-        "image": "/blogs/images/perils.png"
   }
 ]
