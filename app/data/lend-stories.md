@@ -4,7 +4,7 @@ As we dug into this theme, we started unpacking what gives LEND narratives their
 
 ## What the stories are for
 
-People wanted narratives that do different jobs at different moments. We heard about four broad types:
+People wanted narratives that do different jobs at different moments. We heard about four types:
 
 1. **Informational** — clear, step-by-step guidance through options, services, and stages of the disease.  
 2. **Educational** — correcting myths and widening public understanding.  
