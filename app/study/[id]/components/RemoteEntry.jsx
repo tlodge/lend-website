@@ -76,7 +76,7 @@ const PARTICIPANT_INFO_SECTIONS = [
     title: "What will I need to do?",
     paragraphs: [
       "We will ask you to use a website that will ask you a set of questions about stories that you would like to read, watch or listen to. We will ask you a few questions about how easy it is to use, as well as share your views on what works well and what could be improved. This will be face to face, either in-person or using Microsoft Teams and a LEND researcher will guide you through the process.",
-      "These sessions will be recorded and are likely to last about 30 to 45 minutes. We may invite you to more Workshops in the future, depending on where about we are in the development of the final Online LEND Intervention, the LEND Portal and the LEND Website.",
+      "These sessions will be recorded and are likely to last about 30 to 45 minutes. We may invite you to more workshops in the future, depending on where about we are in the development of the final Online LEND Intervention, the LEND Portal and the LEND Website.",
       "If you would like to take part but are unable to attend in person, this can be done online or face to face at a different location. Please speak to the LEND team on <strong>07791598280</strong> or email <strong>LEND@nottingham.ac.uk</strong>.",
     ],
   },
@@ -226,10 +226,10 @@ export function ParticipantInformationScreen({ onBack, onGoToStudy }) {
         </div>
       </article>
       <div className={`${styles.infoActions} ${styles.infoActionsFixed}`}>
-        <button type="button" className={styles.secondaryButton} onClick={onBack}>
+        { false && <button type="button" className={styles.secondaryButton} onClick={onBack}>
           Back
-        </button>
-        {onGoToStudy ? (
+        </button>}
+        {onGoToStudy && false ? (
           <button type="button" className={styles.primaryButton} onClick={onGoToStudy}>
             Go to study
           </button>
