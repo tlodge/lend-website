@@ -24,10 +24,10 @@ type RouteParams = {
 }
 
 const THUMBNAIL_BY_TYPE: Record<NarrativeType, string> = {
-  video: "/narratives/thumbnails/video.png",
-  audio: "/narratives/thumbnails/audio.png",
-  text: "/narratives/thumbnails/text.png",
-  image: "/narratives/thumbnails/image.png"
+  video: "/og/video.png",
+  audio: "/og/audio.png",
+  text: "/og/text.png",
+  image: "/og/image.png"
 }
 
 const FALLBACKS: Record<NarrativeType, Omit<NarrativeEntry, "id" | "type">> = {
@@ -117,7 +117,7 @@ export async function generateMetadata({ params }: { params: Promise<RouteParams
   const narrative = await getNarrative(type, resolvedParams.nid)
   const baseUrl = await getBaseUrl()
   const pageUrl = `${baseUrl}/narrative/${type}/${encodeURIComponent(resolvedParams.nid)}/${encodeURIComponent(resolvedParams.uid)}`
-  const ogImage = `${baseUrl}${narrative.ogImage || THUMBNAIL_BY_TYPE[type]}`
+  const ogImage = `${baseUrl}${THUMBNAIL_BY_TYPE[type]}`
 
   return {
     title: `${narrative.title} | LEND narrative`,
@@ -131,8 +131,8 @@ export async function generateMetadata({ params }: { params: Promise<RouteParams
       images: [
         {
           url: ogImage,
-          width: 1200,
-          height: 630,
+          width: 1080,
+          height: 1080,
           alt: `${type} narrative preview`
         }
       ]
