@@ -1,4 +1,15 @@
 [
+     {
+        "id": "dce-experiment",
+        "title": "<h1>LEND Discrete Choice Experiment</h1>",
+        "location": "Online",
+        "date": "ongoing",
+        "duration": "30 minutes",
+        "description": "As part of the LEND study, we are conducting a discrete choice experiment (DCE) to understand participants’ preferences for different aspects of the intervention. This will help us identify which features are most important to participants.",
+        "tags": ["online"],
+        "formUrl": "https://forms.cloud.microsoft/e/skAbMNQTRq"
+      }
+    ,
     {
         "id": "gitfing-individually",
         "title": "<h1>Gifting narrative to LEND individually</h1>",
