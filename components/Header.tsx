@@ -10,11 +10,9 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const navItems = [
-    { name: "Team", href: "/team" },
-    { name: "Participate", href: "/participate" },
-    { name: "Narrative collection", href: "/collect" },
-    { name: "Contact", href: "/contact" },
-    { name: "Findings", href: "/findings" },
+    { name: "Get involved", href: "/participate", colour: styles.green },
+    { name: "Findings", href: "/findings", colour: styles.purple },
+    { name: "Contact", href: "/contact", colour: styles.teal },
   ]
 
   const toggleMenu = () => {
@@ -32,6 +30,24 @@ const Header = () => {
     }
   }
 
+  // TODO: wire up site search
+  const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+  }
+
+  const renderSearch = (id: string) => (
+    <form className={styles.search} role="search" onSubmit={handleSearch}>
+      <label htmlFor={id} className={styles.visuallyHidden}>Search the LEND website</label>
+      <input id={id} type="search" name="q" placeholder="Search" className={styles.searchInput} />
+      <button type="submit" className={styles.searchButton} aria-label="Search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="7" />
+          <path d="M20 20l-4-4" />
+        </svg>
+      </button>
+    </form>
+  )
+
   return (
     <header className={styles.header}>
       <div className={styles.container}>
@@ -40,22 +56,25 @@ const Header = () => {
             <Image src="/lendlogo.svg" alt="LEND" width={308} height={50} />
           </Link>
         </div>
-        
+
         {/* Desktop Navigation */}
-        <nav className={styles.nav}>
-          {navItems.map((item) => (
-            <Link
-              key={item.name}
-              href={item.href}
-              className={`${styles.navLink} ${pathname === item.href ? styles.active : ""}`}
-            >
-              {item.name}
-            </Link>
-          ))}
-        </nav>
+        <div className={styles.navArea}>
+          {renderSearch("site-search")}
+          <nav className={styles.nav}>
+            {navItems.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                className={`${styles.navLink} ${item.colour} ${pathname === item.href ? styles.active : ""}`}
+              >
+                {item.name}
+              </Link>
+            ))}
+          </nav>
+        </div>
 
         {/* Mobile Menu Button */}
-        <button 
+        <button
           className={styles.mobileMenuButton}
           onClick={toggleMenu}
           aria-label="Toggle navigation menu"
@@ -67,11 +86,12 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       <nav className={`${styles.mobileNav} ${isMenuOpen ? styles.open : ''}`}>
+        <div className={styles.mobileSearch}>{renderSearch("site-search-mobile")}</div>
         {navItems.map((item) => (
           <Link
             key={item.name}
             href={item.href}
-            className={`${styles.mobileNavLink} ${pathname === item.href ? styles.active : ""}`}
+            className={`${styles.mobileNavLink} ${item.colour} ${pathname === item.href ? styles.active : ""}`}
             onClick={closeMenu}
           >
             {item.name}
@@ -81,8 +101,8 @@ const Header = () => {
 
       {/* Overlay for mobile menu */}
       {isMenuOpen && (
-        <div 
-          className={styles.overlay} 
+        <div
+          className={styles.overlay}
           onClick={closeMenu}
           onKeyDown={handleOverlayKeyDown}
           tabIndex={-1}

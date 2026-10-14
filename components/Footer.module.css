@@ -12,18 +12,25 @@
   right: 0;
   z-index: 1000;*/
   position: relative;
-  width: 1280px;
-  left: calc((100vw - 1296px) / 2);
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 /* Added decorative SVG styling */
 .decorativeSvg {
   position: absolute;
   top: -50px;
+  left: 0;
   fill: #0e9fb2;
-  width: 1280px;
+  width: 100%;
   height: 50px;
   z-index: 1;
+}
+
+.decorativeSvg svg {
+  display: block;
+  width: 100%;
 }
 
 .container {

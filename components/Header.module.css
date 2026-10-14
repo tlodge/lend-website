@@ -13,7 +13,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 96px;
   position: relative;
   z-index: 1001;
 }
@@ -24,21 +24,127 @@
   color: #333;
 }
 
+.navArea {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
 .nav {
   display: flex;
-  gap: 40px;
+  align-items: center;
+  gap: 28px;
 }
 
 .navLink {
-  font-weight: 400;
-  color: #333;
-  transition: font-weight 0.2s;
+  --nav-colour: #0e9fb2;
+  position: relative;
+  padding: 8px 0;
+  color: #1c2b30;
+  font-weight: 600;
+  font-size: 16px;
   text-decoration: none;
 }
 
-.navLink:hover,
-.navLink.active {
-  font-weight: 700;
+.navLink::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--nav-colour);
+  transform: scaleX(0);
+  transition: transform 0.2s;
+}
+
+.navLink:hover::after,
+.navLink.active::after {
+  transform: scaleX(1);
+}
+
+/* Primary action: Get involved */
+.navLink.green {
+  padding: 10px 20px;
+  border-radius: 6px;
+  background: var(--nav-colour);
+  color: white;
+  transition: background-color 0.2s;
+}
+
+.navLink.green::after {
+  display: none;
+}
+
+.navLink.green:hover,
+.navLink.green.active {
+  background: #256b28;
+}
+
+.navLink:focus-visible,
+.mobileNavLink:focus-visible,
+.searchInput:focus-visible,
+.searchButton:focus-visible {
+  outline: 3px solid #183560;
+  outline-offset: 2px;
+}
+
+.green { --nav-colour: #2e7d32; }
+.purple { --nav-colour: #74307f; }
+.teal { --nav-colour: #0e9fb2; }
+
+/* Search */
+.search {
+  display: flex;
+  align-items: stretch;
+  height: 42px;
+  border: 1px solid #c3cfd2;
+  border-radius: 6px;
+  overflow: hidden;
+  background: white;
+  transition: border-color 0.2s;
+}
+
+.search:focus-within {
+  border-color: #135e6b;
+}
+
+.searchInput {
+  border: none;
+  padding: 0 12px;
+  width: 200px;
+  font: inherit;
+  font-size: 15px;
+  color: #1c2b30;
+  background: transparent;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+.searchButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  border: none;
+  background: transparent;
+  color: #4a5a5f;
+}
+
+.searchButton:hover {
+  color: #135e6b;
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
 }
 
 /* Mobile Menu Button */
@@ -99,7 +205,7 @@
 .mobileNav {
   display: none;
   position: fixed;
-  top: 80px;
+  top: 96px;
   left: 0;
   right: 0;
   background: white;
@@ -107,7 +213,7 @@
   transform: translateY(-100%);
   transition: transform 0.3s ease;
   z-index: 99;
-  max-height: calc(100vh - 80px);
+  max-height: calc(100vh - 96px);
   overflow-y: auto;
   visibility: hidden;
 }
@@ -117,11 +223,27 @@
   visibility: visible;
 }
 
+.mobileSearch {
+  padding: 16px 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.mobileSearch .search {
+  width: 100%;
+}
+
+.mobileSearch .searchInput {
+  flex: 1;
+  width: auto;
+}
+
 .mobileNavLink {
   display: block;
   padding: 16px 20px;
-  font-weight: 400;
-  color: #333;
+  border-left: 4px solid var(--nav-colour, #0e9fb2);
+  font-weight: 600;
+  color: #1c2b30;
+  text-align: left;
   text-decoration: none;
   border-bottom: 1px solid #f0f0f0;
   transition: background-color 0.2s;
@@ -131,13 +253,12 @@
 .mobileNavLink:hover,
 .mobileNavLink.active {
   background-color: #f8f9fa;
-  font-weight: 700;
 }
 
 /* Overlay */
 .overlay {
   position: fixed;
-  top: 80px;
+  top: 96px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -153,8 +274,8 @@
 }
 
 /* Responsive Design */
-@media screen and (max-width: 1000px) {
-  .nav {
+@media screen and (max-width: 1059px) {
+  .navArea {
     display: none !important;
   }
 
@@ -167,7 +288,7 @@
   }
 }
 
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1060px) {
   .mobileMenuButton {
     display: none !important;
   }
@@ -182,8 +303,17 @@
     padding: 0 16px;
   }
 
-  /*.logo img {
-    width: 200px;
+  .container {
+    height: 80px;
+  }
+
+  .mobileNav,
+  .overlay {
+    top: 80px;
+  }
+
+  .logo img {
+    width: 220px;
     height: auto;
-  }*/
+  }
 }
