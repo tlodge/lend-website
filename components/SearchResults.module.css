@@ -1,0 +1,158 @@
+.form {
+  display: flex;
+  gap: 12px;
+  margin-top: 48px;
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  height: 54px;
+  padding: 0 16px;
+  border: 1px solid #b7c7cb;
+  border-radius: 6px;
+  background: white;
+  font: inherit;
+  font-size: 18px;
+  color: #1c2b30;
+}
+
+.input:focus {
+  outline: 3px solid #183560;
+  outline-offset: 1px;
+  border-color: #135e6b;
+}
+
+.button {
+  height: 54px;
+  padding: 0 28px;
+  border: none;
+  border-radius: 6px;
+  background: #135e6b;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background: #0e4a55;
+}
+
+.button:focus-visible {
+  outline: 3px solid #183560;
+  outline-offset: 3px;
+}
+
+.summary {
+  margin: 24px 0 16px;
+  font-size: 18px;
+  color: #4a5a5f;
+}
+
+.summary strong {
+  color: #1c2b30;
+  font-weight: 600;
+}
+
+.results {
+  list-style: none;
+  padding: 0;
+  background: white;
+  border: 1px solid #cfe0e3;
+  border-radius: 10px;
+}
+
+.result {
+  padding: 24px 32px;
+}
+
+.result + .result {
+  border-top: 1px solid #e3eef0;
+}
+
+.category {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4a5a5f;
+  margin-bottom: 4px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.title a {
+  color: #135e6b;
+  text-align: left;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.2s;
+}
+
+.title a:hover {
+  text-decoration-color: currentColor;
+}
+
+.title a:focus-visible,
+.help a:focus-visible {
+  outline: 3px solid #183560;
+  outline-offset: 3px;
+}
+
+.snippet {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  margin-top: 6px;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #1c2b30;
+}
+
+.mark {
+  background: #fdf0b8;
+  color: inherit;
+  border-radius: 2px;
+  padding: 0 1px;
+}
+
+.help {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #1c2b30;
+}
+
+.help a {
+  color: #135e6b;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .form {
+    margin-top: 32px;
+    flex-direction: column;
+  }
+
+  .input {
+    flex: none;
+  }
+
+  .result {
+    padding: 20px;
+  }
+}

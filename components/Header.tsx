@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation"
 import { useState } from "react"
 import styles from "./Header.module.css"
 import Image from "next/image"
+import Form from "next/form"
 
 const Header = () => {
   const pathname = usePathname()
@@ -30,22 +31,17 @@ const Header = () => {
     }
   }
 
-  // TODO: wire up site search
-  const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-  }
-
   const renderSearch = (id: string) => (
-    <form className={styles.search} role="search" onSubmit={handleSearch}>
+    <Form action="/search" className={styles.search} role="search" onSubmit={closeMenu}>
       <label htmlFor={id} className={styles.visuallyHidden}>Search the LEND website</label>
-      <input id={id} type="search" name="q" placeholder="Search" className={styles.searchInput} />
+      <input id={id} type="search" name="q" placeholder="Search" className={styles.searchInput} required />
       <button type="submit" className={styles.searchButton} aria-label="Search">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
           <circle cx="11" cy="11" r="7" />
           <path d="M20 20l-4-4" />
         </svg>
       </button>
-    </form>
+    </Form>
   )
 
   return (
