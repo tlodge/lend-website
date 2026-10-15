@@ -1,5 +1,6 @@
 import Link from "next/link"
 import styles from "./HomeContent.module.css"
+import layout from "./PageLayout.module.css"
 import blogData from "../app/data/blogs.json"
 import type { BlogData } from "../lib/types"
 
@@ -56,8 +57,8 @@ export default function HomeContent() {
   }
 
   return (
-    <div className={styles.home}>
-      <h1 className={styles.welcome}>Welcome to LEND</h1>
+    <div className={`${layout.page} ${layout.teal} ${styles.home}`}>
+      <h1 className={layout.banner}>Welcome to LEND</h1>
 
       <section className={styles.intro}>
         <div className={styles.introText}>

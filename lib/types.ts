@@ -96,3 +96,14 @@ export interface Publication {
 }
 
 export type PublicationData = Publication[];
+export interface InvolvementOption {
+  id: string;
+  colour: "green" | "purple" | "teal" | "orange";
+  title: string;
+  description: string;
+  meta?: string;
+  link?: { label: string; href: string };
+  button: { label: string; href: string; external?: boolean };
+}
+
+export type InvolvementData = InvolvementOption[];

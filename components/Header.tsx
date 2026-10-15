@@ -65,7 +65,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`${styles.navLink} ${item.colour} ${pathname === item.href ? styles.active : ""}`}
+                className={`${styles.navLink} ${item.colour} ${pathname.startsWith(item.href) ? styles.active : ""}`}
               >
                 {item.name}
               </Link>
@@ -91,7 +91,7 @@ const Header = () => {
           <Link
             key={item.name}
             href={item.href}
-            className={`${styles.mobileNavLink} ${item.colour} ${pathname === item.href ? styles.active : ""}`}
+            className={`${styles.mobileNavLink} ${item.colour} ${pathname.startsWith(item.href) ? styles.active : ""}`}
             onClick={closeMenu}
           >
             {item.name}
