@@ -1,5 +1,6 @@
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
+import BackLink from "../../components/BackLink"
 import InvolvementOptions from "../../components/InvolvementOptions"
 import styles from "../../components/PageLayout.module.css"
 import involvementData from "../data/involvement.json"
@@ -33,6 +34,8 @@ const ParticipatePage = () => {
             <p className={styles.smallprint}>
               Not sure which is right for you? Email us at <a href="mailto:LEND@nottingham.ac.uk">LEND@nottingham.ac.uk</a>.
             </p>
+
+            <BackLink />
           </div>
         </div>
       </div>

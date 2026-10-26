@@ -26,6 +26,11 @@ const Footer = () => {
             alt="University of West London"
             className={styles.partnerLogo}
           />
+          <img
+            src="/partners/nihr-funded-by-white.png"
+            alt="Funded by NIHR, the National Institute for Health and Care Research"
+            className={styles.partnerLogo}
+          />
           {/*<img
             src="/partners/leicester.svg"
             alt="University of Leicester"

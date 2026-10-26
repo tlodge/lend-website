@@ -5,6 +5,7 @@ import { useState } from "react"
 import styles from "./Header.module.css"
 import Image from "next/image"
 import Form from "next/form"
+import Breadcrumbs from "./Breadcrumbs"
 
 const Header = () => {
   const pathname = usePathname()
@@ -45,6 +46,7 @@ const Header = () => {
   )
 
   return (
+    <>
     <header className={styles.header}>
       <div className={styles.container}>
         <div className={styles.logo}>
@@ -107,6 +109,8 @@ const Header = () => {
         ></div>
       )}
     </header>
+    <Breadcrumbs />
+    </>
   )
 }
 

@@ -49,27 +49,9 @@
   padding: 0 48px;
 }
 
-.breadcrumb {
-  display: inline-block;
-  margin-top: 32px;
-  color: var(--link);
-  font-size: 15px;
-  font-weight: 600;
-  text-align: left;
-}
-
-.breadcrumb:hover {
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
 .intro {
   padding: 48px 0 40px;
   text-align: center;
-}
-
-.breadcrumb + .intro {
-  padding-top: 24px;
 }
 
 .intro p {
@@ -242,13 +224,32 @@
   text-underline-offset: 2px;
 }
 
-.breadcrumb:focus-visible,
+.backLink:focus-visible,
 .textLink:focus-visible,
 .ctaButton:focus-visible,
 .prose a:focus-visible,
 .smallprint a:focus-visible {
   outline: 3px solid #183560;
   outline-offset: 3px;
+}
+
+/* Back link at the end of a page */
+.back {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.backLink {
+  color: var(--link);
+  font-size: 17px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.backLink:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 @media (max-width: 768px) {

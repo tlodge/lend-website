@@ -123,9 +123,6 @@ export default function HomeContent() {
         </section>
       )}
 
-      <p className={styles.funding}>
-        Funded by the <strong>National Institute for Health and Care Research (NIHR)</strong>
-      </p>
     </div>
   )
 }

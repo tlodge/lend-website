@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
+import BackLink from "../../components/BackLink"
 import styles from "../../components/PageLayout.module.css"
 
 export default function About() {
@@ -72,6 +73,8 @@ export default function About() {
             <p className={styles.smallprint}>
               Interested to learn more? Email us at <a href="mailto:LEND@nottingham.ac.uk">LEND@nottingham.ac.uk</a>.
             </p>
+
+            <BackLink />
           </div>
         </div>
       </div>

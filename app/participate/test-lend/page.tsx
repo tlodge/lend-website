@@ -1,6 +1,6 @@
-import Link from "next/link"
 import Header from "../../../components/Header"
 import Footer from "../../../components/Footer"
+import BackLink from "../../../components/BackLink"
 import styles from "../../../components/PageLayout.module.css"
 
 // TODO: replace with the trial registration link once it exists
@@ -15,10 +15,6 @@ export default function TestLendPage() {
           <h1 className={styles.banner}>Help us test LEND</h1>
 
           <div className={styles.column}>
-            <Link href="/participate" className={styles.breadcrumb}>
-              <span aria-hidden="true">←</span> All ways to get involved
-            </Link>
-
             <div className={styles.intro}>
               <p>
                 We welcome you to take part if you are someone with a diagnosis of dementia, or an informal carer such as a family member, partner or friend.
@@ -97,6 +93,8 @@ export default function TestLendPage() {
             <p className={styles.smallprint}>
               Questions about the study? Email us at <a href="mailto:LEND@nottingham.ac.uk">LEND@nottingham.ac.uk</a>.
             </p>
+
+            <BackLink />
           </div>
         </div>
       </div>

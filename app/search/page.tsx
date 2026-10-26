@@ -1,6 +1,7 @@
 import { Suspense } from "react"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
+import BackLink from "../../components/BackLink"
 import SearchResults from "../../components/SearchResults"
 import styles from "../../components/PageLayout.module.css"
 import { buildSearchIndex } from "../../lib/searchIndex"
@@ -23,6 +24,7 @@ export default function SearchPage() {
             <Suspense>
               <SearchResults index={index} />
             </Suspense>
+            <BackLink />
           </div>
         </div>
       </div>
