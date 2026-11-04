@@ -1,13 +1,3 @@
-export interface Person {
-  name: string;
-  institution: string;
-  profile: string;
-  url?: string;
-  image?: string;
-}
-
-export type PeopleData = Person[];
-
 export interface BlogPost {
   id: string;
   title: string;
@@ -107,3 +97,28 @@ export interface InvolvementOption {
 }
 
 export type InvolvementData = InvolvementOption[];
+
+export interface TeamMember {
+  name: string;
+  title?: string;
+  institution?: string;
+  url?: string;
+  role?: string;
+  contact?: boolean; // Likely to be in touch with participants
+}
+
+export interface TeamGroup {
+  id: string;
+  title: string;
+  members: TeamMember[];
+}
+
+export interface University {
+  name: string;
+  contribution: string;
+}
+
+export interface TeamData {
+  groups: TeamGroup[];
+  universities: University[];
+}

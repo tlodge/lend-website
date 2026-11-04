@@ -1,10 +1,10 @@
 import { readFileSync } from "fs"
 import { join } from "path"
 import blogData from "../app/data/blogs.json"
-import peopleData from "../app/data/people.json"
+import teamData from "../app/data/team.json"
 import publicationsData from "../app/data/publications.json"
 import involvementData from "../app/data/involvement.json"
-import type { BlogData, InvolvementData, PeopleData, PublicationData } from "./types"
+import type { BlogData, InvolvementData, PublicationData, TeamData } from "./types"
 
 export interface SearchEntry {
   title: string;
@@ -50,8 +50,8 @@ const pages: SearchEntry[] = [
     title: "Our team",
     href: "/team",
     category: "Page",
-    description: "We are a mix of academics, clinical psychologists, psychiatrists, economists, statisticians, technologists, and people with lived experience of dementia.",
-    keywords: "Project lead Professor Martin Orrell, Director of the Institute of Mental Health at the University of Nottingham. Researchers people staff",
+    description: "Who is on the LEND team, who you may hear from if you take part, and our collaborating universities.",
+    keywords: "Researchers people staff contact recruitment interviews programme manager research assistant associate co-applicants PhD students universities Nottingham Bangor West London Leicester Exeter",
   },
   {
     title: "Findings",
@@ -128,13 +128,15 @@ export function buildSearchIndex(): SearchEntry[] {
       body: [blog.subtitle, blog.author, blog.tags.join(" "), readBlogContent(blog.contentFile)].join(" "),
     }))
 
-  const team: SearchEntry[] = (peopleData as PeopleData).map((person) => ({
-    title: person.name,
-    href: "/team",
-    category: "Team",
-    description: stripHtml(person.profile),
-    body: person.institution,
-  }))
+  const team: SearchEntry[] = (teamData as TeamData).groups.flatMap((group) =>
+    group.members.map((member) => ({
+      title: member.name,
+      href: "/team",
+      category: "Team" as const,
+      description: [member.title, member.institution].filter(Boolean).join(" · ") || group.title,
+      body: member.role ?? "",
+    }))
+  )
 
   const findings: SearchEntry[] = (publicationsData as PublicationData).map((publication) => ({
     title: publication.title,

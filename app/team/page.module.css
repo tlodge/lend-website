@@ -1,0 +1,95 @@
+.contact {
+  border-left-color: #2e7d32;
+}
+
+.contactList {
+  margin-top: 20px;
+}
+
+.contactEmail {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #1c2b30;
+}
+
+.contactEmail a {
+  color: #135e6b;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.universities {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px 40px;
+}
+
+.university {
+  padding-top: 16px;
+  border-top: 1px solid #e3eef0;
+}
+
+.universityName {
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #1c2b30;
+}
+
+.universityText {
+  margin-top: 4px;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #1c2b30;
+}
+
+.glossary {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 10px 24px;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.glossary dt {
+  font-weight: 600;
+  color: #1c2b30;
+}
+
+.glossary dd {
+  margin: 0;
+  color: #1c2b30;
+}
+
+.glossary a {
+  color: #135e6b;
+  font-weight: 600;
+  text-align: left;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.contactEmail a:focus-visible,
+.glossary a:focus-visible {
+  outline: 3px solid #183560;
+  outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+  .universities {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .glossary {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .glossary dd {
+    margin-bottom: 10px;
+  }
+}

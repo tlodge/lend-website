@@ -1,0 +1,200 @@
+{
+  "groups": [
+    {
+      "id": "leadership",
+      "title": "Programme leadership and management",
+      "members": [
+        {
+          "name": "Professor Martin Orrell",
+          "title": "Chief Investigator",
+          "institution": "University of Nottingham",
+          "url": "https://www.nottingham.ac.uk/medicine/people/m.orrell",
+          "role": "Provides overall scientific and strategic leadership, ensuring the programme achieves its objectives and meets research governance and funding requirements."
+        },
+        {
+          "name": "Dr Linda O'Raw",
+          "title": "Programme Manager",
+          "contact": true,
+          "role": "Responsible for the day-to-day management, coordination and delivery of LEND, overseeing work packages, research governance, timelines, resources, reporting and collaboration across partner institutions."
+        }
+      ]
+    },
+    {
+      "id": "delivery",
+      "title": "Core research delivery team",
+      "members": [
+        {
+          "name": "Dr Briony Harden",
+          "title": "Research Associate",
+          "contact": true,
+          "role": "Supports the delivery of research activities across LEND, including qualitative data collection, narrative assessment, co-production and engagement with LEAP members."
+        },
+        {
+          "name": "Erin Gardner",
+          "title": "Research Assistant",
+          "contact": true,
+          "role": "Supports participant recruitment, research interviews, data collection, narrative assessment and the day-to-day implementation of research procedures."
+        },
+        {
+          "name": "Dr Tom Lodge",
+          "title": "Computer Science Researcher",
+          "role": "Contributes to the technical design and development of the LEND Intervention, including digital accessibility, usability testing and research systems."
+        }
+      ]
+    },
+    {
+      "id": "co-applicants",
+      "title": "Co-applicants and academic leads",
+      "members": [
+        {
+          "name": "Professor Mike Slade",
+          "institution": "University of Nottingham",
+          "url": "https://www.nottingham.ac.uk/healthsciences/people/m.slade",
+          "role": "Provides expertise in lived experience narratives, mental health recovery and complex interventions, supporting the adaptation of learning from the NEON programme."
+        },
+        {
+          "name": "Professor Chris Fox",
+          "institution": "University of Exeter",
+          "url": "https://experts.exeter.ac.uk/36926-chris-fox",
+          "role": "Co-leads WP3, providing clinical and methodological expertise in dementia research and the development and evaluation of the feasibility trial."
+        },
+        {
+          "name": "Professor Rhiannon Tudor Edwards",
+          "institution": "Bangor University",
+          "url": "https://research.bangor.ac.uk/en/persons/rhiannon-tudor-edwards/",
+          "role": "Leads the health economic evaluation, overseeing assessments of intervention costs, resource use and cost-effectiveness."
+        },
+        {
+          "name": "Dr Zoe Hoare",
+          "institution": "Bangor University",
+          "url": "https://www.bangor.ac.uk/staff/nwms/zoe-hoare-011473/en",
+          "role": "Provides senior statistical and clinical trials methodology expertise, supporting trial design, randomisation, statistical analysis and trial oversight through NWORTH CTU."
+        },
+        {
+          "name": "Professor Neil Coulson",
+          "institution": "University of Nottingham",
+          "url": "https://www.nottingham.ac.uk/medicine/people/neil.coulson",
+          "role": "Co-leads WP5, contributing expertise in health psychology, behaviour change, intervention development and implementation."
+        },
+        {
+          "name": "Professor Praminda Caleb-Solly",
+          "institution": "University of Nottingham",
+          "url": "https://www.nottingham.ac.uk/computerscience/people/praminda.caleb-solly",
+          "role": "Co-leads WP2, providing expertise in computer science, accessible technologies and the technical development of the digital LEND Intervention."
+        },
+        {
+          "name": "Dr Stefan Rennick-Egglestone",
+          "institution": "University of Nottingham",
+          "url": "https://www.nottingham.ac.uk/healthsciences/people/stefan.egglestone",
+          "role": "Co-leads WP2, overseeing the development and characterisation of lived experience narratives, intervention design and the application of narrative research evidence."
+        },
+        {
+          "name": "Dr Fiona Ng",
+          "institution": "University of Nottingham",
+          "url": "https://www.nottingham.ac.uk/healthsciences/people/fiona.ng",
+          "role": "Co-leads WP1, contributing expertise in programme theory, mechanisms of change and qualitative research, while supporting researcher training and development."
+        },
+        {
+          "name": "Professor Katie Featherstone",
+          "institution": "University of West London",
+          "url": "https://www.uwl.ac.uk/staff/katie-featherstone",
+          "role": "Co-leads WP1 and provides qualitative methodological leadership, guiding narrative research, interviews and the exploration of lived experiences of dementia."
+        },
+        {
+          "name": "Professor Juanita Hoe",
+          "institution": "University of West London",
+          "url": "https://www.uwl.ac.uk/staff/juanita-hoe",
+          "role": "Co-leads WP4, contributing expertise in dementia outcomes, quality of life, family carers and the design and evaluation of complex interventions."
+        },
+        {
+          "name": "Dr Orii McDermott",
+          "role": "Co-leads patient and public involvement and engagement (PPIE), contributing expertise in qualitative research, young-onset dementia and inclusive research practice. Development of the LEND Theory of Change."
+        },
+        {
+          "name": "Swati Madhavji",
+          "title": "Lead LEAP Representative",
+          "role": "Provides lived experience leadership for PPIE, supporting the Lived Experience Advisory Panel (LEAP) and ensuring the perspectives of people with dementia and carers inform programme decisions. Inclusion advocate."
+        },
+        {
+          "name": "Dáithí Clayton",
+          "title": "Trans and Non-Binary Dementia Advocate",
+          "role": "Supports the Lived Experience Advisory Panel (LEAP), ensuring the perspectives of LGBTQIA+ people with dementia and carers inform programme decisions."
+        },
+        {
+          "name": "Bettina Wallice",
+          "title": "Black Caribbean Dementia Advocate",
+          "role": "Supports the Lived Experience Advisory Panel (LEAP), ensuring the perspectives of Black Caribbean people with dementia and carers inform programme decisions."
+        },
+        {
+          "name": "Dr Ash Routen",
+          "role": "Supports equality, diversity and inclusion (EDI) and community engagement, particularly the meaningful involvement of ethnically underserved communities."
+        }
+      ]
+    },
+    {
+      "id": "phd",
+      "title": "PhD researchers",
+      "members": [
+        {
+          "name": "Abigail Moon",
+          "title": "PhD Student",
+          "institution": "University of West London",
+          "role": "Undertakes doctoral research exploring lived experience narratives and the experiences of underserved communities, contributing to the development of an inclusive LEND narrative collection."
+        },
+        {
+          "name": "Rianna Patterson",
+          "title": "PhD Student",
+          "institution": "University of Nottingham",
+          "role": "Undertakes doctoral research exploring the feasibility, accessibility and longer-term experiences of using the LEND Intervention among people living with dementia."
+        }
+      ]
+    },
+    {
+      "id": "health-economics",
+      "title": "Health economics and clinical trials support",
+      "members": [
+        {
+          "name": "Dr Victory Ezeofor",
+          "title": "Health Economist",
+          "role": "Provides health economic modelling and statistical expertise, contributing to the DCE and economic evaluation of the LEND Intervention."
+        },
+        {
+          "name": "Pim Doungsong",
+          "title": "Health Economics Researcher",
+          "role": "Contributes to the design and analysis of the discrete choice experiment (DCE), supporting the assessment of participant preferences and health economic methods."
+        },
+        {
+          "name": "Dr Andrew Brand",
+          "title": "Trial Statistician"
+        },
+        {
+          "name": "Alison Jenkins",
+          "title": "Clinical Trials Unit Trial Manager",
+          "role": "Supports the coordination and operational management of LEND clinical trials, ensuring trial procedures meet methodological and regulatory requirements."
+        }
+      ]
+    }
+  ],
+  "universities": [
+    {
+      "name": "University of Nottingham",
+      "contribution": "Lead academic institution, programme coordination, programme theory, digital intervention development and research delivery."
+    },
+    {
+      "name": "Bangor University",
+      "contribution": "Health economics, statistical expertise, randomisation and clinical trials support through the NWORTH Clinical Trials Unit."
+    },
+    {
+      "name": "University of West London",
+      "contribution": "Qualitative research, dementia care, lived experience narratives, engagement with underserved communities and doctoral research."
+    },
+    {
+      "name": "University of Leicester",
+      "contribution": "Equality, diversity and inclusion, ethnic health inequalities and community engagement through the Centre for Ethnic Health Research."
+    },
+    {
+      "name": "University of Exeter",
+      "contribution": "Clinical expertise in dementia, feasibility trial design and evaluation of complex interventions."
+    }
+  ]
+}
