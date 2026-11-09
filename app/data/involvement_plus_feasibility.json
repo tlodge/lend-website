@@ -1,0 +1,39 @@
+[
+  {
+    "id": "test-lend",
+    "colour": "green",
+    "title": "Help us test LEND",
+    "description": "This study looks at the impact of LEND. We want to hear what worked for you and what didn’t, so that we can make LEND as helpful as possible.",
+    "meta": "Online · 3 months, with follow-ups",
+    "button": { "label": "Test LEND", "href": "/participate/test-lend" }
+  },
+  {
+    "id": "survey",
+    "colour": "purple",
+    "title": "Complete our survey",
+    "description": "We want to find out more about you, your experience of dementia and how you use technology. Your answers will help us create better online support.",
+    "meta": "Online · About 10 minutes",
+    "button": {
+      "label": "Take the survey",
+      "href": "https://forms.office.com/Pages/ResponsePage.aspx?id=7qe9Z4D970GskTWEGCkKHj3QYzAI49JAinZABgNX2WZUM0RSRTNCUFhKU0dLTVRRMUpUSVpFS1hDTy4u",
+      "external": true
+    }
+  },
+  {
+    "id": "share-story",
+    "colour": "teal",
+    "title": "Share your story",
+    "description": "Sharing stories can improve quality of life for people affected by dementia. We are looking for people who would like to share their own experience of dementia.",
+    "meta": "Online · One-off",
+    "link": { "label": "Find out more about sharing your story", "href": "/collect" },
+    "button": { "label": "Share your story", "href": "mailto:LEND@nottingham.ac.uk?subject=Sharing%20my%20story%20with%20LEND" }
+  },
+  {
+    "id": "dce",
+    "colour": "orange",
+    "title": "Take part in a discrete choice experiment",
+    "description": "We are running a discrete choice experiment (DCE) to understand people’s preferences for different parts of LEND. This will help us find out which features matter most.",
+    "meta": "Online · About 30 minutes",
+    "button": { "label": "Start the experiment", "href": "https://forms.cloud.microsoft/e/skAbMNQTRq", "external": true }
+  }
+]

@@ -1,13 +1,5 @@
 [
   {
-    "id": "test-lend",
-    "colour": "green",
-    "title": "Help us test LEND",
-    "description": "This study looks at the impact of LEND. We want to hear what worked for you and what didn’t, so that we can make LEND as helpful as possible.",
-    "meta": "Online · 3 months, with follow-ups",
-    "button": { "label": "Test LEND", "href": "/participate/test-lend" }
-  },
-  {
     "id": "survey",
     "colour": "purple",
     "title": "Complete our survey",
@@ -26,7 +18,7 @@
     "description": "Sharing stories can improve quality of life for people affected by dementia. We are looking for people who would like to share their own experience of dementia.",
     "meta": "Online · One-off",
     "link": { "label": "Find out more about sharing your story", "href": "/collect" },
-    "button": { "label": "Share your story", "href": "mailto:LEND@nottingham.ac.uk?subject=Sharing%20my%20story%20with%20LEND" }
+    "button": { "label": "Share your story", "href": "/collect"}
   },
   {
     "id": "dce",
