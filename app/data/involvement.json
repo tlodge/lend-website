@@ -1,5 +1,13 @@
 [
   {
+    "id": "test-lend",
+    "colour": "green",
+    "title": "Help us test LEND",
+    "description": "This study looks at the impact of LEND. We want to hear what worked for you and what didn’t, so that we can make LEND as helpful as possible.",
+    "meta": "Online · 3 months, with follow-ups",
+    "button": { "label": "Test LEND", "href": "/participate/test-lend" }
+  },
+  {
     "id": "survey",
     "colour": "purple",
     "title": "Complete our survey",

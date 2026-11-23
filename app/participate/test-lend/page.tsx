@@ -4,7 +4,7 @@ import BackLink from "../../../components/BackLink"
 import styles from "../../../components/PageLayout.module.css"
 
 // TODO: replace with the trial registration link once it exists
-const registerHref = "mailto:LEND@nottingham.ac.uk?subject=I%20would%20like%20to%20test%20LEND"
+const registerHref = "https://redcaplive.nottingham.ac.uk/redcap/surveys/?s=ENX7RDXPPE8PKKAK"
 
 export default function TestLendPage() {
   return (
