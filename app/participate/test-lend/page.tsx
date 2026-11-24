@@ -46,7 +46,7 @@ export default function TestLendPage() {
                   <li>have access to a device with an internet connection</li>
                   <li>have an email address or phone number</li>
                   <li>have a formal diagnosis of dementia, or be a carer or supporter of someone with a diagnosis of dementia</li>
-                  <li>be able to start on <strong>[start date to be confirmed]</strong>, use LEND for 3 months, and take part in follow-up interviews 3, 12 and 18 months after the start date</li>
+                  <li>be able to start on or after <strong>23rd November 2026</strong>, use LEND for 3 months, and take part in follow-up interviews 3, 12 and 18 months after the start date</li>
                 </ul>
               </div>
             </section>
@@ -78,7 +78,6 @@ export default function TestLendPage() {
               <div className={styles.prose}>
                 <ul>
                   <li>Taking part is voluntary. You can withdraw from the study at any time, without giving a reason.</li>
-                  <li>We do not offer payment for taking part in this study.</li>
                   <li>We cannot promise that taking part will bring long-term benefits.</li>
                   <li>You cannot take part in other research studies while you are in this study.</li>
                 </ul>
@@ -86,8 +85,8 @@ export default function TestLendPage() {
             </section>
 
             <div className={styles.cta}>
-              <p className={styles.ctaText}>Would you like to take part? Get in touch and we will explain the next steps.</p>
-              <a href={registerHref} className={styles.ctaButton}>I want to test LEND</a>
+              <p className={styles.ctaText}>Would you like to take part? Sign up now.</p>
+              <a href={registerHref} className={styles.ctaButton}>Sign up to test LEND</a>
             </div>
 
             <p className={styles.smallprint}>
